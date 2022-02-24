@@ -1,0 +1,56 @@
+.lnhr_new_toolbar {
+    margin-bottom: -17px;
+    transform: translateY(13px);
+    @include respond-to(xl) {
+      transform: translateY(0px);
+    }
+    &__call {
+      margin-right: 29px;
+      @include respond-to(xs) {
+        margin-right: 70px;
+      }
+      img {
+        height: 19px;
+        width: 19px;
+        margin-right: 10px;
+      }
+      .lnhr_new_pn {
+        display: none;
+        @include respond-to(xl) {
+          display: block;
+        }
+      }
+      font-family: "tt_norms_regular";
+      color: $primary_clr;
+      font-size: $fz18;
+      line-height: 30px;
+      letter-spacing: 1px;
+      @include transition(0.3s);
+      display: inline-flex;
+      align-items: center;
+      &:hover {
+        color: $primary_hvr;
+      }
+    }
+  }
+  .lnhr_new__social_icon {
+    @include flex(row);
+    display: none;
+    @include respond-to(xl) {
+      display: flex;
+    }
+    a {
+      height: 27px;
+      width: 27px;
+      display: inline-flex;
+      &:not(:last-child) {
+        margin-right: 13px;
+      }
+      img {
+        margin: 0;
+        padding: 0;
+        height: 27px;
+        width: 27px;
+      }
+    }
+  }

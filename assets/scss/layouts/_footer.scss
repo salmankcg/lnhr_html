@@ -1,0 +1,268 @@
+
+%footer_bottom_inherit {
+    font-family: $tt_regular;
+    color: $c8a8a;
+    font-size: 12px;
+    line-height: 17px;
+    @include respond-to(xl){
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  
+  .lnhr_new_footer {
+    padding-bottom: 30px;
+    &__top {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      @include respond-to(xl){
+          padding-top: 50px;
+          padding-bottom: 50px;
+      }
+      .lnhr_new_footer__top_content {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          @include respond-to(lg){
+              flex-flow: row;
+              align-items: center;
+          }
+        .lnhr_new_footer__logo {
+            margin-bottom: 20px;
+            @include respond-to(lg){
+                margin-bottom: 0;
+            }
+        }
+        .lnhr_new_footer__phone {
+          text-decoration: none;
+          span {
+            
+            line-height: 16px;
+            letter-spacing: 1px;
+            color: $ae97;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: $tt_regular;
+            font-size: 18px;
+            @include respond-to(xl){
+              font-size: 24px;
+            }
+          }
+          img {
+            display: inline-block;
+            margin-top: -10px;
+            height: 20px;
+            width: 20px;
+            max-width: 138px;
+            @include respond-to(xl){
+              height: 30px;
+              width: 30px;
+            }
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    &__middle {
+      .lnhr_new_footer__widget {
+          padding-bottom: 15px;
+          @include respond-to(xl){
+              padding-bottom: 0;
+          }
+        &_title {
+          
+          line-height: 16px;
+          color: $black;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-family: $tt_bold;
+          margin-bottom: 13px;
+          font-size: 12px;
+          @include respond-to(xl){
+              font-size: 14px;
+          }
+          @include respond-to(md){
+              cursor: default;
+          }
+          position: relative;
+          cursor: pointer;
+          &::after{
+          @include respond-to(md){
+              display: none;
+          }
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 5px;
+          background: url('../images/ac_down.png');
+          width: 10px;
+          height: 6px;
+          background-size: contain;
+          transform: scaleY(1);
+          }
+        }
+        &_content:not(.lnhr_new_footer__widget_social) {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+  
+          ul {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0;
+            li {
+              list-style: none;
+              &:not(:last-child) {
+                margin-bottom: 5px;
+              }
+              a {
+                
+                text-decoration: none;
+                font-family: $tt_regular;
+                color: $black;
+                @include transition(0.1s);
+                font-size: 12px;
+                @include respond-to(xl){
+                  font-size: 14px;
+                }
+                &:hover {
+                  text-decoration: none;
+                  color: $primary_hvr;
+                }
+              }
+            }
+            & + ul {
+              margin-left: 15px;
+            }
+          }
+        }
+  
+        &_social {
+          text-align: right;
+          a {
+            display: inline-block;
+            @include transition(0.3s);
+            img {
+              height: 28px;
+              width: 28px;
+            }
+            &:not(:last-child) {
+              margin-bottom: 11px;
+            }
+            &:hover {
+              transform: scale(1.05);
+            }
+            &+a{
+              margin-left: 10px;
+                @include respond-to(md){
+                  margin-left: 0px;
+                }
+            }
+          }
+          display: flex;
+          flex-flow: row;
+          justify-content: center;
+          @include respond-to(md){
+              flex-flow: column;
+          }
+        }
+        
+        &.lnhr_new_accordion_on{
+          .lnhr_new_footer__widget_title{
+              cursor: pointer;
+              position: relative;
+              &::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 5px;
+                background: url('../images/ac_down.png');
+                width: 10px;
+                height: 6px;
+                background-size: contain;
+                transform: scaleY(-1);
+              }
+          }
+      }
+      }
+    }
+    &__bottom {
+      padding-top: 30px;
+      @include respond-to(xl){
+          padding-top: 80px;
+      }
+      &_inner {
+        border-top: 1px solid rgba($black, 0.19);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .row{
+            display: flex;
+            [class*="col-"]{
+                &:nth-child(1){
+                  padding-top: 30px;
+                  order: 4;
+                  @include respond-to(lg){
+                      padding-top: 0;
+                      order: 1;
+                  }
+                }
+                &:nth-child(2){
+                  order: 1;
+                }
+                &:nth-child(3){
+                  order: 2;
+                }
+                &:nth-child(4){}
+            }
+        }
+      }
+      &_widget {
+        @extend %footer_bottom_inherit;
+        ul {
+          @include flex(row);
+          @extend %ul_rules;
+        }
+        a {
+          @extend %footer_bottom_inherit;
+          @extend %a_rules;
+          @include transition(0.3s);
+          padding: 0 10px;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            left: -3px;
+            top: 7px;
+            background: rgba($black, 0.19);
+            height: 5px;
+            width: 5px;
+            border-radius: 5px;
+          }
+          &:hover {
+            color: $primary_clr;
+          }
+        }
+      }
+      .lnhr_new__design_credit {
+        @extend %footer_bottom_inherit;
+        margin-top: -55px;
+        @include respond-to(lg){
+          margin-top: 0px;
+        }
+        a {
+          @extend %footer_bottom_inherit;
+          @extend %a_rules;
+          @include transition(0.3s);
+          display: inline-flex;
+          img {
+            margin-left: 8px;
+          }
+          &:hover {
+            color: $primary_clr;
+          }
+        }
+      }
+    }
+  }

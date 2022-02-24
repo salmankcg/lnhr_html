@@ -1,0 +1,17 @@
+.lnhr_new_banner {
+    background: url("../images/lnhr_banner_image.png") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    @include respond-to(xl) {
+      min-height: 1431px;
+      background-position: initial;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      // background: url('../images/lnhr_banner_image.png') no-repeat;
+    }
+  }

@@ -1,0 +1,60 @@
+
+@font-face {
+    font-family: 'tt_norms_regular';
+    src: url('../fonts/TTNormsPro-Regular.woff2') format('woff2'),
+        url('../fonts/TTNormsPro-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tt_norms_bold';
+    src: url('../fonts/TTNormsPro-Bold.woff2') format('woff2'),
+        url('../fonts/TTNormsPro-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: bold;
+
+}
+
+%ul_rules{
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    li{
+        list-style: none;
+    }
+}
+
+.lnhr_new_img{
+  max-width: 100%;
+}
+
+.lnhr_new_anchor{
+    text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+%a_rules{
+    text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.lnhr_new_list{
+    list-style: none;
+    & & {
+        padding: {
+          bottom: 0;
+          left: 0;
+        }
+    }
+}
+
+
+.lnhr_new_typo{
+    margin: 0;
+    padding: 0;
+}
+

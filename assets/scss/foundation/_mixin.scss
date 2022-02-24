@@ -1,0 +1,109 @@
+@mixin flex($flow) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @if $flow == "column" {
+    flex-flow: $flow;
+  } @else if $flow == "row" {
+    flex-flow: $flow;
+  } @else {
+    flex-flow: row-reverse;
+  }
+}
+@mixin transition($timing) {
+  transition: all $timing linear;
+}
+
+@mixin  cmn_typo($clr:$white,$lh: 16px) {
+    font-size: 14px;
+    @if $lh {
+        line-height: $lh;
+    } @else{
+        line-height: 16px;
+    }
+
+    @if $clr {
+        color: $clr;
+    } @else{
+        color: $white;
+    }
+    letter-spacing: 1px;
+}
+
+
+@mixin inlineFlex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+$xs: "0";
+$sm: "576px";
+$md: "768px";
+$lg: "992px";
+$xl: "1200px";
+$xxl: "1400px";
+
+
+@mixin respond-to($media) {
+  @if $media == xs {
+    @media only screen and (max-width: $sm) {
+      @content;
+    }
+  } @else if $media == sm {
+    @media only screen and (min-width: $sm) {
+      @content;
+    }
+  } @else if $media == md {
+    @media only screen and (min-width: $md) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media only screen and (min-width: $lg) {
+      @content;
+    }
+  } @else if $media == xl {
+    @media only screen and (min-width: $xl) {
+      @content;
+    }
+  } @else if $media == xxl {
+    @media only screen and (min-width: $xxl) {
+      @content;
+    }
+  }
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@include keyframes(rotation) {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

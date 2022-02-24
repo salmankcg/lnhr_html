@@ -1,0 +1,19 @@
+{
+  "name": "lnhr_new",
+  "version": "1.0.0",
+  "description": "lnhr new project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass-chokidar assets/scss -o assets/css --watch"
+  },
+  "keywords": [
+    "lnhr_new"
+  ],
+  "author": "kcg",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "node-sass-chokidar": "^1.5.0"
+  }
+}
