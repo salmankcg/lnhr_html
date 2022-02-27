@@ -165,14 +165,38 @@
 
 /*------------------------------------------
 ------------------------------------------*/
-.lnhr_new_banner {
-  background: url("../images/lnhr_banner_image.png") no-repeat;
-  background-size: cover;
+.lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
   min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 51%; }
+  @media only screen and (min-width: 1200px) {
+    .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
+      min-height: 1110px;
+      background-position: initial; } }
+
+.lnhr_new_banner__content h2 {
+  font-size: 70px;
+  font-family: "tt_norms_regular";
+  line-height: 90px; }
+
+.lnhr_new_banner__content p {
+  font-size: 18px;
+  line-height: 24px; }
+
+.lnhr_new_banner__content .lnhr_new_banner__button {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "tt_norms_regular";
+  color: #000; }
+
+.lnhr_new_banner {
+  background-size: cover;
   background-position: center; }
   @media only screen and (min-width: 1200px) {
     .lnhr_new_banner {
-      min-height: 1431px;
       background-position: initial; } }
   .lnhr_new_banner::before {
     content: "";
@@ -185,12 +209,15 @@
 ------------------------------------------*/
 .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul::before, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul::before {
   content: "";
-  display: block;
+  display: none;
   position: absolute;
   bottom: 100%;
   border: 0.5rem solid transparent;
   border-bottom-color: #000;
   left: 1rem; }
+  @media only screen and (min-width: 1200px) {
+    .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul::before, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul::before {
+      display: block; } }
 
 .lnhr_new_navigation .lnhr_new_navbar__nav > li.lnhr_new_has_children::after, .lnhr_new_navbar .lnhr_new_navbar__nav > li.lnhr_new_has_children::after {
   content: "";
@@ -217,13 +244,17 @@
     font-size: 10px !important;
     padding: 0px 13px 11px !important; }
     .mean-bar a.meanmenu-reveal .lnhr_new_menu_clicker {
-      background: transparent !important; }
+      background: transparent !important;
+      z-index: 10; }
+      .mean-bar a.meanmenu-reveal .lnhr_new_menu_clicker span {
+        background: transparent !important; }
     .mean-bar a.meanmenu-reveal .lnhr_new_menu_text {
       background: transparent !important;
-      transform: translate(-35px, 3px); }
+      transform: translate(-35px, 3px);
+      font-size: 12px; }
     .mean-bar a.meanmenu-reveal.meanclose {
-      top: 50px;
-      right: 12px !important;
+      top: 45px;
+      right: 0px !important;
       font-size: 15px !important; }
   .mean-bar .mean-nav {
     background-color: transparent !important; }
@@ -232,15 +263,25 @@
     .mean-bar .mean-nav .navbar-brand img {
       max-width: 97px; }
     .mean-bar .mean-nav ul li a.mean-expand {
-      padding: 11px 6px 1px 6px !important; }
+      padding: 11px 6px 1px 6px !important;
+      background: transparent !important; }
 
 .lnhr_new_navigation, .lnhr_new_navbar {
-  margin-top: 17px; }
+  margin-top: 17px;
+  background: #FFFFFF; }
   @media only screen and (min-width: 1200px) {
     .lnhr_new_navigation, .lnhr_new_navbar {
-      margin-top: 0; } }
+      margin-top: 0;
+      background: transparent; } }
   .lnhr_new_navigation .lnhr_new_navbar__nav, .lnhr_new_navbar .lnhr_new_navbar__nav {
     margin-bottom: -21px; }
+    .lnhr_new_navigation .lnhr_new_navbar__nav li a, .lnhr_new_navbar .lnhr_new_navbar__nav li a {
+      color: #CDBF83 !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.09); }
+      @media only screen and (min-width: 1200px) {
+        .lnhr_new_navigation .lnhr_new_navbar__nav li a, .lnhr_new_navbar .lnhr_new_navbar__nav li a {
+          color: #FFFFFF;
+          border-color: transparent; } }
     .lnhr_new_navigation .lnhr_new_navbar__nav > li, .lnhr_new_navbar .lnhr_new_navbar__nav > li {
       position: relative;
       line-height: 20px;
@@ -314,13 +355,15 @@
               background-image: -webkit-linear-gradient(-180deg, #aa935d 0%, #fbfab6 100%);
               background-image: -ms-linear-gradient(-180deg, #aa935d 0%, #fbfab6 100%); } }
         .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul li a, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul li a {
-          border-bottom: 1px solid #202020;
           font-family: "tt_norms_regular";
           color: #FFFFFF;
           padding: 1rem 1.5rem;
           display: block;
           text-transform: uppercase;
           width: 93%; }
+          @media only screen and (min-width: 1200px) {
+            .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul li a, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul li a {
+              border-bottom: 1px solid #202020; } }
           @media only screen and (min-width: 1200px) {
             .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul li a, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul li a {
               width: 100%; } }
@@ -388,7 +431,7 @@
               font-size: 24px; } }
         .lnhr_new_footer__top .lnhr_new_footer__top_content .lnhr_new_footer__phone img {
           display: inline-block;
-          margin-top: -10px;
+          margin-top: -5px;
           height: 20px;
           width: 20px;
           max-width: 138px; }
@@ -399,17 +442,21 @@
         .lnhr_new_footer__top .lnhr_new_footer__top_content .lnhr_new_footer__phone:hover {
           text-decoration: none; }
   .lnhr_new_footer__middle .lnhr_new_footer__widget {
-    padding-bottom: 15px; }
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.19); }
     @media only screen and (min-width: 1200px) {
       .lnhr_new_footer__middle .lnhr_new_footer__widget {
         padding-bottom: 0; } }
+    @media only screen and (min-width: 768px) {
+      .lnhr_new_footer__middle .lnhr_new_footer__widget {
+        border-bottom: 0; } }
     .lnhr_new_footer__middle .lnhr_new_footer__widget_title {
       line-height: 16px;
       color: #000;
       letter-spacing: 1px;
       text-transform: uppercase;
       font-family: "tt_norms_bold";
-      margin-bottom: 13px;
       font-size: 12px;
       position: relative;
       cursor: pointer; }
@@ -418,7 +465,10 @@
           font-size: 14px; } }
       @media only screen and (min-width: 768px) {
         .lnhr_new_footer__middle .lnhr_new_footer__widget_title {
-          cursor: default; } }
+          cursor: default;
+          margin-bottom: 13px;
+          border-bottom: none;
+          padding-bottom: 0; } }
       .lnhr_new_footer__middle .lnhr_new_footer__widget_title::after {
         content: "";
         position: absolute;
@@ -458,11 +508,21 @@
               color: #f3de88; }
         .lnhr_new_footer__middle .lnhr_new_footer__widget_content:not(.lnhr_new_footer__widget_social) ul + ul {
           margin-left: 15px; }
+    .lnhr_new_footer__middle .lnhr_new_footer__widget.lnhr_new_footer_social_widget {
+      margin-bottom: 0;
+      border-bottom: 0;
+      padding-bottom: 0; }
     .lnhr_new_footer__middle .lnhr_new_footer__widget_social {
       text-align: right;
+      padding-top: 20px;
+      padding-bottom: 0px;
       display: flex;
       flex-flow: row;
       justify-content: center; }
+      @media only screen and (min-width: 768px) {
+        .lnhr_new_footer__middle .lnhr_new_footer__widget_social {
+          padding-top: 0;
+          padding-bottom: 0; } }
       .lnhr_new_footer__middle .lnhr_new_footer__widget_social a {
         display: inline-block;
         transition: all 0.3s linear; }
@@ -544,6 +604,11 @@
       .lnhr_new_footer__bottom .lnhr_new__design_credit a {
         transition: all 0.3s linear;
         display: inline-flex; }
+        .lnhr_new_footer__bottom .lnhr_new__design_credit a span {
+          display: none; }
+          @media only screen and (min-width: 768px) {
+            .lnhr_new_footer__bottom .lnhr_new__design_credit a span {
+              display: inline-block; } }
         .lnhr_new_footer__bottom .lnhr_new__design_credit a img {
           margin-left: 8px; }
         .lnhr_new_footer__bottom .lnhr_new__design_credit a:hover {

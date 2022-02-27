@@ -18,9 +18,28 @@
 	    $('.lnhr_new_navbar').meanmenu({
             meanScreenWidth: "1200",
             meanMenuOpen: `<span class="lnhr_new_menu_clicker"><span class="lnhr_new_menu_text">Menu</span> <img class="lnhr_new_menu_img" src="assets/images/mobile_menu_bar.svg" alt="menu"></span>`,
+            meanMenuClose: `<span class="lnhr_new_menu_clicker"><span class="lnhr_new_menu_text">Close</span> <span class="cl_icon">X</span></span>`,
             meanRevealColour: "tansparent",
 
         });
+
+        //
+        $('.lnhr_set_bg').each(function(e){
+            let getImage = $(this).attr('data-bg-image');
+            $(this).css({
+                backgroundImage: 'url('+getImage+')',
+                backgroundSize: 'cover'
+            })
+        })
+
+        //
+        var swiper = new Swiper(".lnhr_new_banner__slider", {
+            pagination: {
+            el: ".swiper-pagination",
+            },
+        });
+
+        
 
         $(window).on('load resize', function () {
             mobileAccordion()

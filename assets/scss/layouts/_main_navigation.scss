@@ -1,11 +1,15 @@
 %dropdown_up_arrow {
     content: "";
-    display: block;
+    display: none;
+    @include respond-to(xl){
+      display: block;
+    }
     position: absolute;
     bottom: 100%;
     border: 0.5rem solid transparent;
     border-bottom-color: $black;
     left: 1rem;
+    
   }
   
   %has_children {
@@ -44,14 +48,19 @@
       padding: 0px 13px 11px !important;
       .lnhr_new_menu_clicker {
         background: transparent !important;
+        z-index: 10;
+        span{
+          background: transparent !important;
+        }
       }
       .lnhr_new_menu_text {
         background: transparent !important;
         transform: translate(-35px, 3px);
+        font-size: 12px;
       }
       &.meanclose {
-        top: 50px;
-        right: 12px !important;
+        top: 45px;
+        right: 0px !important;
         font-size: 15px !important;
       }
     }
@@ -70,6 +79,7 @@
           a {
             &.mean-expand {
               padding: 11px 6px 1px 6px !important;
+              background: transparent !important;
             }
           }
         }
@@ -79,8 +89,10 @@
   
   .lnhr_new_navigation {
     margin-top: 17px;
+    background: $white;
     @include respond-to(xl) {
       margin-top: 0;
+      background:transparent;
     }
   
     .lnhr_new_navbar__nav {
@@ -89,6 +101,13 @@
         @extend %ul_rules;
         a {
           @extend %a_rules;
+          color: $primary_clr !important;
+          border-bottom: 1px solid rgba($color: $black, $alpha: 0.09);
+
+          @include respond-to(xl){
+            color: $white;
+            border-color: transparent;
+          }
         }
         ul {
           @extend %ul_rules;
@@ -207,7 +226,10 @@
           }
           li {
             a {
-              border-bottom: 1px solid $c2020;
+              
+              @include respond-to(xl){
+                  border-bottom: 1px solid $c2020;
+              }
               font-family: $tt_regular;
               color: $white;
               padding: 1rem 1.5rem;

@@ -1,10 +1,55 @@
+.lnhr_new_banner__slider {
+
+    .swiper-wrapper{
+        .swiper-slide{
+          .lnhr_new_banner__content{
+            min-height: 100vh;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-bottom: 51%;
+            @include respond-to(xl) {
+              min-height: 1110px;
+              background-position: initial;
+            }
+          }
+         
+        }
+    }
+}
+
+
+@mixin lnhr_btn($fz,$px,$py) {
+  
+}
+
+.lnhr_new_banner__content{
+    h2{
+        font-size: 70px;
+        font-family: $tt_regular;
+        line-height: 90px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .lnhr_new_banner__button{
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $tt_regular;
+        color: $black;
+    }
+    
+}
+
 .lnhr_new_banner {
-    background: url("../images/lnhr_banner_image.png") no-repeat;
+    // background: url("../images/lnhr_banner_image.png") no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    
     background-position: center;
     @include respond-to(xl) {
-      min-height: 1431px;
+     
       background-position: initial;
     }
     &::before {
