@@ -1,0 +1,119 @@
+.lnhr_new_testimonial {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      position: relative;
+      @include respond-to(xl){
+          padding-top: 100px;
+          padding-bottom: 100px;
+      }
+      background: $c1717;
+      position: relative;
+      .bottom_edge{
+          position: absolute;
+          top: 100%;
+          width: 100%;
+      }
+    .lnhr_new_testimonial__slider {
+      .swiper-slide {
+        .lnhr_new_testimonial_star {
+              @include lnhr_flex(flex, "", center, center);
+              text-align: center;
+              img{
+                  
+                  display: inline-flex;
+                  width: 15px;
+                  @include respond-to(xl){
+                    width: 22px;
+                  }
+                  &:not(:last-child){
+                      margin-right: 10px;
+                  }
+              }
+        }
+        p {
+          text-align: center;
+          color: $white;
+          font-family: $tt_regular;
+          font-style: italic;
+          
+          line-height: 24px;
+          
+          font-size: 12px;
+          margin-bottom: 30px;
+          margin-top: 20px;
+          @include respond-to(md){
+              font-size: 16px;
+              margin-bottom: 30px;
+              line-height: 28px;
+              margin-top: 20px;
+          }
+          @include respond-to(xl){
+              font-size: 22px;
+              margin-bottom: 50px;
+              line-height: 28px;
+              margin-top: 30px;
+          }
+        }
+        h6 {
+          text-align: center;
+          font-size: 18px;
+          text-transform: uppercase;
+          display: block;
+          margin: 0;
+          color: $white;
+        }
+      }
+      .swiper-pagination {
+        margin-top: 30px;
+        position: relative;
+        .swiper-pagination-bullet {
+          width: 24px;
+          height: 7px;
+          background: rgba(255, 255, 255, 0.2);
+          border: none;
+          outline: none;
+          border-radius: 0;
+          @include transition(0.3s);
+          &.swiper-pagination-bullet-active {
+            background: $primary_clr;
+          }
+        }
+      }
+      .swiper-button-next {
+        @extend %swiper_arrows;
+        right: 20px;
+        @include respond-to(md){
+          right: 30px;
+        }
+          @include respond-to(xl){
+              right: 50px;
+          }
+        
+      }
+      .swiper-button-prev {
+          @extend %swiper_arrows;
+          left: 20px;
+          @include respond-to(md){
+              left: 30px;
+          }
+          @include respond-to(xl){
+              left: 50px;
+          }
+      }
+    }
+  }
+
+  %swiper_arrows {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background: #484848;
+    @include transition(.30s);
+    &::after{
+          font-size: 14px;
+          color: $white;
+      }
+      &:hover{
+          background: $primary_clr;
+      }
+  }

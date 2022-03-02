@@ -6,10 +6,29 @@
     flex-flow: $flow;
   } @else if $flow == "row" {
     flex-flow: $flow;
-  } @else {
-    flex-flow: row-reverse;
-  }
+  } 
 }
+
+@mixin lnhr_flex($fltype,$flow,$align:center,$justify:center) {
+    @if $fltype == inline {
+        display: inline-flex;
+    }@else{
+        display: flex;
+    }
+
+    @if $flow != '' {
+        flex-flow: $flow;
+    }
+
+    @if $align {
+        align-items: $align;
+    }
+    @if $justify {
+        justify-content: $justify;
+    }
+}
+
+
 @mixin transition($timing) {
   transition: all $timing linear;
 }
@@ -28,6 +47,54 @@
         color: $white;
     }
     letter-spacing: 1px;
+}
+
+
+// section title
+@mixin lnhr_section_title($type) {
+    font-size: 22px;
+    font-family: $tt_regular;
+    line-height: 28px;
+    letter-spacing: 1px;
+    @if $type == one {     
+      font-weight: 400;
+      color: #d7cc8f;
+      background: -webkit-linear-gradient(80deg, #ac9660 20%, #faf8b4 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-family: $tt_regular;
+    
+    }@else{
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $black;
+    }
+}
+
+@mixin lnhr_btn($fz: 14px, $px: 27px, $py: 30px) {
+  background: linear-gradient(
+    270deg,
+    #f3eeb1 9.2%,
+    #d2c58d 54.69%,
+    #f3eeb1 85.82%
+  );
+  border-radius: 2px;
+  color: $black;
+  @if $fz {
+    font-size: $fz;
+  } @else {
+    font-size: 14px;
+  }
+
+  @if $px and $py {
+    padding: $px $py;
+  } @else {
+    padding: 27px 30px;
+  }
+  &:hover {
+    background: $white;
+  }
 }
 
 

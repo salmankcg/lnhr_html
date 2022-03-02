@@ -12,6 +12,13 @@
   
   .lnhr_new_footer {
     padding-bottom: 30px;
+    ul{
+      li{
+        &::before{
+          display: none;
+        }
+      }
+    }
     &__top {
       padding-top: 30px;
       padding-bottom: 30px;
@@ -246,6 +253,19 @@
         ul {
           @include flex(row);
           @extend %ul_rules;
+          li{
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              left: -3px;
+              top: 7px;
+              background: rgba($black, 0.19);
+              height: 5px;
+              width: 5px;
+              border-radius: 5px;
+            }
+          }
         }
         a {
           @extend %footer_bottom_inherit;
@@ -253,16 +273,7 @@
           @include transition(0.3s);
           padding: 0 10px;
           position: relative;
-          &::before {
-            content: "";
-            position: absolute;
-            left: -3px;
-            top: 7px;
-            background: rgba($black, 0.19);
-            height: 5px;
-            width: 5px;
-            border-radius: 5px;
-          }
+          
           &:hover {
             color: $primary_clr;
           }

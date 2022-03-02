@@ -1,62 +1,230 @@
 .lnhr_new_banner__slider {
-
-    .swiper-wrapper{
-        .swiper-slide{
-          .lnhr_new_banner__content{
-            min-height: 100vh;
-            display: flex;
-            flex-flow: column;
-            align-items: flex-start;
-            justify-content: center;
-            padding-bottom: 51%;
-            @include respond-to(xl) {
-              min-height: 1110px;
-              background-position: initial;
-            }
-          }
-         
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  .swiper-wrapper {
+    .swiper-slide {
+        background-position: 57% 15%;
+        @include respond-to(lg){
+          background-position: 0% 40%;
         }
+
+      .lnhr_new_banner__content {
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        
+        padding-bottom: 33%;
+        @include respond-to(sm){
+          height: 1380px;
+          padding-top: 90%;
+          justify-content: flex-start;
+          padding-bottom: 0;
+        }
+        @include respond-to(md){
+          height: 1286px;
+          justify-content: flex-start ;
+          padding-bottom: 51%;
+        }
+        @include respond-to(lg){
+          height: 1383px;
+        }
+        @include respond-to(xxl) {
+          min-height: 1651px;
+          background-position: initial;
+          justify-content: flex-start ;
+        }
+        @include respond-to(xl){
+          min-height: 1472px;
+        }
+      }
+      &.swiper-slide-active {
+        h2 {
+          animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+          animation-duration: 2s; /* don't forget to set a duration! */
+        }
+        p {
+          animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+          animation-duration: 2s; /* don't forget to set a duration! */
+        }
+        button {
+          animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+          animation-duration: 2s; /* don't forget to set a duration! */
+        }
+      }
     }
+  }
+  .swiper-pagination {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    left: 50%;
+
+    transform: translateX(-50%);
+    z-index: 99;
+    top: 94%;
+    @include respond-to(lg) {
+      top: 80%;
+    }
+    .swiper-pagination-bullet {
+      width: 24px;
+      height: 7px;
+      background: rgba(255, 255, 255, 0.19);
+      border-radius: 0px;
+      transition: all 0.3s linear;
+      cursor: pointer;
+      visibility: hidden;
+      &::before {
+        content: "";
+        width: 24px;
+        height: 7px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 0px;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+      }
+      &.swiper-pagination-bullet-active {
+        &::before {
+          background: $primary_clr;
+        }
+      }
+      &:hover {
+        &::before {
+          background: $primary_clr;
+        }
+      }
+    }
+  }
 }
 
 
-@mixin lnhr_btn($fz,$px,$py) {
-  
-}
+.lnhr_new_banner__content {
+  @include respond-to(md) {
+    padding-top: 0px;
+  }
+  @include respond-to(xl) {
+    padding-top: 0px;
+  }
+  h2 {
+    font-family: $tt_regular;
 
-.lnhr_new_banner__content{
-    h2{
-        font-size: 70px;
-        font-family: $tt_regular;
-        line-height: 90px;
+    color: #d7cc8f;
+    background: -webkit-linear-gradient(80deg, #ac9660 20%, #faf8b4 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.175rem;
+    font-weight: 600;
+    font-family: $tt_regular;
+
+    font-size: 36px;
+    @include respond-to(md) {
+      font-size: 30px;
+      line-height: 50px;
+      margin-bottom: 20px;
     }
-    p{
-        font-size: 18px;
-        line-height: 24px;
+    @include respond-to(lg) {
+      font-size: 36px;
+      line-height: 50px;
+      margin-bottom: 20px;
     }
-    .lnhr_new_banner__button{
-        font-size: 14px;
-        line-height: 24px;
-        font-family: $tt_regular;
-        color: $black;
+    @include respond-to(xl) {
+      font-size: 70px;
+      line-height: 90px;
+      margin-bottom: 50px;
     }
-    
+  }
+  p {
+    line-height: 24px;
+    color: $ce5e5;
+
+    font-weight: 400;
+    font-family: $tt_regular;
+    font-size: 14px;
+    @include respond-to(md) {
+      margin-bottom: 20px;
+      line-height: 28px;
+    }
+    @include respond-to(lg) {
+      font-size: 14px;
+      margin-bottom: 30px;
+      line-height: 28px;
+    }
+    @include respond-to(xl) {
+      font-size: 18px;
+      margin-bottom: 60px;
+      line-height: 28px;
+    }
+  }
+  .lnhr_new_banner__button {
+    @include lnhr_btn(12px, 15px, 15px);
+    @include respond-to(md) {
+      @include lnhr_btn(14px, 20px, 20px);
+    }
+    @include respond-to(xl) {
+      @include lnhr_btn(14px, 25px, 28px);
+    }
+
+    border: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
 }
 
 .lnhr_new_banner {
-    // background: url("../images/lnhr_banner_image.png") no-repeat;
-    background-size: cover;
-    
-    background-position: center;
-    @include respond-to(xl) {
-     
-      background-position: initial;
+  // background: url("../images/lnhr_banner_image.png") no-repeat;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    background: url("../images/curve-left-1.png");
+
+    z-index: 9;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 93px;
+    height: 300px;
+    top: 100px;
+    opacity: .5;
+    @include respond-to(lg) {
+        opacity: 1;
+      width: 106px;
+      height: 350px;
     }
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
+    @include respond-to(xxl) {
+        opacity: 1;
       top: 0;
-      // background: url('../images/lnhr_banner_image.png') no-repeat;
+      width: 106px;
+      height: 600px;
     }
   }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    background: url("../images/curve-right-1.png");
+    z-index: 9;
+    background-position: 100% 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 100px;
+    width: 93px;
+    height: 150px;
+    @include respond-to(lg){
+        width: 106px;
+        height: 250px;
+    }
+    @include respond-to(xxl){
+        top: 0;
+        width: 160px;
+        height: 701px;
+    }
+  }
+}

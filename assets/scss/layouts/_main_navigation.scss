@@ -25,6 +25,7 @@
   
   .mean-bar {
     background-color: transparent !important;
+    position: absolute !important;
     // &::after{
     //     content: "Menu";
     //     position: absolute;
@@ -103,9 +104,8 @@
           @extend %a_rules;
           color: $primary_clr !important;
           border-bottom: 1px solid rgba($color: $black, $alpha: 0.09);
-
           @include respond-to(xl){
-            color: $white;
+            color: $white !important;
             border-color: transparent;
           }
         }
