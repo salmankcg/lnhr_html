@@ -1,7 +1,13 @@
 // love from teamKCG
 .lnhr_new_patient_stories{
     background: #171717;
-    padding: 40px 0;
+    padding: 30px 0 30px 0;
+    @include respond-to(md){
+        padding: 50px 0 30px 0;
+    }
+    @include respond-to(xxl){
+        padding: 150px 0 30px 0;
+    }
     .lnhr_new_section_title{
         @include lnhr_section_title(one);
         font-size: 16px;
@@ -92,11 +98,14 @@
                 margin-right: 20px;
             }
             a{
-                font-size: 14px;
+                font-size: 10px;
                 color: $white;
                 @extend %a_rules;
                 text-transform: uppercase;
                 @include lnhr_flex(inline,'',center,center);
+                @include respond-to(md){
+                    font-size: 14px;
+                }
                 img{
                         height: 15px;
                         width: 15px;

@@ -44,123 +44,9 @@
 .lnhr_new_section_title {
   @include lnhr_section_title(one);
 }
-.lnhr_new_procedure_products {
-  background: transparent;
-  transform: translateY(-100%);
-}
 
-.lnhr_new_procedure_products__container {
-  display: block;
-  width: 100%;
-  flex-wrap: inherit;
-  .lnhr_new_procedure_products__item {
-    height: 227px;
-    width: 26.7%;
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 7px;
-    align-self: inherit;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: center;
 
-    figure {
-      margin: 0;
-      position: relative;
-      @include transition(0.3s);
-      height: 100%;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 5px;
-        top: 5px;
-        width: calc(100% - 10px);
-        height: calc(100% - 10px);
-        background: rgba(0, 0, 0, 0.4);
-        z-index: 0;
-        @include transition(0.3s);
-      }
-      img {
-        max-width: 100%;
-        padding: 5px;
-        height: 100%;
-        background: #aa935d;
-        background: -moz-linear-gradient(
-          45deg,
-          #aa935d 0%,
-          #f9f8b4 67%,
-          #b9a66d 100%
-        );
-        background: -webkit-linear-gradient(
-          45deg,
-          #aa935d 0%,
-          #f9f8b4 67%,
-          #b9a66d 100%
-        );
-        background: linear-gradient(
-          45deg,
-          #aa935d 0%,
-          #f9f8b4 67%,
-          #b9a66d 100%
-        );
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa935d', endColorstr='#b9a66d',GradientType=1 );
-        object-fit: cover;
-      }
-      .lnhr_new_procedure_products__item_content {
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        height: 100%;
-        width: 100%;
-        a {
-          height: 100%;
-          width: 100%;
 
-          font-weight: 700;
-          font-family: $tt_bold;
-          color: $white;
-          position: absolute;
-          z-index: 9;
-          @extend %a_rules;
-          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          // display: flex;
-          // align-items: flex-end;
-          // justify-content: flex-start;
-          @include lnhr_flex(flex, "", flex-end, flex-start);
-
-          @include respond-to(md) {
-            font-size: 14px;
-            padding-left: 20px;
-            padding-bottom: 20px;
-          }
-          @include respond-to(xxl) {
-            font-size: 26px;
-            padding-left: 30px;
-            padding-bottom: 30px;
-          }
-        }
-      }
-    }
-    &:nth-child(4) {
-      height: 453px;
-      width: 27.3%;
-      float: right;
-    }
-    &:nth-child(3) {
-      width: 19.3%;
-      float: right;
-      height: 453px;
-    }
-    &:hover {
-      figure {
-        &::before {
-          background: rgba(0, 0, 0, 0.5);
-        }
-      }
-    }
-  }
-}
 /*------------------------------------------
     // Patient Storeis
 ------------------------------------------*/
@@ -170,6 +56,7 @@
 @import "layouts/testimonial";
 /*------------------------------------------
 ------------------------------------------*/
+@import "layouts/procedure_products";
 /*------------------------------------------
 ------------------------------------------*/
 /*------------------------------------------

@@ -12,6 +12,18 @@
   
   .lnhr_new_footer {
     padding-bottom: 30px;
+    position: relative;
+    &::after{
+      content: "";
+        background: url("../img/footer_shape.png") no-repeat;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include respond-to(xxl){
+          width: 125px;
+          height: 231px;
+        }
+    }
     ul{
       li{
         &::before{

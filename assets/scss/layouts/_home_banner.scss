@@ -14,21 +14,23 @@
         display: flex;
         flex-flow: column;
         align-items: flex-start;
-        
+        justify-content: flex-end;
         padding-bottom: 33%;
+        height: 100vh;
         @include respond-to(sm){
-          height: 1380px;
           padding-top: 90%;
           justify-content: flex-start;
           padding-bottom: 0;
         }
         @include respond-to(md){
-          height: 1286px;
+          height: 100vh;
           justify-content: flex-start ;
           padding-bottom: 51%;
+          padding-top: 100%;
         }
         @include respond-to(lg){
-          height: 1383px;
+          height: 100vh;
+          padding-top: 70%;
         }
         @include respond-to(xxl) {
           min-height: 1651px;
@@ -63,9 +65,9 @@
 
     transform: translateX(-50%);
     z-index: 99;
-    top: 94%;
+    top: calc(100vh - 35px);
     @include respond-to(lg) {
-      top: 80%;
+      top: calc(100vh - 35px);
     }
     .swiper-pagination-bullet {
       width: 24px;
