@@ -17,6 +17,7 @@
         background: transparent;
     }
     .lnhr_new_section_title{
+        @include lnhr_section_title(one);
         padding-bottom: 20px;
     }
 }

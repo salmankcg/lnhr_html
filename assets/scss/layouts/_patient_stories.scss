@@ -1,9 +1,15 @@
 // love from teamKCG
 .lnhr_new_patient_stories{
     background: #171717;
-    padding: 30px 0 30px 0;
+    padding: 20px 0 30px 0;
     @include respond-to(md){
+        padding: 40px 0 30px 0;
+    }
+    @include respond-to(xl){
         padding: 50px 0 30px 0;
+    }
+    @include respond-to(xl){
+        padding: 130px 0 30px 0;
     }
     @include respond-to(xxl){
         padding: 150px 0 30px 0;

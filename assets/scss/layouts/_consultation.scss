@@ -1,0 +1,305 @@
+
+%consult_field{
+    font-family: $tt_regular;
+    color: $black;
+    margin-bottom: 10px;
+    font-size: 12px;
+    @include respond-to(sm){
+        margin-bottom: 20px;
+        height: 50px;
+        font-size: 14px;
+    }
+    @include respond-to(lg){
+        margin-bottom: 25px;
+        height: 70px;
+        font-size: 18px;
+    }
+}
+
+.consultation_reviews{
+    background: #F3F3F3;
+    padding: 50px 0 150px 0;
+    position: relative;
+    .consultation_curve{
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        height: 150px;
+        @include respond-to(sm){
+            height: 200px;
+        }
+        @include respond-to(lg){
+            width: 96px;
+            height: 431px;
+        }
+        img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+    }
+    .lnhr_new_section_title{
+        
+        font-weight: 700;
+        font-family: $tt_bold;
+        font-size: 14px;
+        @include respond-to(sm){
+            font-size: 18px;
+        }
+        @include respond-to(lg){
+            @include lnhr_section_title(two);
+        }
+        
+        &.consultation_reviews_call_text{
+            font-family: $tt_regular;
+            font-weight: 300;
+            @include respond-to(sm){
+                font-size: 18px;
+                padding: 5px 0 7px 0;
+            }
+            @include respond-to(lg){
+                padding: 5px 0 7px 0;
+                @include lnhr_section_title(two);
+            }
+        }
+    }
+    &__phone_number{
+        img{
+            
+            display: inline-flex;
+            margin-right: 3px;
+            @include respond-to(sm){
+                width: 20px;
+                margin-top: -4px;
+            }
+            @include respond-to(lg){
+                width: 30px;
+                margin-top: -8px;
+            }
+        }
+        @extend %a_rules;
+        color: #AE9765;
+        font-family: $tt_regular;
+        font-weight: 400;
+        margin-bottom: 40px;
+        display: flex;
+        @include respond-to(md){
+
+        }
+        @include respond-to(lg){
+            font-size: 24px;
+            line-height: 16px;
+        }
+
+    }
+    .concultation_form{
+        @include respond-to(lg){
+            padding-right: 40px;
+        }
+        &__field:not(textarea){
+            @extend %consult_field;
+            border: 1px solid #BABABA;
+            outline: none;
+            @include transition(.30s);
+            &:hover{
+                border-color: #777;
+            }
+            &:focus{
+                outline: none;
+                box-shadow: none;
+                border-color: #777;
+            }
+            
+        }
+        textarea{
+            
+            border: 1px solid #BABABA;
+            outline: none;
+            @include transition(.30s);
+            font-size: 12px;
+            @include respond-to(sm){
+                height: 100px;
+                font-size: 14px;
+            }
+            @include respond-to(md){
+                height: 150px;
+                font-size: 18px;
+            }
+            &:hover{
+                border-color: #777;
+            }
+            &:focus{
+                outline: none;
+                box-shadow: none;
+                border-color: #777;
+            }
+        }
+        &__select{
+            @extend %consult_field;
+            border: 1px solid #BABABA;
+            outline: none;
+            @include transition(.30s);
+            &:hover{
+                border-color: #777;
+            }
+            &:focus{
+                outline: none;
+                box-shadow: none;
+                border-color: #777;
+            }
+        }
+        .lnhr_new_btn{
+            
+            font-family: $tt_regular;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: none;
+            margin-top: 50px;
+            display: inline-flex;
+            position: relative;
+            z-index: 9;
+            @include lnhr_btn(12px,10px,30px);
+            @include respond-to(md){
+                @include lnhr_btn(14px,22px,50px);
+            }
+        }
+    }
+}
+.reviews_area{
+    
+    position: relative;
+    margin-top: 50px;
+    @include respond-to(md){
+        margin-top: 0;
+    }
+    @include respond-to(md){
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include respond-to(lg){
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0px;
+        height: 110%;
+        width: 1px;
+        background: #ccc;
+        top: 0;
+        display: none;
+        @include respond-to(md){
+            display: block;
+        }
+    }
+    .lnhr_new_section_title{
+
+    }
+    .lnhr_new_reviews__slider{
+        position: relative;
+        @include respond-to(md){
+            padding-top: 50px;
+        }
+        @include respond-to(lg){
+            padding-top: 110px;
+        }
+        .swiper-wrapper{
+            .swiper-slide{
+                text-align: center;
+                p{
+                    
+                    font-weight: 400;
+                    font-family: $tt_regular;
+                    color: #4C4C4C;
+                    font-style: italic;
+                    line-height: 25px;
+                    margin-bottom: 30px;
+                    text-align: center;
+                    font-size: 14px;
+                    @include respond-to(md){
+                        font-size: 14px;
+                    }
+                    @include respond-to(lg){
+                        font-size: 16px;
+                    }
+                }
+                h6{
+                    
+                    color: #000;
+                    font-family: $tt_bold;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    @include respond-to(md){
+                        font-size: 15px;
+                    }
+                    @include respond-to(lg){
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .swiper-pagination {
+            margin-top: 10px;
+            position: relative;
+            .swiper-pagination-bullet {
+              width: 24px;
+              height: 7px;
+              background: rgba(56, 56, 56, 0.2);
+              border: none;
+              outline: none;
+              border-radius: 0;
+              @include transition(0.3s);
+              &.swiper-pagination-bullet-active {
+                background: $primary_clr;
+              }
+            }
+          }
+    }
+}
+
+.lnhr_new_google_rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    @include respond-to(md){
+        margin-top: 30px;
+    }
+    @include respond-to(lg){
+        margin-top: 70px;
+    }
+    >img{
+        width: 60px;
+        @include respond-to(lg){
+            width: initial
+        }
+    }
+    &__bar{
+        margin-top: 20px;
+        
+        img{
+            width: 15px;
+            @include respond-to(md){
+                width: 28px;
+            }
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        font-size: 15px;
+        color: #9D9D9D;
+        line-height: 17px;
+        margin-bottom: 0;
+        margin-top: 10px;
+        @include respond-to(md){
+            margin-top: 30px;
+        }
+    }
+}

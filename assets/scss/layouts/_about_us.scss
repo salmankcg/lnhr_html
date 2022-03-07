@@ -1,0 +1,194 @@
+
+.lnhr_new_about_us {
+    background: #C2BFB0;
+    &__curbe{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: initial;
+        
+        transform: translateY(50%);
+        z-index: 9;
+        width: 40px;
+        height: 100px;
+        @include respond-to(md){
+            width: 70px;
+            height: 200px;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    position: relative;
+    padding: 0px 0 40px 0;
+    @include respond-to(sm){
+        padding: 51px 0 31px 0;
+    }
+    @include respond-to(lg){
+        padding: 51px 0 31px 0;
+    }
+    @include respond-to(xxl){
+        padding: 120px 0 100px 0;
+    }
+    &__image{
+        
+        top: 0;
+        position: relative !important;
+        width: 100%;
+        margin-bottom: 30px;
+        @include respond-to(sm){
+            position: absolute !important;
+            width: calc(50% - 30px);
+            height: 50%;
+            margin-bottom: 0px;
+        }
+        @include respond-to(md){
+            position: absolute;
+            height: 100%;
+            width: calc(50% - 30px);
+            margin-bottom: 0px;
+        }
+        @include respond-to(xxl){
+            height: 90%;
+            width: calc(50% - 30px);
+            margin-bottom: 0px;
+            top: 10%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &_inner{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            &_content{
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                h6{
+                    line-height: 28.5px;
+                    font-family: $tt_bold;
+                    text-transform: uppercase;
+                    color: $white;
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    @include respond-to(md){
+                        font-size: 22px;
+                    }
+                }
+                p{
+                    color: $white;
+                    
+                    line-height: 20.48px;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    font-size: 12px;
+                    @include respond-to(md){
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    &__content{
+        position: relative;
+        z-index: 10;
+        .lnhr_new_section_title{
+
+            @include lnhr_section_title(two);
+            font-size: 14px;
+            @include respond-to(md){
+                font-size: 18px;
+            }
+            @include respond-to(md){
+                padding-top: 40px;
+                padding-bottom: 10px;
+            }
+            @include respond-to(xl){
+                padding-bottom: 17px;
+                font-size: 22px;
+            }
+        }
+        @include respond-to(md){
+            padding-left: 0px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+        @include respond-to(lg){
+            padding-left: 30px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+        @include respond-to(xxl){
+            padding-left: 50px;
+            padding-top: 90px;
+            padding-bottom: 40px;
+        }
+        
+        p{
+            line-height: 29px;
+            font-family: 'tt_norms_regular';
+            font-weight: 400;
+            color: #000000;
+            font-size: 14px;
+            line-height: 24px;
+            @include respond-to(md){
+                font-size: 14px;
+            }
+            @include respond-to(lg){
+                font-size: 15px;
+            }
+            @include respond-to(xxl){
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        &_footer{
+            text-align: center;
+            margin-top: 20px;
+            P{
+                font-size: 10px;
+                color: #000;
+                line-height: 18px;
+                padding-top: 15px;
+                @include respond-to(md){
+                    font-size: 12px;
+                }
+            }
+            .lnhr_new_btn{
+                display: inline-flex;
+                @extend %a_rules;
+                
+                @include transition(.30s);
+                @include lnhr_btn(12px, 15px, 12px);
+                @include respond-to(sm){
+                    margin-top: 10px;
+                    @include lnhr_btn(12px, 18px, 15px);
+                }
+                @include respond-to(md){
+                    margin-top: 10px;
+                    @include lnhr_btn(12px, 18px, 15px);
+                }
+                @include respond-to(lg){
+                    @include lnhr_btn(12px, 22px, 22px);
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    margin-top: 10px;
+                }
+               @include respond-to(xl){
+                    @include lnhr_btn(14px, 25px, 25px);
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    margin-top: 20px;
+               }
+            }
+        }
+    }
+}
