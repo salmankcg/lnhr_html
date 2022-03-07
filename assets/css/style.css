@@ -40,11 +40,11 @@
   font-weight: bold;
   font-style: bold; }
 
-.lnhr_new_navigation .lnhr_new_navbar__nav li, .lnhr_new_navbar .lnhr_new_navbar__nav li, .lnhr_new_navigation .lnhr_new_navbar__nav li ul, .lnhr_new_navbar .lnhr_new_navbar__nav li ul, .lnhr_new_navigation .lnhr_new_navbar__nav > li:hover > ul, .lnhr_new_navbar .lnhr_new_navbar__nav > li:hover > ul, .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul, .lnhr_new_footer__bottom_widget ul {
+.lnhr_new_navigation .lnhr_new_navbar__nav li, .lnhr_new_navbar .lnhr_new_navbar__nav li, .lnhr_new_navigation .lnhr_new_navbar__nav li ul, .lnhr_new_navbar .lnhr_new_navbar__nav li ul, .lnhr_new_navigation .lnhr_new_navbar__nav > li:hover > ul, .lnhr_new_navbar .lnhr_new_navbar__nav > li:hover > ul, .lnhr_new_patient_stories__bar ul, .lnhr_new_footer__bottom_widget ul {
   margin-left: 0;
   padding-left: 0;
   list-style: none; }
-  .lnhr_new_navigation .lnhr_new_navbar__nav li li, .lnhr_new_navbar .lnhr_new_navbar__nav li li, .lnhr_new_navigation .lnhr_new_navbar__nav > li:hover > ul li, .lnhr_new_navbar .lnhr_new_navbar__nav > li:hover > ul li, .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul li, .lnhr_new_footer__bottom_widget ul li {
+  .lnhr_new_navigation .lnhr_new_navbar__nav li li, .lnhr_new_navbar .lnhr_new_navbar__nav li li, .lnhr_new_navigation .lnhr_new_navbar__nav > li:hover > ul li, .lnhr_new_navbar .lnhr_new_navbar__nav > li:hover > ul li, .lnhr_new_patient_stories__bar ul li, .lnhr_new_footer__bottom_widget ul li {
     list-style: none; }
 
 .lnhr_new_img {
@@ -55,9 +55,9 @@
   .lnhr_new_anchor:hover {
     text-decoration: none; }
 
-.lnhr_new_navigation .lnhr_new_navbar__nav li a, .lnhr_new_navbar .lnhr_new_navbar__nav li a, .lnhr_new_patient_stories .lnhr_new_more_stories a, .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul li a, .procudure_container .procedure_item .procedure_item__inner .procedure_item_content a, .lnhr_new_about_us__content_footer .lnhr_new_btn, .lnhr_new_locations .lnhr_new_locations__box__content .lnhr_new_locations__title a, .lnhr_new_locations .lnhr_new_btn, .consultation_reviews__phone_number, .lnhr_new_footer__bottom_widget a, .lnhr_new_footer__bottom .lnhr_new__design_credit a {
+.lnhr_new_navigation .lnhr_new_navbar__nav li a, .lnhr_new_navbar .lnhr_new_navbar__nav li a, .lnhr_new_more_stories a, .lnhr_new_patient_stories__bar ul li a, .procudure_container .procedure_item .procedure_item__inner .procedure_item_content a, .lnhr_new_about_us__content_footer .lnhr_new_btn, .lnhr_new_locations .lnhr_new_locations__box__content .lnhr_new_locations__title a, .lnhr_new_locations .lnhr_new_btn, .consultation_reviews__phone_number, .lnhr_new_footer__bottom_widget a, .lnhr_new_footer__bottom .lnhr_new__design_credit a {
   text-decoration: none; }
-  .lnhr_new_navigation .lnhr_new_navbar__nav li a:hover, .lnhr_new_navbar .lnhr_new_navbar__nav li a:hover, .lnhr_new_patient_stories .lnhr_new_more_stories a:hover, .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul li a:hover, .procudure_container .procedure_item .procedure_item__inner .procedure_item_content a:hover, .lnhr_new_about_us__content_footer .lnhr_new_btn:hover, .lnhr_new_locations .lnhr_new_locations__box__content .lnhr_new_locations__title a:hover, .lnhr_new_locations .lnhr_new_btn:hover, .consultation_reviews__phone_number:hover, .lnhr_new_footer__bottom_widget a:hover, .lnhr_new_footer__bottom .lnhr_new__design_credit a:hover {
+  .lnhr_new_navigation .lnhr_new_navbar__nav li a:hover, .lnhr_new_navbar .lnhr_new_navbar__nav li a:hover, .lnhr_new_more_stories a:hover, .lnhr_new_patient_stories__bar ul li a:hover, .procudure_container .procedure_item .procedure_item__inner .procedure_item_content a:hover, .lnhr_new_about_us__content_footer .lnhr_new_btn:hover, .lnhr_new_locations .lnhr_new_locations__box__content .lnhr_new_locations__title a:hover, .lnhr_new_locations .lnhr_new_btn:hover, .consultation_reviews__phone_number:hover, .lnhr_new_footer__bottom_widget a:hover, .lnhr_new_footer__bottom .lnhr_new__design_credit a:hover {
     text-decoration: none; }
 
 .lnhr_new_list {
@@ -637,26 +637,27 @@
   @media only screen and (min-width: 1400px) {
     .lnhr_new_patient_stories {
       padding: 150px 0 30px 0; } }
-  .lnhr_new_patient_stories .lnhr_new_section_title {
-    font-size: 22px;
-    font-family: "tt_norms_regular";
-    line-height: 28px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    color: #d7cc8f;
-    background: -webkit-linear-gradient(80deg, #ac9660 20%, #faf8b4 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 400;
-    font-family: "tt_norms_regular";
-    font-size: 16px;
-    text-transform: uppercase; }
-    @media only screen and (min-width: 768px) {
-      .lnhr_new_patient_stories .lnhr_new_section_title {
-        font-size: 22px;
-        padding-bottom: 15px; } }
 
-.lnhr_new_patient_stories .lnhr_new_image_compare {
+.lnhr_new_section_title.type1 {
+  font-size: 22px;
+  font-family: "tt_norms_regular";
+  line-height: 28px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #d7cc8f;
+  background: -webkit-linear-gradient(80deg, #ac9660 20%, #faf8b4 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  font-family: "tt_norms_regular";
+  font-size: 16px;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 768px) {
+    .lnhr_new_section_title.type1 {
+      font-size: 22px;
+      padding-bottom: 15px; } }
+
+.lnhr_new_image_compare {
   padding: 5px;
   background: #aa935d;
   background: -moz-linear-gradient(45deg, #aa935d 0%, #f9f8b4 67%, #b9a66d 100%);
@@ -664,31 +665,31 @@
   background: linear-gradient(45deg, #aa935d 0%, #f9f8b4 67%, #b9a66d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa935d', endColorstr='#b9a66d',GradientType=1 );
   margin-top: 20px; }
-  .lnhr_new_patient_stories .lnhr_new_image_compare .cross2-item {
+  .lnhr_new_image_compare .cross2-item {
     width: calc(100% - 5px) !important;
     height: calc(100% - 10px) !important; }
-    .lnhr_new_patient_stories .lnhr_new_image_compare .cross2-item img {
+    .lnhr_new_image_compare .cross2-item img {
       height: 100%;
       width: calc(100% - 5px) !important; }
-  .lnhr_new_patient_stories .lnhr_new_image_compare .cross2-slider {
+  .lnhr_new_image_compare .cross2-slider {
     background: url("../images/img-before-after.svg") no-repeat;
     width: 60px;
     height: 60px;
     border: none;
     margin-left: -30px; }
-    .lnhr_new_patient_stories .lnhr_new_image_compare .cross2-slider::before {
+    .lnhr_new_image_compare .cross2-slider::before {
       display: none; }
-    .lnhr_new_patient_stories .lnhr_new_image_compare .cross2-slider::after {
+    .lnhr_new_image_compare .cross2-slider::after {
       display: none; }
-    .lnhr_new_patient_stories .lnhr_new_image_compare .cross2-slider span {
+    .lnhr_new_image_compare .cross2-slider span {
       display: none; }
   @media only screen and (min-width: 768px) {
-    .lnhr_new_patient_stories .lnhr_new_image_compare {
+    .lnhr_new_image_compare {
       margin-top: 0; } }
 
-.lnhr_new_patient_stories .lnhr_new_more_stories {
+.lnhr_new_more_stories {
   text-align: right; }
-  .lnhr_new_patient_stories .lnhr_new_more_stories a {
+  .lnhr_new_more_stories a {
     text-transform: uppercase;
     font-size: 14px;
     font-family: "tt_norms_regular";
@@ -697,23 +698,23 @@
     display: inline-flex;
     align-items: center;
     justify-content: center; }
-    .lnhr_new_patient_stories .lnhr_new_more_stories a img {
+    .lnhr_new_more_stories a img {
       display: inline-flex;
       margin-left: 10px; }
 
-.lnhr_new_patient_stories .lnhr_new_patient_stories__bar {
+.lnhr_new_patient_stories__bar {
   margin-top: 18px;
   margin-bottom: 20px; }
   @media only screen and (min-width: 768px) {
-    .lnhr_new_patient_stories .lnhr_new_patient_stories__bar {
+    .lnhr_new_patient_stories__bar {
       margin-bottom: 0; } }
-  .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul {
+  .lnhr_new_patient_stories__bar ul {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul li:not(:last-child) {
+    .lnhr_new_patient_stories__bar ul li:not(:last-child) {
       margin-right: 20px; }
-    .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul li a {
+    .lnhr_new_patient_stories__bar ul li a {
       font-size: 10px;
       color: #FFFFFF;
       text-transform: uppercase;
@@ -721,25 +722,25 @@
       align-items: center;
       justify-content: center; }
       @media only screen and (min-width: 768px) {
-        .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul li a {
+        .lnhr_new_patient_stories__bar ul li a {
           font-size: 14px; } }
-      .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul li a img {
+      .lnhr_new_patient_stories__bar ul li a img {
         height: 15px;
         width: 15px; }
         @media only screen and (min-width: 992px) {
-          .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul li a img {
+          .lnhr_new_patient_stories__bar ul li a img {
             height: 20px;
             width: 20px; } }
         @media only screen and (min-width: 1200px) {
-          .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul li a img {
+          .lnhr_new_patient_stories__bar ul li a img {
             height: 35px;
             width: 35px; } }
-      .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul li a span {
+      .lnhr_new_patient_stories__bar ul li a span {
         display: inline-flex;
         margin-left: 10px;
         margin-top: 0; }
         @media only screen and (min-width: 1200px) {
-          .lnhr_new_patient_stories .lnhr_new_patient_stories__bar ul li a span {
+          .lnhr_new_patient_stories__bar ul li a span {
             margin-top: 10px; } }
 
 /*------------------------------------------
@@ -1262,18 +1263,18 @@
 
 /*------------------------------------------
 ------------------------------------------*/
-.consultation_reviews .concultation_form__field:not(textarea), .consultation_reviews .concultation_form__select {
+.concultation_form__field:not(textarea), .concultation_form__select {
   font-family: "tt_norms_regular";
   color: #000;
   margin-bottom: 10px;
   font-size: 12px; }
   @media only screen and (min-width: 576px) {
-    .consultation_reviews .concultation_form__field:not(textarea), .consultation_reviews .concultation_form__select {
+    .concultation_form__field:not(textarea), .concultation_form__select {
       margin-bottom: 20px;
       height: 50px;
       font-size: 14px; } }
   @media only screen and (min-width: 992px) {
-    .consultation_reviews .concultation_form__field:not(textarea), .consultation_reviews .concultation_form__select {
+    .concultation_form__field:not(textarea), .concultation_form__select {
       margin-bottom: 25px;
       height: 70px;
       font-size: 18px; } }
@@ -1282,54 +1283,21 @@
   background: #F3F3F3;
   padding: 50px 0 150px 0;
   position: relative; }
-  .consultation_reviews .consultation_curve {
+  .consultation_reviews__curve {
     position: absolute;
     bottom: 100px;
     left: 0;
     height: 150px; }
     @media only screen and (min-width: 576px) {
-      .consultation_reviews .consultation_curve {
+      .consultation_reviews__curve {
         height: 200px; } }
     @media only screen and (min-width: 992px) {
-      .consultation_reviews .consultation_curve {
+      .consultation_reviews__curve {
         width: 96px;
         height: 431px; } }
-    .consultation_reviews .consultation_curve img {
+    .consultation_reviews__curve img {
       max-height: 100%;
       max-width: 100%; }
-  .consultation_reviews .lnhr_new_section_title {
-    font-weight: 700;
-    font-family: "tt_norms_bold";
-    font-size: 14px; }
-    @media only screen and (min-width: 576px) {
-      .consultation_reviews .lnhr_new_section_title {
-        font-size: 18px; } }
-    @media only screen and (min-width: 992px) {
-      .consultation_reviews .lnhr_new_section_title {
-        font-size: 22px;
-        font-family: "tt_norms_regular";
-        line-height: 28px;
-        letter-spacing: 1px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #000; } }
-    .consultation_reviews .lnhr_new_section_title.consultation_reviews_call_text {
-      font-family: "tt_norms_regular";
-      font-weight: 300; }
-      @media only screen and (min-width: 576px) {
-        .consultation_reviews .lnhr_new_section_title.consultation_reviews_call_text {
-          font-size: 18px;
-          padding: 5px 0 7px 0; } }
-      @media only screen and (min-width: 992px) {
-        .consultation_reviews .lnhr_new_section_title.consultation_reviews_call_text {
-          padding: 5px 0 7px 0;
-          font-size: 22px;
-          font-family: "tt_norms_regular";
-          line-height: 28px;
-          letter-spacing: 1px;
-          font-weight: 700;
-          text-transform: uppercase;
-          color: #000; } }
   .consultation_reviews__phone_number {
     color: #AE9765;
     font-family: "tt_norms_regular";
@@ -1351,73 +1319,114 @@
       .consultation_reviews__phone_number {
         font-size: 24px;
         line-height: 16px; } }
+    .consultation_reviews__phone_number:hover {
+      color: #CDBF83 !important; }
+
+@media only screen and (min-width: 992px) {
+  .concultation_form {
+    padding-right: 40px; } }
+
+.concultation_form__field:not(textarea) {
+  border: 1px solid #BABABA;
+  outline: none;
+  transition: all 0.3s linear; }
+  .concultation_form__field:not(textarea):hover {
+    border-color: #777; }
+  .concultation_form__field:not(textarea):focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #777; }
+
+.concultation_form textarea {
+  border: 1px solid #BABABA;
+  outline: none;
+  transition: all 0.3s linear;
+  font-size: 12px; }
+  @media only screen and (min-width: 576px) {
+    .concultation_form textarea {
+      height: 100px;
+      font-size: 14px; } }
+  @media only screen and (min-width: 768px) {
+    .concultation_form textarea {
+      height: 150px;
+      font-size: 18px; } }
+  .concultation_form textarea:hover {
+    border-color: #777; }
+  .concultation_form textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #777; }
+
+.concultation_form__select {
+  border: 1px solid #BABABA;
+  outline: none;
+  transition: all 0.3s linear; }
+  .concultation_form__select:hover {
+    border-color: #777; }
+  .concultation_form__select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #777; }
+
+.concultation_form .lnhr_new_btn {
+  font-family: "tt_norms_regular";
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 50px;
+  display: inline-flex;
+  position: relative;
+  z-index: 9;
+  background: linear-gradient(270deg, #f3eeb1 9.2%, #d2c58d 54.69%, #f3eeb1 85.82%);
+  border-radius: 2px;
+  color: #000;
+  font-size: 12px;
+  padding: 10px 30px; }
+  .concultation_form .lnhr_new_btn:hover {
+    background: #FFFFFF; }
+  @media only screen and (min-width: 768px) {
+    .concultation_form .lnhr_new_btn {
+      background: linear-gradient(270deg, #f3eeb1 9.2%, #d2c58d 54.69%, #f3eeb1 85.82%);
+      border-radius: 2px;
+      color: #000;
+      font-size: 14px;
+      padding: 22px 50px; }
+      .concultation_form .lnhr_new_btn:hover {
+        background: #FFFFFF; } }
+
+.lnhr_new_section_title.cuonsultation_title {
+  font-weight: 700;
+  font-family: "tt_norms_bold";
+  font-size: 14px; }
+  @media only screen and (min-width: 576px) {
+    .lnhr_new_section_title.cuonsultation_title {
+      font-size: 18px; } }
   @media only screen and (min-width: 992px) {
-    .consultation_reviews .concultation_form {
-      padding-right: 40px; } }
-  .consultation_reviews .concultation_form__field:not(textarea) {
-    border: 1px solid #BABABA;
-    outline: none;
-    transition: all 0.3s linear; }
-    .consultation_reviews .concultation_form__field:not(textarea):hover {
-      border-color: #777; }
-    .consultation_reviews .concultation_form__field:not(textarea):focus {
-      outline: none;
-      box-shadow: none;
-      border-color: #777; }
-  .consultation_reviews .concultation_form textarea {
-    border: 1px solid #BABABA;
-    outline: none;
-    transition: all 0.3s linear;
-    font-size: 12px; }
-    @media only screen and (min-width: 576px) {
-      .consultation_reviews .concultation_form textarea {
-        height: 100px;
-        font-size: 14px; } }
-    @media only screen and (min-width: 768px) {
-      .consultation_reviews .concultation_form textarea {
-        height: 150px;
-        font-size: 18px; } }
-    .consultation_reviews .concultation_form textarea:hover {
-      border-color: #777; }
-    .consultation_reviews .concultation_form textarea:focus {
-      outline: none;
-      box-shadow: none;
-      border-color: #777; }
-  .consultation_reviews .concultation_form__select {
-    border: 1px solid #BABABA;
-    outline: none;
-    transition: all 0.3s linear; }
-    .consultation_reviews .concultation_form__select:hover {
-      border-color: #777; }
-    .consultation_reviews .concultation_form__select:focus {
-      outline: none;
-      box-shadow: none;
-      border-color: #777; }
-  .consultation_reviews .concultation_form .lnhr_new_btn {
+    .lnhr_new_section_title.cuonsultation_title {
+      font-size: 22px;
+      font-family: "tt_norms_regular";
+      line-height: 28px;
+      letter-spacing: 1px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #000; } }
+  .lnhr_new_section_title.cuonsultation_title.consultation_reviews_call_text {
     font-family: "tt_norms_regular";
-    font-weight: 600;
-    text-transform: uppercase;
-    border: none;
-    margin-top: 50px;
-    display: inline-flex;
-    position: relative;
-    z-index: 9;
-    background: linear-gradient(270deg, #f3eeb1 9.2%, #d2c58d 54.69%, #f3eeb1 85.82%);
-    border-radius: 2px;
-    color: #000;
-    font-size: 12px;
-    padding: 10px 30px; }
-    .consultation_reviews .concultation_form .lnhr_new_btn:hover {
-      background: #FFFFFF; }
-    @media only screen and (min-width: 768px) {
-      .consultation_reviews .concultation_form .lnhr_new_btn {
-        background: linear-gradient(270deg, #f3eeb1 9.2%, #d2c58d 54.69%, #f3eeb1 85.82%);
-        border-radius: 2px;
-        color: #000;
-        font-size: 14px;
-        padding: 22px 50px; }
-        .consultation_reviews .concultation_form .lnhr_new_btn:hover {
-          background: #FFFFFF; } }
+    font-weight: 300; }
+    @media only screen and (min-width: 576px) {
+      .lnhr_new_section_title.cuonsultation_title.consultation_reviews_call_text {
+        font-size: 18px;
+        padding: 5px 0 7px 0; } }
+    @media only screen and (min-width: 992px) {
+      .lnhr_new_section_title.cuonsultation_title.consultation_reviews_call_text {
+        padding: 5px 0 7px 0;
+        font-size: 22px;
+        font-family: "tt_norms_regular";
+        line-height: 28px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #000; } }
 
 .reviews_area {
   position: relative;

@@ -20,7 +20,7 @@
     background: #F3F3F3;
     padding: 50px 0 150px 0;
     position: relative;
-    .consultation_curve{
+    &__curve{
         position: absolute;
         bottom: 100px;
         left: 0;
@@ -38,31 +38,7 @@
         }
 
     }
-    .lnhr_new_section_title{
-        
-        font-weight: 700;
-        font-family: $tt_bold;
-        font-size: 14px;
-        @include respond-to(sm){
-            font-size: 18px;
-        }
-        @include respond-to(lg){
-            @include lnhr_section_title(two);
-        }
-        
-        &.consultation_reviews_call_text{
-            font-family: $tt_regular;
-            font-weight: 300;
-            @include respond-to(sm){
-                font-size: 18px;
-                padding: 5px 0 7px 0;
-            }
-            @include respond-to(lg){
-                padding: 5px 0 7px 0;
-                @include lnhr_section_title(two);
-            }
-        }
-    }
+    
     &__phone_number{
         img{
             
@@ -90,81 +66,116 @@
             font-size: 24px;
             line-height: 16px;
         }
+        &:hover{
+            color: $primary_clr !important;
+        }
 
     }
-    .concultation_form{
-        @include respond-to(lg){
-            padding-right: 40px;
+    
+}
+
+
+.concultation_form{
+    @include respond-to(lg){
+        padding-right: 40px;
+    }
+    &__field:not(textarea){
+        @extend %consult_field;
+        border: 1px solid #BABABA;
+        outline: none;
+        @include transition(.30s);
+        &:hover{
+            border-color: #777;
         }
-        &__field:not(textarea){
-            @extend %consult_field;
-            border: 1px solid #BABABA;
+        &:focus{
             outline: none;
-            @include transition(.30s);
-            &:hover{
-                border-color: #777;
-            }
-            &:focus{
-                outline: none;
-                box-shadow: none;
-                border-color: #777;
-            }
-            
+            box-shadow: none;
+            border-color: #777;
         }
-        textarea{
-            
-            border: 1px solid #BABABA;
+        
+    }
+    textarea{
+        
+        border: 1px solid #BABABA;
+        outline: none;
+        @include transition(.30s);
+        font-size: 12px;
+        @include respond-to(sm){
+            height: 100px;
+            font-size: 14px;
+        }
+        @include respond-to(md){
+            height: 150px;
+            font-size: 18px;
+        }
+        &:hover{
+            border-color: #777;
+        }
+        &:focus{
             outline: none;
-            @include transition(.30s);
-            font-size: 12px;
-            @include respond-to(sm){
-                height: 100px;
-                font-size: 14px;
-            }
-            @include respond-to(md){
-                height: 150px;
-                font-size: 18px;
-            }
-            &:hover{
-                border-color: #777;
-            }
-            &:focus{
-                outline: none;
-                box-shadow: none;
-                border-color: #777;
-            }
+            box-shadow: none;
+            border-color: #777;
         }
-        &__select{
-            @extend %consult_field;
-            border: 1px solid #BABABA;
+    }
+    &__select{
+        @extend %consult_field;
+        border: 1px solid #BABABA;
+        outline: none;
+        @include transition(.30s);
+        &:hover{
+            border-color: #777;
+        }
+        &:focus{
             outline: none;
-            @include transition(.30s);
-            &:hover{
-                border-color: #777;
-            }
-            &:focus{
-                outline: none;
-                box-shadow: none;
-                border-color: #777;
-            }
+            box-shadow: none;
+            border-color: #777;
         }
-        .lnhr_new_btn{
-            
-            font-family: $tt_regular;
-            font-weight: 600;
-            text-transform: uppercase;
-            border: none;
-            margin-top: 50px;
-            display: inline-flex;
-            position: relative;
-            z-index: 9;
-            @include lnhr_btn(12px,10px,30px);
-            @include respond-to(md){
-                @include lnhr_btn(14px,22px,50px);
-            }
+    }
+    .lnhr_new_btn{
+        
+        font-family: $tt_regular;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
+        margin-top: 50px;
+        display: inline-flex;
+        position: relative;
+        z-index: 9;
+        @include lnhr_btn(12px,10px,30px);
+        @include respond-to(md){
+            @include lnhr_btn(14px,22px,50px);
         }
     }
 }
+
+.lnhr_new_section_title{
+    &.cuonsultation_title{
+        font-weight: 700;
+        font-family: $tt_bold;
+        font-size: 14px;
+        @include respond-to(sm){
+            font-size: 18px;
+        }
+        @include respond-to(lg){
+            @include lnhr_section_title(two);
+        }
+        
+        &.consultation_reviews_call_text{
+            font-family: $tt_regular;
+            font-weight: 300;
+            @include respond-to(sm){
+                font-size: 18px;
+                padding: 5px 0 7px 0;
+            }
+            @include respond-to(lg){
+                padding: 5px 0 7px 0;
+                @include lnhr_section_title(two);
+            }
+        }
+    }   
+    
+}
+
 .reviews_area{
     
     position: relative;
