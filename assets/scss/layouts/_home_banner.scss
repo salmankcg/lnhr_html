@@ -15,7 +15,7 @@
         flex-flow: column;
         align-items: flex-start;
         justify-content: flex-end;
-        padding-bottom: 33%;
+        padding-bottom: 25%;
         height: 100vh;
         @include respond-to(sm) {
           padding-top: 80%;
@@ -189,6 +189,7 @@
   .lnhr_new_banner__button {
     @include lnhr_btn(12px, 15px, 15px);
     @include media-breakpoint-down(md) {
+      margin-top: 30px;
         @include orientation(landscape) {
             @include lnhr_btn(12px, 12px, 12px);
         } 

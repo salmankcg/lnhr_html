@@ -52,11 +52,12 @@
         z-index: 10;
         span{
           background: transparent !important;
+          text-transform: uppercase;
         }
       }
       .lnhr_new_menu_text {
         background: transparent !important;
-        transform: translate(-35px, 3px);
+        transform: translate(-52px, 3px);
         font-size: 12px;
       }
       &.meanclose {

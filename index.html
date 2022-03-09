@@ -14,7 +14,7 @@
     />
   
     <!--  -->
-    <link rel="stylesheet" href="assets/css/jquery.cross2.min.css" />
+    <link rel="stylesheet" href="assets/css/cndk.beforeafter.css" />
     <!--  -->
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <!--  -->
@@ -117,7 +117,7 @@
           <!-- slide-1 -->
           <div
             class="swiper-slide lnhr_set_bg"
-            data-bg-image="assets/images/lnhr_banner_image.png"
+            data-bg-image="assets/images/banner-1.jpg"
           >
             <div class="container">
               <div class="row">
@@ -144,7 +144,7 @@
           <!-- slide-2 -->
           <div
             class="swiper-slide lnhr_set_bg"
-            data-bg-image="assets/images/lnhr_banner_image_2.jpg"
+            data-bg-image="assets/images/banner-2.jpg"
           >
             <div class="container">
               <div class="row">
@@ -171,7 +171,7 @@
           <!-- slide-3 -->
           <div
             class="swiper-slide lnhr_set_bg"
-            data-bg-image="assets/images/lnhr_banner_image_3.jpg"
+            data-bg-image="assets/images/banner-3.jpg"
           >
             <div class="container">
               <div class="row">
@@ -195,6 +195,36 @@
             </div>
           </div>
           <!--  -->
+
+          <!-- slide-3 -->
+          <div
+            class="swiper-slide lnhr_set_bg"
+            data-bg-image="assets/images/banner-4.jpg"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="lnhr_new_banner__content">
+                    <h2>
+                      Look Natural <br />
+                      Feel Confident
+                    </h2>
+                    <p>
+                      At Look Natural Hair Restoration our name indicates our
+                      specialty. We are hair restoration experts who specialize
+                      in achieving high-quality, truly natural looking results.
+                    </p>
+                    <button class="lnhr_new_banner__button">
+                      SCHEDULE A CONSULTATION
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+
+
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -252,7 +282,7 @@
                 <div class="procedure_item__inner">
                   <img src="assets/images/pp-5.jpg" alt="" />
                   <div class="procedure_item_content">
-                    <a href="#"> Micropigmentation </a>
+                    <a href="#"> Eyebrow </a>
                   </div>
                 </div>
               </div>
@@ -263,7 +293,7 @@
                 <div class="procedure_item__inner">
                   <img src="assets/images/pp-6.jpg" alt="" />
                   <div class="procedure_item_content">
-                    <a href="#"> ReVive </a>
+                    <a href="#"> Facial Hair </a>
                   </div>
                 </div>
               </div>
@@ -272,7 +302,7 @@
                 <div class="procedure_item__inner">
                   <img src="assets/images/pp-3.jpg" alt="" />
                   <div class="procedure_item_content">
-                    <a href="#"> Eyebrow </a>
+                    <a href="#"> Micropigmentation </a>
                   </div>
                 </div>
               </div>
@@ -281,7 +311,7 @@
                 <div class="procedure_item__inner">
                   <img src="assets/images/pp-4.jpg" alt="" />
                   <div class="procedure_item_content">
-                    <a href="#"> Facial Hair </a>
+                    <a href="#"> ReVive </a>
                   </div>
                 </div>
               </div>
@@ -322,12 +352,18 @@
           <div class="col-md-6">
             <div
               id="demo"
-              class="lnhr_new_image_compare cross2 wow animated fadeInDown"
+              class="lnhr_new_image_compare beforeafterdrag cross2 wow animated fadeInDown"
               data-wow-duration="2s"
               data-wow-offset="100"
             >
-              <img src="assets/images/image_before1.jpg" alt="before" />
-              <img src="assets/images/image_before2.jpg" alt="after" />
+              <div data-type="data-type-image">
+                <div data-type="before">
+                  <img src="assets/images/before-after-1before.jpg" alt="before" />
+                </div>
+                <div data-type="after">
+                  <img src="assets/images/before-after-1after.jpg" alt="after" />
+                </div>
+              </div>
             </div>
             <div
               class="lnhr_new_patient_stories__bar wow animated fadeInDown"
@@ -359,14 +395,22 @@
           <div class="col-md-6">
             <div
               id="demo"
-              class="lnhr_new_image_compare cross2 wow animated fadeInDown"
+              class="lnhr_new_image_compare beforeafterdrag cross2 wow animated fadeInDown"
               data-wow-duration="2s"
+              data-wow-offset="100"
             >
-              <img src="assets/images/image_before1.jpg" alt="before" />
-              <img src="assets/images/image_before2.jpg" alt="after" />
+              <div data-type="data-type-image">
+                <div data-type="before">
+                  <img src="assets/images/before-after-2before.jpg" alt="before" />
+                </div>
+                <div data-type="after">
+                  <img src="assets/images/before-after-2after.jpg" alt="after" />
+                </div>
+              </div>
             </div>
             <div
               class="lnhr_new_patient_stories__bar wow animated fadeInDown"
+              data-wow-offset="100"
               data-wow-duration="2s"
             >
               <ul>
@@ -520,9 +564,9 @@
 
     <!--  -->
     <section class="lnhr_new_about_us">
-        <div class="lnhr_new_about_us__curbe">
-            <img src="assets/images/absout_us_shape.png" alt="">
-        </div>
+    <div class="lnhr_new_about_us__curbe">
+        <img src="assets/images/about-us-top-curbe.png" alt="">
+    </div>
       <div class="lnhr_new_about_us__image position-absolute">
         <div class="lnhr_new_about_us__image_inner">
           <img src="assets/images/about-person.jpg" alt="" />
@@ -576,6 +620,9 @@
 
     <!-- Locations -->
     <section class="lnhr_new_locations">
+      <div class="lnhr_new_locations__curbe">
+          <img src="assets/images/absout_us_shape.png" alt="">
+      </div>
       <span class="lnhr_new_locations__overlay">
         <img src="assets/images/world_map.png" alt="world map" />
       </span>
@@ -792,7 +839,7 @@
                           type="text"
                           class="form-control concultation_form__field wow fadeInDown animated " data-wow-duration="3s" 
                           id="name"
-                          placeholder="Name"
+                          placeholder="Name*"
                         />
                       </div>
                       <div class="col-md-6">
@@ -800,7 +847,7 @@
                           type="tel"
                           class="form-control concultation_form__field wow fadeInDown animated" data-wow-duration="3s"
                           id="tel"
-                          placeholder="Phone Number"
+                          placeholder="Phone Number*"
                         />
                       </div>
                     </div>
@@ -834,7 +881,7 @@
                           type="email"
                           class="form-control concultation_form__field wow animated fadeInDown" data-wow-duration="3s"
                           id="email"
-                          placeholder="Email"
+                          placeholder="Email*"
                         />
                       </div>
                       <div class="col-md-6">
@@ -842,7 +889,7 @@
                           type="text"
                           class="form-control concultation_form__field wow animated fadeInDown" data-wow-duration="3s"
                           id="zipcode"
-                          placeholder="Zipcode"
+                          placeholder="Zipcode*"
                         />
                       </div>
                     </div>
@@ -850,7 +897,7 @@
                       <div class="col-md-12">
                         <textarea
                           class="form-control concultation_form__field wow animated fadeInDown" data-wow-duration="3s"
-                          placeholder="Message"
+                          placeholder="Message*"
                           id="message"
                         ></textarea>
                       </div>
@@ -867,7 +914,7 @@
           </div>
           <div class="col-md-6">
             <div class="reviews_area">
-                <h4 class="lnhr_new_section_title reviews_area__title text-center wow fadeInDown animated" data-wow-duration="3s">
+                <h4 class="lnhr_new_section_title reviews_area__title  wow fadeInDown animated" data-wow-duration="3s">
                     REVIEWS
                 </h4>
                 <div class="swiper lnhr_new_reviews__slider wow fadeInDown animated" data-wow-duration="3s">
@@ -943,7 +990,7 @@
       <div class="lnhr_new_footer__top">
         <div class="container">
           <div class="row">
-            <div class="col wow fadeInDown animated" data-wow-duration="3s">
+            <div class="col " data-wow-duration="3s">
               <div
                 class="lnhr_new_footer__top_content d-flex justify-content-between"
               >
@@ -963,7 +1010,7 @@
         <div class="container">
           <div class="row">
             <!--  -->
-            <div class="col-lg-2 col-md-3 lnhr_ac_parent wow fadeInDown animated" data-wow-duration="3s">
+            <div class="col-lg-2 col-md-3 lnhr_ac_parent " >
               <div class="lnhr_new_footer__widget">
                 <h6 class="lnhr_new_footer__widget_title">About Us</h6>
                 <div class="lnhr_new_footer__widget_content">
@@ -984,7 +1031,7 @@
             <!--  -->
 
             <!--  -->
-            <div class="col-lg-3 col-md-6 lnhr_ac_parent wow fadeInDown animated" data-wow-duration="3s">
+            <div class="col-lg-3 col-md-6 lnhr_ac_parent " >
               <div class="lnhr_new_footer__widget">
                 <h6 class="lnhr_new_footer__widget_title">
                   Procedure & products
@@ -1008,7 +1055,7 @@
             <!--  -->
 
             <!--  -->
-            <div class="col-lg-2 col-md-3 lnhr_ac_parent wow fadeInDown animated" data-wow-duration="3s">
+            <div class="col-lg-2 col-md-3 lnhr_ac_parent " >
               <div class="lnhr_new_footer__widget">
                 <h6 class="lnhr_new_footer__widget_title">RESOURCES</h6>
                 <div class="lnhr_new_footer__widget_content">
@@ -1022,7 +1069,7 @@
             <!--  -->
 
             <!--  -->
-            <div class="col-lg-2 col-md-4 lnhr_ac_parent wow fadeInDown animated" data-wow-duration="3s">
+            <div class="col-lg-2 col-md-4 lnhr_ac_parent " >
               <div class="lnhr_new_footer__widget">
                 <h6 class="lnhr_new_footer__widget_title">FAQ</h6>
               </div>
@@ -1030,7 +1077,7 @@
             <!--  -->
 
             <!--  -->
-            <div class="col-lg-2 col-md-4 lnhr_ac_parent wow fadeInDown animated" data-wow-duration="3s">
+            <div class="col-lg-2 col-md-4 lnhr_ac_parent " >
               <div class="lnhr_new_footer__widget">
                 <h6 class="lnhr_new_footer__widget_title">CONTACT US</h6>
                 <div class="lnhr_new_footer__widget_content">
@@ -1045,7 +1092,7 @@
             <!--  -->
             <div class="col-lg-1 col-md-4">
               <div
-                class="lnhr_new_footer__widget lnhr_new_footer_social_widget wow fadeInDown animated" data-wow-duration="3s"
+                class="lnhr_new_footer__widget lnhr_new_footer_social_widget " 
               >
                 <div
                   class="lnhr_new_footer__widget_content lnhr_new_footer__widget_social"
@@ -1063,7 +1110,7 @@
           </div>
         </div>
       </div>
-      <div class="lnhr_new_footer__bottom wow fadeInDown animated" data-wow-duration="3s">
+      <div class="lnhr_new_footer__bottom wow fadeInDown animated" >
         <div class="container">
           <div class="lnhr_new_footer__bottom_inner">
             <div class="row">
@@ -1114,7 +1161,7 @@
     <!--  -->
 
     <!--  -->
-    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--  -->
     <script src="assets/js/popper.min.js"></script>
     <!--  -->
@@ -1124,11 +1171,9 @@
     <!--  -->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!--  -->
-    <script src="assets/js/jquery.cross2.min.js"></script>
+    <script src="assets/js/cndk.beforeafter.js"></script>
     <!--  -->
-    <script src="assets/js/jquery.event.drag.min.js"></script>
-    <!--  -->
-    <script src="assets/js/jquery.easing.min.js"></script>
+    <!-- <script src="assets/js/jquery.easing.min.js"></script> -->
     <!--  -->
     <script src="assets/js/wow.min.js"></script>
 

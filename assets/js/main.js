@@ -11,6 +11,19 @@
 
   // Mobile Menu
   $(document).ready(function () {
+
+    if(classExist('.lnhr_new_image_compare')){
+        $('.lnhr_new_image_compare').each(function(e){
+          $(this).cndkbeforeafter(
+            {
+                mode: "drag", 
+                showText:false,
+            }
+          );
+      })
+    }
+    
+
     //
     const lnhr_new_navbar__nav_li = $(".lnhr_new_navbar__nav li");
     lnhr_new_navbar__nav_li.each(function () {
@@ -170,13 +183,14 @@
 
   //
 
-  $(window).load(function () {
-    $(".lnhr_new_image_compare").cross2({
-      clickEnabled: true,
-      easing: "easeInBack",
-      animationDuration: 500,
-      mousemoveEnabled: true,
-      titlesEnabled: false,
-    });
+  $(window).on('load',function () {
+    // $(".lnhr_new_image_compare").cross2({
+    //   clickEnabled: true,
+    //   easing: "easeInBack",
+    //   animationDuration: 500,
+    //   mousemoveEnabled: true,
+    //   titlesEnabled: false,
+    // });
+    
   });
 })(jQuery);

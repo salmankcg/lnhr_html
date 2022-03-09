@@ -3,15 +3,21 @@
     background: #C2BFB0;
     &__curbe{
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 100%;
+        left: 0;
         background-repeat: no-repeat;
         background-size: initial;
-        
         transform: translateY(50%);
         z-index: 9;
         width: 40px;
         height: 100px;
+        @include media-breakpoint-down(sm){
+            display: block;
+        }
+        @include media-breakpoint-up(sm){
+            display: none;
+        }
+        
         @include respond-to(md){
             width: 70px;
             height: 200px;
@@ -22,9 +28,13 @@
         }
     }
     position: relative;
-    padding: 60px 0 40px 0;
+    
     display: flex;
     flex-flow: column-reverse;
+    padding: 60px 0 40px 0;
+    @include media-breakpoint-down(sm){
+        padding-bottom: 0;
+    }
     @include respond-to(sm){
         padding: 51px 0 31px 0;
         display: block;
@@ -42,6 +52,9 @@
         width: 100%;
         margin-bottom: 30px;
         margin-top: 70px;
+        @include media-breakpoint-down(sm){
+            margin-bottom: 0;
+        }
         @include respond-to(sm){
             position: absolute !important;
             width: calc(50% - 30px);
@@ -146,7 +159,7 @@
             font-size: 16px;
             line-height: 24px;
             @include media-breakpoint-down(sm){
-                text-align: center;
+                text-align: left;
             }
             @include respond-to(md){
                 font-size: 14px;
@@ -162,11 +175,18 @@
         &_footer{
             text-align: center;
             margin-top: 20px;
+            @include media-breakpoint-down(sm){
+                padding-left: 15%;
+                padding-right: 15%;   
+            }
             P{
                 font-size: 10px;
                 color: #000;
                 line-height: 18px;
                 padding-top: 15px;
+                @include media-breakpoint-down(sm){
+                    text-align: center;
+                }
                 @include respond-to(md){
                     font-size: 12px;
                 }
@@ -176,7 +196,10 @@
                 @extend %a_rules;
                 
                 @include transition(.30s);
-                @include lnhr_btn(12px, 15px, 12px);
+                @include media-breakpoint-down(sm){
+                    @include lnhr_btn(12px, 15px, 20px);
+                    font-weight: 600;
+                }
                 @include respond-to(sm){
                     margin-top: 10px;
                     @include lnhr_btn(12px, 18px, 15px);
@@ -201,3 +224,7 @@
         }
     }
 }
+
+
+
+

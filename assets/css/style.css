@@ -190,7 +190,7 @@
       flex-flow: column;
       align-items: flex-start;
       justify-content: flex-end;
-      padding-bottom: 33%;
+      padding-bottom: 25%;
       height: 100vh; }
       @media only screen and (min-width: 576px) {
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
@@ -348,16 +348,18 @@
   letter-spacing: 1px; }
   .lnhr_new_banner__content .lnhr_new_banner__button:hover {
     background: #FFFFFF; }
-
-@media (max-width: 767.98px) and (orientation: landscape) {
-  .lnhr_new_banner__content .lnhr_new_banner__button {
-    background: linear-gradient(270deg, #f3eeb1 9.2%, #d2c58d 54.69%, #f3eeb1 85.82%);
-    border-radius: 2px;
-    color: #000;
-    font-size: 12px;
-    padding: 12px 12px; }
-    .lnhr_new_banner__content .lnhr_new_banner__button:hover {
-      background: #FFFFFF; } }
+  @media (max-width: 767.98px) {
+    .lnhr_new_banner__content .lnhr_new_banner__button {
+      margin-top: 30px; } }
+  @media (max-width: 767.98px) and (orientation: landscape) {
+    .lnhr_new_banner__content .lnhr_new_banner__button {
+      background: linear-gradient(270deg, #f3eeb1 9.2%, #d2c58d 54.69%, #f3eeb1 85.82%);
+      border-radius: 2px;
+      color: #000;
+      font-size: 12px;
+      padding: 12px 12px; }
+      .lnhr_new_banner__content .lnhr_new_banner__button:hover {
+        background: #FFFFFF; } }
   @media only screen and (min-width: 768px) {
     .lnhr_new_banner__content .lnhr_new_banner__button {
       background: linear-gradient(270deg, #f3eeb1 9.2%, #d2c58d 54.69%, #f3eeb1 85.82%);
@@ -468,10 +470,11 @@
       background: transparent !important;
       z-index: 10; }
       .mean-bar a.meanmenu-reveal .lnhr_new_menu_clicker span {
-        background: transparent !important; }
+        background: transparent !important;
+        text-transform: uppercase; }
     .mean-bar a.meanmenu-reveal .lnhr_new_menu_text {
       background: transparent !important;
-      transform: translate(-35px, 3px);
+      transform: translate(-52px, 3px);
       font-size: 12px; }
     .mean-bar a.meanmenu-reveal.meanclose {
       top: 45px;
@@ -754,6 +757,25 @@
           .lnhr_new_patient_stories__bar ul li a span {
             margin-top: 10px; } }
 
+.cndkbeforeafter-item {
+  height: 100% !important; }
+
+.cndkbeforeafter-hover:hover {
+  box-shadow: none; }
+
+.cndkbeforeafter-theme-light .cndkbeforeafter-seperator {
+  background: transparent !important; }
+
+.cndkbeforeafter-theme-light .cndkbeforeafter-seperator > div > span {
+  background: url("../images/img-before-after.svg") no-repeat !important;
+  height: 60px;
+  width: 60px;
+  border: none; }
+  .cndkbeforeafter-theme-light .cndkbeforeafter-seperator > div > span::before {
+    display: none; }
+  .cndkbeforeafter-theme-light .cndkbeforeafter-seperator > div > span::after {
+    display: none; }
+
 /*------------------------------------------
 ------------------------------------------*/
 .lnhr_new_testimonial {
@@ -766,12 +788,18 @@
     .lnhr_new_testimonial {
       padding-top: 50px;
       padding-bottom: 70px; } }
+  @media (min-width: 576px) {
+    .lnhr_new_testimonial {
+      padding-top: 60px; } }
   .lnhr_new_testimonial .bottom_edge {
     position: absolute;
     top: 100%;
     width: 100%;
     z-index: 9;
     display: none; }
+    @media (max-width: 767.98px) {
+      .lnhr_new_testimonial .bottom_edge {
+        top: 99%; } }
     @media only screen and (min-width: 576px) {
       .lnhr_new_testimonial .bottom_edge {
         display: block; } }
@@ -1012,19 +1040,25 @@
 .lnhr_new_about_us {
   background: #C2BFB0;
   position: relative;
-  padding: 60px 0 40px 0;
   display: flex;
-  flex-flow: column-reverse; }
+  flex-flow: column-reverse;
+  padding: 60px 0 40px 0; }
   .lnhr_new_about_us__curbe {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 100%;
+    left: 0;
     background-repeat: no-repeat;
     background-size: initial;
     transform: translateY(50%);
     z-index: 9;
     width: 40px;
     height: 100px; }
+    @media (max-width: 575.98px) {
+      .lnhr_new_about_us__curbe {
+        display: block; } }
+    @media (min-width: 576px) {
+      .lnhr_new_about_us__curbe {
+        display: none; } }
     @media only screen and (min-width: 768px) {
       .lnhr_new_about_us__curbe {
         width: 70px;
@@ -1032,6 +1066,9 @@
     .lnhr_new_about_us__curbe img {
       max-width: 100%;
       max-height: 100%; }
+  @media (max-width: 575.98px) {
+    .lnhr_new_about_us {
+      padding-bottom: 0; } }
   @media only screen and (min-width: 576px) {
     .lnhr_new_about_us {
       padding: 51px 0 31px 0;
@@ -1048,6 +1085,9 @@
     width: 100%;
     margin-bottom: 30px;
     margin-top: 70px; }
+    @media (max-width: 575.98px) {
+      .lnhr_new_about_us__image {
+        margin-bottom: 0; } }
     @media only screen and (min-width: 576px) {
       .lnhr_new_about_us__image {
         position: absolute !important;
@@ -1149,7 +1189,7 @@
       line-height: 24px; }
       @media (max-width: 575.98px) {
         .lnhr_new_about_us__content p {
-          text-align: center; } }
+          text-align: left; } }
       @media only screen and (min-width: 768px) {
         .lnhr_new_about_us__content p {
           font-size: 14px; } }
@@ -1163,24 +1203,34 @@
     .lnhr_new_about_us__content_footer {
       text-align: center;
       margin-top: 20px; }
+      @media (max-width: 575.98px) {
+        .lnhr_new_about_us__content_footer {
+          padding-left: 15%;
+          padding-right: 15%; } }
       .lnhr_new_about_us__content_footer P {
         font-size: 10px;
         color: #000;
         line-height: 18px;
         padding-top: 15px; }
+        @media (max-width: 575.98px) {
+          .lnhr_new_about_us__content_footer P {
+            text-align: center; } }
         @media only screen and (min-width: 768px) {
           .lnhr_new_about_us__content_footer P {
             font-size: 12px; } }
       .lnhr_new_about_us__content_footer .lnhr_new_btn {
         display: inline-flex;
-        transition: all 0.3s linear;
-        background: linear-gradient(270deg, #f3eeb1 9.2%, #d2c58d 54.69%, #f3eeb1 85.82%);
-        border-radius: 2px;
-        color: #000;
-        font-size: 12px;
-        padding: 15px 12px; }
-        .lnhr_new_about_us__content_footer .lnhr_new_btn:hover {
-          background: #FFFFFF; }
+        transition: all 0.3s linear; }
+        @media (max-width: 575.98px) {
+          .lnhr_new_about_us__content_footer .lnhr_new_btn {
+            background: linear-gradient(270deg, #f3eeb1 9.2%, #d2c58d 54.69%, #f3eeb1 85.82%);
+            border-radius: 2px;
+            color: #000;
+            font-size: 12px;
+            padding: 15px 20px;
+            font-weight: 600; }
+            .lnhr_new_about_us__content_footer .lnhr_new_btn:hover {
+              background: #FFFFFF; } }
         @media only screen and (min-width: 576px) {
           .lnhr_new_about_us__content_footer .lnhr_new_btn {
             margin-top: 10px;
@@ -1239,12 +1289,35 @@
   background: #F3F3F3;
   position: relative;
   padding: 50px 0 20px 0; }
+  @media (max-width: 575.98px) {
+    .lnhr_new_locations {
+      padding-bottom: 60px; } }
   @media only screen and (min-width: 576px) {
     .lnhr_new_locations {
       padding: 60px 0 70px 0; } }
   @media only screen and (min-width: 992px) {
     .lnhr_new_locations {
       padding: 180px 0 100px 0; } }
+  .lnhr_new_locations__curbe {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: initial;
+    transform: translateY(50%);
+    z-index: 9;
+    width: 40px;
+    height: 100px; }
+    @media (max-width: 575.98px) {
+      .lnhr_new_locations__curbe {
+        bottom: 0%; } }
+    @media only screen and (min-width: 768px) {
+      .lnhr_new_locations__curbe {
+        width: 70px;
+        height: 200px; } }
+    .lnhr_new_locations__curbe img {
+      max-width: 100%;
+      max-height: 100%; }
   .lnhr_new_locations__overlay {
     position: absolute;
     top: 50%;
@@ -1252,6 +1325,10 @@
     transform: translate(-50%, -50%);
     height: 100%;
     width: 100%; }
+    @media (max-width: 575.98px) {
+      .lnhr_new_locations__overlay {
+        top: 57%;
+        left: 33%; } }
     @media only screen and (min-width: 768px) {
       .lnhr_new_locations__overlay {
         height: initial;
@@ -1357,6 +1434,10 @@
     bottom: 100px;
     left: 0;
     height: 150px; }
+    @media (max-width: 575.98px) {
+      .consultation_reviews__curve {
+        bottom: -45px;
+        z-index: 99; } }
     @media only screen and (min-width: 576px) {
       .consultation_reviews__curve {
         height: 200px; } }
@@ -1370,7 +1451,7 @@
   .consultation_reviews__phone_number {
     color: #AE9765;
     font-family: "tt_norms_regular";
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 40px;
     display: flex; }
     .consultation_reviews__phone_number img {
@@ -1456,6 +1537,15 @@
   padding: 10px 30px; }
   .concultation_form .lnhr_new_btn:hover {
     background: #FFFFFF; }
+  @media (max-width: 575.98px) {
+    .concultation_form .lnhr_new_btn {
+      background: linear-gradient(270deg, #f3eeb1 9.2%, #d2c58d 54.69%, #f3eeb1 85.82%);
+      border-radius: 2px;
+      color: #000;
+      font-size: 12px;
+      padding: 15px 30px; }
+      .concultation_form .lnhr_new_btn:hover {
+        background: #FFFFFF; } }
   @media only screen and (min-width: 768px) {
     .concultation_form .lnhr_new_btn {
       background: linear-gradient(270deg, #f3eeb1 9.2%, #d2c58d 54.69%, #f3eeb1 85.82%);
@@ -1472,7 +1562,8 @@
   text-transform: uppercase; }
   @media (max-width: 575.98px) {
     .lnhr_new_section_title.cuonsultation_title {
-      font-size: 18px; } }
+      font-size: 18px;
+      text-align: left; } }
   @media only screen and (min-width: 576px) {
     .lnhr_new_section_title.cuonsultation_title {
       font-size: 18px; } }
@@ -1535,11 +1626,13 @@
     @media only screen and (min-width: 768px) {
       .reviews_area::before {
         display: block; } }
-  @media (max-width: 575.98px) {
-    .reviews_area__title {
-      font-size: 18px;
-      font-weight: 700;
-      text-align: left; } }
+  .reviews_area__title {
+    text-align: center; }
+    @media (max-width: 575.98px) {
+      .reviews_area__title {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left; } }
   .reviews_area .lnhr_new_reviews__slider {
     position: relative;
     padding-top: 50px; }
@@ -1661,6 +1754,9 @@
     height: 100px;
     z-index: -1;
     height: 100px; }
+    @media (max-width: 767.98px) {
+      .lnhr_new_footer__bottom_edge {
+        display: none; } }
     @media only screen and (min-width: 768px) {
       .lnhr_new_footer__bottom_edge {
         height: 150px; } }
@@ -1711,6 +1807,9 @@
           text-transform: uppercase;
           font-family: "tt_norms_regular";
           font-size: 18px; }
+          @media (max-width: 575.98px) {
+            .lnhr_new_footer__top .lnhr_new_footer__top_content .lnhr_new_footer__phone span {
+              font-weight: 600; } }
           @media only screen and (min-width: 1200px) {
             .lnhr_new_footer__top .lnhr_new_footer__top_content .lnhr_new_footer__phone span {
               font-size: 24px; } }
@@ -1726,6 +1825,10 @@
               width: 30px; } }
         .lnhr_new_footer__top .lnhr_new_footer__top_content .lnhr_new_footer__phone:hover {
           text-decoration: none; }
+  @media (max-width: 767.98px) {
+    .lnhr_new_footer__middle .lnhr_ac_parent:nth-child(1) .lnhr_new_footer__widget {
+      border-top: 1px solid rgba(0, 0, 0, 0.19);
+      padding-top: 15px; } }
   .lnhr_new_footer__middle .lnhr_new_footer__widget {
     padding-bottom: 10px;
     margin-bottom: 20px;

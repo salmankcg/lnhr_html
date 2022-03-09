@@ -11,11 +11,37 @@
     background: #F3F3F3;
     position: relative;
     padding: 50px 0 20px 0;
+    @include media-breakpoint-down(sm){
+        padding-bottom: 60px;
+    }
     @include respond-to(sm){
         padding: 60px 0 70px 0;
     }
     @include respond-to(lg){
         padding: 180px 0 100px 0;
+    }
+    &__curbe{
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: initial;
+        
+        transform: translateY(50%);
+        z-index: 9;
+        width: 40px;
+        height: 100px;
+        @include media-breakpoint-down(sm){
+            bottom: 0%;
+        }
+        @include respond-to(md){
+            width: 70px;
+            height: 200px;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
     }
     &__overlay{
         position: absolute;
@@ -24,6 +50,10 @@
         transform: translate(-50%,-50%);
         height: 100%;
         width: 100%;
+        @include media-breakpoint-down(sm){
+            top: 57%;
+            left: 33%;
+        }
         @include respond-to(md){
             height: initial;
             width: initial;

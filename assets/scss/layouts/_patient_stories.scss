@@ -34,6 +34,7 @@
 }
 .lnhr_new_image_compare{
     @extend %lnhr_new_image_compare;
+    
 }   
 .lnhr_new_patient_stories__bar{
     @extend %lnhr_new_patient_stories__bar;
@@ -152,5 +153,27 @@
                 }
             }
         }
+    }
+}
+
+.cndkbeforeafter-item{
+    height: 100% !important;
+}
+.cndkbeforeafter-hover:hover{
+    box-shadow: none;
+}
+.cndkbeforeafter-theme-light .cndkbeforeafter-seperator{
+    background: transparent !important;
+}
+.cndkbeforeafter-theme-light .cndkbeforeafter-seperator > div > span{
+    background: url('../images/img-before-after.svg') no-repeat !important;
+    height: 60px;
+    width: 60px;
+    border: none;
+    &::before{
+        display: none;
+    }
+    &::after{
+        display: none;
     }
 }

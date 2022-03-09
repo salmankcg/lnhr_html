@@ -102,6 +102,7 @@
                 @include lnhr_flex(flex, "", flex-end, flex-start);
                 padding-left: 10px;
                 padding-bottom: 10px;
+                @include media-breakpoint-down(sm){}
                 @include media-breakpoint-down(md){
                     font-size: 16px;
                 }

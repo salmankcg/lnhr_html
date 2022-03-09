@@ -6,6 +6,9 @@
           padding-top: 50px;
           padding-bottom: 70px;
       }
+      @include media-breakpoint-up(sm){
+        padding-top: 60px;
+      }
       background: #171717;
       position: relative;
       .bottom_edge{
@@ -14,6 +17,9 @@
           width: 100%;
           z-index: 9;
           display: none;
+          @include media-breakpoint-down(md){
+            top: 99%;
+          }
           @include respond-to(sm){
             display: block;
           }
