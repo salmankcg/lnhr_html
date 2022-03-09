@@ -11,6 +11,9 @@
   }
   
   .lnhr_new_footer {
+    @include media-breakpoint-down(md){
+        padding-bottom: 0;
+    }
     padding-bottom: 30px;
     position: relative;
     &__bottom_edge{
@@ -256,12 +259,15 @@
       &_inner {
         border-top: 1px solid rgba($black, 0.19);
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
+        @include media-breakpoint-up(md){
+          padding-bottom: 40px;
+        }
         .row{
             display: flex;
             [class*="col-"]{
                 &:nth-child(1){
-                  padding-top: 30px;
+                  padding-top: 10px;
                   order: 4;
                   @include respond-to(lg){
                       padding-top: 0;
@@ -311,7 +317,7 @@
       }
       .lnhr_new__design_credit {
         @extend %footer_bottom_inherit;
-        margin-top: -55px;
+        margin-top: -51px;
         @include respond-to(lg){
           margin-top: 0px;
         }

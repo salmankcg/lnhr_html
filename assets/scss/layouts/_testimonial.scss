@@ -13,6 +13,10 @@
           top: 100%;
           width: 100%;
           z-index: 9;
+          display: none;
+          @include respond-to(sm){
+            display: block;
+          }
       }
     .lnhr_new_testimonial__slider {
       .swiper-slide {
@@ -57,11 +61,17 @@
         }
         h6 {
           text-align: center;
-          font-size: 18px;
+          
           text-transform: uppercase;
           display: block;
           margin: 0;
           color: $white;
+          @include media-breakpoint-down(md){
+              font-size: 16px;
+          }
+          @include media-breakpoint-up(md){
+            font-size: 18px;
+          }
         }
       }
       .swiper-pagination {
@@ -83,6 +93,11 @@
       .swiper-button-next {
         @extend %swiper_arrows;
         right: 20px;
+        @include media-breakpoint-down(md){
+          z-index: 99;
+            top: initial;
+            bottom: 0px;
+        }
         @include respond-to(md){
           right: 30px;
         }
@@ -94,6 +109,11 @@
       .swiper-button-prev {
           @extend %swiper_arrows;
           left: 20px;
+          @include media-breakpoint-down(md){
+            z-index: 99;
+              top: initial;
+              bottom: 0px;
+          }
           @include respond-to(md){
               left: 30px;
           }

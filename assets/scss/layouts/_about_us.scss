@@ -22,9 +22,12 @@
         }
     }
     position: relative;
-    padding: 0px 0 40px 0;
+    padding: 60px 0 40px 0;
+    display: flex;
+    flex-flow: column-reverse;
     @include respond-to(sm){
         padding: 51px 0 31px 0;
+        display: block;
     }
     @include respond-to(lg){
         padding: 51px 0 31px 0;
@@ -38,23 +41,27 @@
         position: relative !important;
         width: 100%;
         margin-bottom: 30px;
+        margin-top: 70px;
         @include respond-to(sm){
             position: absolute !important;
             width: calc(50% - 30px);
             height: 50%;
             margin-bottom: 0px;
+            margin-top: 0;
         }
         @include respond-to(md){
             position: absolute;
             height: 100%;
             width: calc(50% - 30px);
             margin-bottom: 0px;
+            margin-top: 0;
         }
         @include respond-to(xxl){
             height: 90%;
             width: calc(50% - 30px);
             margin-bottom: 0px;
             top: 10%;
+            margin-top: 0;
         }
         img{
             width: 100%;
@@ -103,10 +110,9 @@
         .lnhr_new_section_title{
 
             @include lnhr_section_title(two);
-            font-size: 14px;
-            @include respond-to(md){
-                font-size: 18px;
-            }
+            font-size: 18px;
+            font-family: $tt_bold;
+            padding-bottom: 10px;
             @include respond-to(md){
                 padding-top: 40px;
                 padding-bottom: 10px;
@@ -137,8 +143,11 @@
             font-family: 'tt_norms_regular';
             font-weight: 400;
             color: #000000;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 24px;
+            @include media-breakpoint-down(sm){
+                text-align: center;
+            }
             @include respond-to(md){
                 font-size: 14px;
             }
