@@ -55,9 +55,9 @@
   .lnhr_new_anchor:hover {
     text-decoration: none; }
 
-.lnhr_new_banner__content .lnhr_new_banner__button, .lnhr_new_navigation .lnhr_new_navbar__nav li a, .lnhr_new_navbar .lnhr_new_navbar__nav li a, .lnhr_new_more_stories a, .lnhr_new_patient_stories__bar ul li a, .procudure_container .procedure_item .procedure_item__inner .procedure_item_content a, .lnhr_new_about_us__content_footer .lnhr_new_btn, .lnhr_new_locations .lnhr_new_locations__box__content .lnhr_new_locations__title a, .lnhr_new_locations .lnhr_new_btn, .consultation_reviews__phone_number, .lnhr_new_footer__bottom_widget a, .lnhr_new_footer__bottom .lnhr_new__design_credit a {
+.lnhr_new_banner__content .lnhr_new_banner__button, .lnhr_new_navigation .lnhr_new_navbar__nav li a, .lnhr_new_navbar .lnhr_new_navbar__nav li a, .lnhr_new_more_stories a, .lnhr_new_patient_stories__bar ul li a, .procudure_container .procedure_item .procedure_item__inner .procedure_item_content a, .lnhr_new_about_us__content_footer .lnhr_new_btn, .lnhr_new_locations .lnhr_new_locations__box__content .lnhr_new_locations__title a, .lnhr_new_locations .lnhr_new_btn, .consultation_reviews__phone_number, .lnhr_new_footer__middle .lnhr_new_footer__widget_title a, .lnhr_new_footer__bottom_widget a, .lnhr_new_footer__bottom .lnhr_new__design_credit a {
   text-decoration: none; }
-  .lnhr_new_banner__content .lnhr_new_banner__button:hover, .lnhr_new_navigation .lnhr_new_navbar__nav li a:hover, .lnhr_new_navbar .lnhr_new_navbar__nav li a:hover, .lnhr_new_more_stories a:hover, .lnhr_new_patient_stories__bar ul li a:hover, .procudure_container .procedure_item .procedure_item__inner .procedure_item_content a:hover, .lnhr_new_about_us__content_footer .lnhr_new_btn:hover, .lnhr_new_locations .lnhr_new_locations__box__content .lnhr_new_locations__title a:hover, .lnhr_new_locations .lnhr_new_btn:hover, .consultation_reviews__phone_number:hover, .lnhr_new_footer__bottom_widget a:hover, .lnhr_new_footer__bottom .lnhr_new__design_credit a:hover {
+  .lnhr_new_banner__content .lnhr_new_banner__button:hover, .lnhr_new_navigation .lnhr_new_navbar__nav li a:hover, .lnhr_new_navbar .lnhr_new_navbar__nav li a:hover, .lnhr_new_more_stories a:hover, .lnhr_new_patient_stories__bar ul li a:hover, .procudure_container .procedure_item .procedure_item__inner .procedure_item_content a:hover, .lnhr_new_about_us__content_footer .lnhr_new_btn:hover, .lnhr_new_locations .lnhr_new_locations__box__content .lnhr_new_locations__title a:hover, .lnhr_new_locations .lnhr_new_btn:hover, .consultation_reviews__phone_number:hover, .lnhr_new_footer__middle .lnhr_new_footer__widget_title a:hover, .lnhr_new_footer__bottom_widget a:hover, .lnhr_new_footer__bottom .lnhr_new__design_credit a:hover {
     text-decoration: none; }
 
 .lnhr_new_list {
@@ -1867,6 +1867,8 @@
         @media only screen and (min-width: 768px) {
           .lnhr_new_footer__middle .lnhr_new_footer__widget_title::after {
             display: none; } }
+      .lnhr_new_footer__middle .lnhr_new_footer__widget_title a {
+        color: #000; }
     .lnhr_new_footer__middle .lnhr_new_footer__widget_content:not(.lnhr_new_footer__widget_social) {
       display: flex;
       align-items: flex-start;

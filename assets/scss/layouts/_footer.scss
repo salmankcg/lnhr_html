@@ -140,10 +140,7 @@
           letter-spacing: 1px;
           text-transform: uppercase;
           font-family: $tt_bold;
-          
           font-size: 12px;
-          
-        //   padding-bottom: 20px;
           @include respond-to(xl){
               font-size: 14px;
           }
@@ -168,6 +165,10 @@
           height: 6px;
           background-size: contain;
           transform: scaleY(1);
+          }
+          a{
+            @extend %a_rules;
+            color: $black;
           }
         }
         &_content:not(.lnhr_new_footer__widget_social) {
