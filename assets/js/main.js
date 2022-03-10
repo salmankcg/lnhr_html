@@ -175,7 +175,7 @@
   $(window).on('load',function () {
     
 
-    $(".lnhr_new_image_compareasdf").imagesLoaded(function () {
+    $(".lnhr_new_image_compare_loaded").imagesLoaded(function () {
       $(".lnhr_new_image_compare").twentytwenty();
       });
     
