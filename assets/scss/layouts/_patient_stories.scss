@@ -32,29 +32,56 @@
 .lnhr_new_more_stories{
     @extend %lnhr_new_more_stories;
 }
+.lnhr_new_image_compareasdf{
+        
+}
 .lnhr_new_image_compare{
+    border-image-source: linear-gradient(
+        to left,
+        #ac9660,
+        #faf8b4
+        ) !important;
+        border: 5px solid;
+        border-image-slice: 1;
     @extend %lnhr_new_image_compare;
+    &.twentytwenty-container{
+        img{
+            // top: 5px;
+            // max-width: 98.2%;
+        }
+    }
+    .twentytwenty-handle{
+        background: url('../images/img-before-after.svg') no-repeat;
+        width: 60px;
+        height: 60px;
+        border: none;
+        margin-left: -30px;
+        border: none;
+        span{
+            display: none;
+        }
+        &::before{
+            display: none;
+        }
+        &::after{
+            display: none;
+        }
+    }
     
 }   
 .lnhr_new_patient_stories__bar{
     @extend %lnhr_new_patient_stories__bar;
+    
 }
 
 %lnhr_new_image_compare{
-    padding: 5px;
-    background: #aa935d;
-    background: -moz-linear-gradient(45deg, #aa935d 0%, #f9f8b4 67%, #b9a66d 100%);
-    background: -webkit-linear-gradient(45deg, #aa935d 0%,#f9f8b4 67%,#b9a66d 100%);
-    background: linear-gradient(45deg, #aa935d 0%,#f9f8b4 67%,#b9a66d 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa935d', endColorstr='#b9a66d',GradientType=1 );
-    .cross2-item{
-        width: calc(100% - 5px) !important;
-        height: calc(100% - 10px) !important;
-        img{
-            height: 100%;
-            width: calc(100% - 5px) !important;
-        }
-    }
+    // padding: 5px;
+    // background: #aa935d;
+    // background: -moz-linear-gradient(45deg, #aa935d 0%, #f9f8b4 67%, #b9a66d 100%);
+    // background: -webkit-linear-gradient(45deg, #aa935d 0%,#f9f8b4 67%,#b9a66d 100%);
+    // background: linear-gradient(45deg, #aa935d 0%,#f9f8b4 67%,#b9a66d 100%);
+    
+    
     .cross2-slider{
         background: url('../images/img-before-after.svg') no-repeat;
         width: 60px;
@@ -115,7 +142,7 @@
                 @extend %a_rules;
                 text-transform: uppercase;
                 
-                @include media-breakpoint-down(md){
+                @include media-breakpoint-down(lg){
                     font-size: 12px;
                     @include lnhr_flex(inline,'',center,center);
                     flex-flow: column;
@@ -156,15 +183,7 @@
     }
 }
 
-.cndkbeforeafter-item{
-    height: 100% !important;
-}
-.cndkbeforeafter-hover:hover{
-    box-shadow: none;
-}
-.cndkbeforeafter-theme-light .cndkbeforeafter-seperator{
-    background: transparent !important;
-}
+
 .cndkbeforeafter-theme-light .cndkbeforeafter-seperator > div > span{
     background: url('../images/img-before-after.svg') no-repeat !important;
     height: 60px;
