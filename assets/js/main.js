@@ -173,8 +173,6 @@
   //
 
   $(window).on('load',function () {
-    
-
     $(".lnhr_new_image_compare_loaded").imagesLoaded(function () {
       $(".lnhr_new_image_compare").twentytwenty();
       });

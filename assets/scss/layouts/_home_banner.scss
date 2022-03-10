@@ -204,6 +204,7 @@
     border: none;
     font-weight: 500;
     letter-spacing: 1px;
+    @extend %a_rules;
   }
 }
 
