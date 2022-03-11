@@ -50,6 +50,9 @@
       .lnhr_new_menu_clicker {
         background: transparent !important;
         z-index: 10;
+        > img{
+            margin-top: -5px;
+        }
         span{
           background: transparent !important;
           text-transform: uppercase;
@@ -81,6 +84,8 @@
           a {
             color: $primary_clr !important;
             &.mean-expand {
+              width: 95%;
+              text-align: right;
               padding: 11px 6px 1px 6px !important;
               background: transparent !important;
             }

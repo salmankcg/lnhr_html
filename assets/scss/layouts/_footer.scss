@@ -113,6 +113,13 @@
     }
     &__middle {
       .lnhr_ac_parent{
+        &.lnhr_disable_accordion{
+          .lnhr_new_footer__widget_title{
+            &::after{
+              display: none;
+            }
+          }
+        }
           &:nth-child(1){
               .lnhr_new_footer__widget{
                   @include media-breakpoint-down(md){
