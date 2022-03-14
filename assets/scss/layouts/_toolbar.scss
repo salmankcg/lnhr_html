@@ -59,6 +59,7 @@
 }
 
 .lnhr_new_toolbar__call.only_for_mobile {
+  display: none;
   @include media-breakpoint-down(xl) {
     display: block !important;
     position: absolute;

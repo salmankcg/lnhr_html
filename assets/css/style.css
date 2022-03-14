@@ -176,13 +176,15 @@
       height: 27px;
       width: 27px; }
 
-@media (max-width: 1199.98px) {
-  .lnhr_new_toolbar__call.only_for_mobile {
-    display: block !important;
-    position: absolute;
-    right: 90px;
-    margin-right: 0 !important;
-    top: -7px !important; } }
+.lnhr_new_toolbar__call.only_for_mobile {
+  display: none; }
+  @media (max-width: 1199.98px) {
+    .lnhr_new_toolbar__call.only_for_mobile {
+      display: block !important;
+      position: absolute;
+      right: 90px;
+      margin-right: 0 !important;
+      top: -7px !important; } }
 
 /*------------------------------------------
 ------------------------------------------*/
