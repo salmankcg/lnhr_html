@@ -210,6 +210,9 @@
           padding-top: 80%;
           justify-content: flex-start;
           padding-bottom: 0; } }
+      @media (max-width: 767.98px) {
+        .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
+          padding-top: 45%; } }
 
 @media (max-width: 767.98px) and (orientation: landscape) {
   .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
@@ -234,6 +237,11 @@
           background-position: initial;
           justify-content: flex-start;
           padding-top: 56%; } }
+
+@media (min-width: 768px) and (max-width: 1199.98px) and (orientation: landscape) {
+  .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
+    justify-content: center;
+    padding-bottom: 82%; } }
     .lnhr_new_banner__slider .swiper-wrapper .swiper-slide.swiper-slide-active h2 {
       animation: fadeInDown;
       /* referring directly to the animation's @keyframe declaration */

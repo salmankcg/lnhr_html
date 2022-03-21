@@ -22,12 +22,17 @@
           justify-content: flex-start;
           padding-bottom: 0;
         }
+        @include media-breakpoint-down(md){
+            padding-top: 45%;
+        }
+        
         @include media-breakpoint-down(md) {
             @include orientation(landscape) {
                 padding-top: 10%;
                 justify-content: center;
             } 
         }
+        
         @include respond-to(md) {
           height: 100vh;
           justify-content: flex-start;
@@ -47,6 +52,12 @@
           justify-content: flex-start;
           padding-top: 56%;
         }
+        @include media-breakpoint-between(md,xl){
+          @include orientation(landscape){
+            justify-content: center;
+            padding-bottom: 82%;
+          }
+      }
         
         
       }
@@ -143,6 +154,7 @@
     font-family: $tt_regular;
 
     font-size: 40px;
+   
     @include media-breakpoint-down(md) {
         @include orientation(landscape) {
             font-size: 18px;
