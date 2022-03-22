@@ -81,7 +81,7 @@
     display: inline-flex;
     align-items: flex-start;
     justify-content: center;
-    left: 50%;
+    left: calc(50% - 8px);
 
     transform: translateX(-50%);
     z-index: 99;
@@ -161,15 +161,15 @@
         } 
     }
     @include respond-to(md) {
-      font-size: 30px;
+      font-size: 40px;
       line-height: 50px;
       margin-bottom: 20px;
     }
-    @include respond-to(lg) {
-      font-size: 36px;
-      line-height: 50px;
-      margin-bottom: 20px;
-    }
+    // @include respond-to(lg) {
+    //   font-size: 40px;
+    //   line-height: 50px;
+    //   margin-bottom: 20px;
+    // }
     @include respond-to(xl) {
       font-size: 70px;
       line-height: 90px;

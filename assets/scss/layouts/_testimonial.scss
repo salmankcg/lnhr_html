@@ -1,7 +1,8 @@
 .lnhr_new_testimonial {
       padding-top: 50px;
-      padding-bottom: 50px;
+      padding-bottom: 100px;
       position: relative;
+
       @include respond-to(xl){
           padding-top: 50px;
           padding-bottom: 70px;
@@ -11,6 +12,30 @@
       }
       background: #171717;
       position: relative;
+      &__shape{
+        position: absolute;
+        top: 63%;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: initial;
+        transform: translateY(-50%);
+        z-index: 9;
+        width: 145px;
+        height: 487px;
+        > img{
+          height: 100%;
+        }
+        @include media-breakpoint-down(xl){
+          height: 350px;
+        }
+        @include media-breakpoint-down(md){
+          height: 237px;
+        }
+        @include media-breakpoint-down(sm){
+          top: 96%;
+          height: 137px;
+        }
+      }
       .bottom_edge{
           position: absolute;
           top: 100%;
@@ -24,6 +49,7 @@
             display: block;
           }
       }
+      
     .lnhr_new_testimonial__slider {
       .swiper-slide {
         .lnhr_new_testimonial_star {
@@ -108,7 +134,7 @@
           right: 30px;
         }
           @include respond-to(xl){
-              right: 50px;
+              right: 0px;
           }
         
       }
@@ -124,7 +150,7 @@
               left: 30px;
           }
           @include respond-to(xl){
-              left: 50px;
+              left: 0px;
           }
       }
     }
