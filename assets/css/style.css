@@ -242,21 +242,6 @@
   .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
     justify-content: center;
     padding-bottom: 82%; } }
-    .lnhr_new_banner__slider .swiper-wrapper .swiper-slide.swiper-slide-active h2 {
-      animation: fadeInDown;
-      /* referring directly to the animation's @keyframe declaration */
-      animation-duration: 2s;
-      /* don't forget to set a duration! */ }
-    .lnhr_new_banner__slider .swiper-wrapper .swiper-slide.swiper-slide-active p {
-      animation: fadeInDown;
-      /* referring directly to the animation's @keyframe declaration */
-      animation-duration: 2s;
-      /* don't forget to set a duration! */ }
-    .lnhr_new_banner__slider .swiper-wrapper .swiper-slide.swiper-slide-active button {
-      animation: fadeInDown;
-      /* referring directly to the animation's @keyframe declaration */
-      animation-duration: 2s;
-      /* don't forget to set a duration! */ }
   .lnhr_new_banner__slider .swiper-pagination {
     display: inline-flex;
     align-items: flex-start;
@@ -541,7 +526,7 @@
           .lnhr_new_navigation .lnhr_new_navbar__nav li ul li.lnhr_new_has_children::after, .lnhr_new_navbar .lnhr_new_navbar__nav li ul li.lnhr_new_has_children::after {
             display: block;
             transform: rotate(-87deg);
-            right: 0px;
+            right: 4px;
             top: 21px;
             height: 10px;
             opacity: .6; } }
@@ -612,7 +597,7 @@
             color: rgba(255, 255, 255, 0.3);
             padding: 1rem 1.5rem;
             display: block;
-            text-transform: uppercase;
+            text-transform: capitalize;
             width: 93%; }
             @media only screen and (min-width: 1200px) {
               .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul li a, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul li a {
@@ -627,13 +612,17 @@
               left: 100% !important;
               right: auto !important;
               position: absolute;
-              background: #3B3B3B;
+              background: #1B1A1A;
               min-width: 14rem;
               top: 0 !important;
               transform: translateX(10px);
               transition: all 0.3s linear;
               visibility: hidden;
-              opacity: 0; } }
+              opacity: 0; }
+              .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul li > ul li a, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul li > ul li a {
+                color: #FFFFFF !important; } }
+          .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul li > ul li > ul, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul li > ul li > ul {
+            background: #1B1A1A; }
       .lnhr_new_navigation .lnhr_new_navbar__nav > li:hover::before, .lnhr_new_navbar .lnhr_new_navbar__nav > li:hover::before {
         transform: scale(1, 1); }
       @media only screen and (min-width: 1200px) {
