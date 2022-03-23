@@ -15,7 +15,12 @@
     img {
       height: 19px;
       width: 19px;
-      margin-right: 10px;
+      margin-right: 13px;
+    }
+    &.only_for_mobile{
+      img {
+      margin-right: -2px;
+    }
     }
     .lnhr_new_pn {
       display: none;

@@ -146,7 +146,9 @@
     .lnhr_new_toolbar__call img {
       height: 19px;
       width: 19px;
-      margin-right: 10px; }
+      margin-right: 13px; }
+    .lnhr_new_toolbar__call.only_for_mobile img {
+      margin-right: -2px; }
     .lnhr_new_toolbar__call .lnhr_new_pn {
       display: none; }
       @media only screen and (min-width: 1200px) {
@@ -299,6 +301,7 @@
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.5em;
   letter-spacing: -0.175rem;
+  word-spacing: 1px;
   font-weight: 600;
   font-family: "tt_norms_regular";
   font-size: 40px; }
@@ -466,6 +469,7 @@
     text-indent: 0px !important;
     font-family: "tt_norms_regular" !important;
     font-size: 10px !important;
+    font-weight: 400;
     padding: 0px 13px 11px !important; }
     .mean-bar a.meanmenu-reveal .lnhr_new_menu_clicker {
       background: transparent !important;
@@ -475,9 +479,11 @@
       .mean-bar a.meanmenu-reveal .lnhr_new_menu_clicker span {
         background: transparent !important;
         text-transform: uppercase; }
+      .mean-bar a.meanmenu-reveal .lnhr_new_menu_clicker .cl_icon {
+        margin-top: 0; }
     .mean-bar a.meanmenu-reveal .lnhr_new_menu_text {
       background: transparent !important;
-      transform: translate(-52px, 3px);
+      transform: translate(-43px, 3px);
       font-size: 12px; }
     .mean-bar a.meanmenu-reveal.meanclose {
       top: 45px;
@@ -493,7 +499,8 @@
     .mean-bar .mean-nav .navbar-brand img {
       max-width: 97px; }
     .mean-bar .mean-nav ul li a {
-      color: #CDBF83 !important; }
+      color: #CDBF83 !important;
+      opacity: 1 !important; }
       .mean-bar .mean-nav ul li a.mean-expand {
         width: 95%;
         text-align: right;
@@ -508,7 +515,8 @@
       margin-top: 0;
       background: transparent; } }
   .lnhr_new_navigation .lnhr_new_navbar__nav, .lnhr_new_navbar .lnhr_new_navbar__nav {
-    margin-bottom: -21px; }
+    margin-bottom: -21px;
+    margin-right: 15px; }
     .lnhr_new_navigation .lnhr_new_navbar__nav li a, .lnhr_new_navbar .lnhr_new_navbar__nav li a {
       color: rgba(255, 255, 255, 0.3);
       border-bottom: 1px solid rgba(0, 0, 0, 0.09); }
@@ -583,11 +591,12 @@
             background: #3B3B3B;
             top: calc(100% + 0rem);
             opacity: 0;
+            visibility: hidden;
             position: absolute;
-            right: 9999rem;
-            transform: translateY(0.5rem);
+            left: 50%;
+            transform: translate(-50%, 0.5rem);
             box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.9);
-            transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s; } }
+            transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s; } }
         .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul li, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul li {
           position: relative; }
           .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul li a, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul li a {
@@ -626,14 +635,17 @@
       @media only screen and (min-width: 1200px) {
         .lnhr_new_navigation .lnhr_new_navbar__nav > li:hover > ul, .lnhr_new_navbar .lnhr_new_navbar__nav > li:hover > ul {
           right: auto;
-          left: 0;
+          left: 50%;
           opacity: 1;
-          transform: translateY(-0.5rem);
+          visibility: visible;
+          transform: translate(-50%, -0.5rem);
           transition: opacity 0.15s linear, transform 0.15s linear; }
           .lnhr_new_navigation .lnhr_new_navbar__nav > li:hover > ul > li:hover > ul, .lnhr_new_navbar .lnhr_new_navbar__nav > li:hover > ul > li:hover > ul {
             visibility: visible;
             opacity: 1;
             transform: translateX(0); } }
+    .lnhr_new_navigation .lnhr_new_navbar__nav > li.lnhr_new_has_children:last-child > ul > li.lnhr_new_has_children > ul, .lnhr_new_navbar .lnhr_new_navbar__nav > li.lnhr_new_has_children:last-child > ul > li.lnhr_new_has_children > ul {
+      left: -100% !important; }
 
 .lnhr_new_navbar > .container {
   align-items: flex-end; }
@@ -666,12 +678,15 @@
   -webkit-text-fill-color: transparent;
   font-weight: 400;
   font-family: "tt_norms_regular";
-  font-size: 16px;
+  font-size: 22px;
   text-transform: uppercase; }
   @media only screen and (min-width: 768px) {
     .lnhr_new_section_title.type1 {
       font-size: 22px;
       padding-bottom: 15px; } }
+  @media (max-width: 575.98px) {
+    .lnhr_new_section_title.type1 {
+      font-size: 16px; } }
 
 .lnhr_new_image_compare {
   border-image-source: linear-gradient(to left, #ac9660, #faf8b4) !important;

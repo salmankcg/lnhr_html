@@ -106,11 +106,15 @@
 
 
 $xs: "0";
+$xs360: "360px";
 $sm: "576px";
 $md: "768px";
 $lg: "992px";
 $xl: "1200px";
 $xxl: "1400px";
+
+$h700: "700px";
+$h800: "800px";
 
 
 @mixin respond-to($media) {
@@ -136,6 +140,21 @@ $xxl: "1400px";
     }
   } @else if $media == xxl {
     @media only screen and (min-width: $xxl) {
+      @content;
+    }
+  }
+  @else if $media == smh7 {
+      @media only screen and (min-width: $sm) and (min-height: $h700) {
+      @content;
+    }
+  }
+  @else if $media == mdh8 {
+      @media only screen and (min-width: $md) and (min-height: $h800) {
+      @content;
+    }
+  }
+  @else if $media == xs360 {
+      @media only screen and (min-width: $xs360) {
       @content;
     }
   }
