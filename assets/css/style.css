@@ -583,9 +583,10 @@
             background: #3B3B3B;
             top: calc(100% + 0rem);
             opacity: 0;
+            visibility: hidden;
             position: absolute;
-            right: 9999rem;
-            transform: translateY(0.5rem);
+            left: 50%;
+            transform: translate(-50%, 0.5rem);
             box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.9);
             transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s; } }
         .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul li, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul li {
@@ -626,9 +627,10 @@
       @media only screen and (min-width: 1200px) {
         .lnhr_new_navigation .lnhr_new_navbar__nav > li:hover > ul, .lnhr_new_navbar .lnhr_new_navbar__nav > li:hover > ul {
           right: auto;
-          left: 0;
+          left: 50%;
           opacity: 1;
-          transform: translateY(-0.5rem);
+          visibility: visible;
+          transform: translate(-50%, -0.5rem);
           transition: opacity 0.15s linear, transform 0.15s linear; }
           .lnhr_new_navigation .lnhr_new_navbar__nav > li:hover > ul > li:hover > ul, .lnhr_new_navbar .lnhr_new_navbar__nav > li:hover > ul > li:hover > ul {
             visibility: visible;

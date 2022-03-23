@@ -2,6 +2,7 @@
       padding-top: 50px;
       padding-bottom: 100px;
       position: relative;
+
       @include respond-to(xl){
           padding-top: 50px;
           padding-bottom: 70px;
@@ -48,6 +49,7 @@
             display: block;
           }
       }
+      
     .lnhr_new_testimonial__slider {
       .swiper-slide {
         .lnhr_new_testimonial_star {
