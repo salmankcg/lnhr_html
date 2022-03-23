@@ -129,6 +129,7 @@
         }
         ul {
           @extend %ul_rules;
+          
           li{
             position: relative;
             &.lnhr_new_has_children {
@@ -154,6 +155,22 @@
         padding-bottom: 0px;
         @include respond-to(xl) {
           padding-bottom: 25px;
+        }
+        &:last-child{
+          ul{
+            li{
+              ul{
+                left: initial !important;
+                right: 100% !important;
+                transform: translateX(-14px);
+              }
+              &:hover{
+                ul{
+                  transform: translateX(0px);
+                }
+              }
+            }
+          }
         }
         &:not(:last-child) {
           margin-right: 30px;
@@ -332,6 +349,7 @@
             }
           }
         }
+
       }
     }
   }
@@ -342,3 +360,10 @@
     }
     @extend .lnhr_new_navigation;
   }
+
+ .lnhr_new_navbar{
+  @include media-breakpoint-down(xs){
+    display: none;
+  }
+ }
+  

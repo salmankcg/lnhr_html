@@ -43,6 +43,20 @@
           height: 100vh;
           padding-top: 70%;
         }
+        @include media-breakpoint-between(sm,md){
+          @include orientation(portrait){
+            padding-top: 45%;
+            min-height: 75vh;
+            height: 75vh;
+          }
+      }
+        @include media-breakpoint-between(md,lg){
+            @include orientation(portrait){
+              padding-top: 70%;
+              min-height: 75vh;
+              height: 75vh;
+            }
+        }
         @include respond-to(xl) {
             min-height: 1472px;
           }
@@ -89,6 +103,11 @@
     
     @include respond-to(lg){
         top: calc(100vh - 100px);
+    }
+    @include media-breakpoint-between(sm,lg){
+        @include orientation(portrait){
+          top: calc(75vh - 35px);
+        }
     }
     @include respond-to(xl){
       top: calc(100vh + 170px);

@@ -228,6 +228,18 @@
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
           height: 100vh;
           padding-top: 70%; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) and (orientation: portrait) {
+  .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
+    padding-top: 45%;
+    min-height: 75vh;
+    height: 75vh; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+  .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
+    padding-top: 70%;
+    min-height: 75vh;
+    height: 75vh; } }
       @media only screen and (min-width: 1200px) {
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
           min-height: 1472px; } }
@@ -253,6 +265,10 @@
     @media only screen and (min-width: 992px) {
       .lnhr_new_banner__slider .swiper-pagination {
         top: calc(100vh - 100px); } }
+
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait) {
+  .lnhr_new_banner__slider .swiper-pagination {
+    top: calc(75vh - 35px); } }
     @media only screen and (min-width: 1200px) {
       .lnhr_new_banner__slider .swiper-pagination {
         top: calc(100vh + 170px); } }
@@ -535,6 +551,12 @@
       @media only screen and (min-width: 1200px) {
         .lnhr_new_navigation .lnhr_new_navbar__nav > li, .lnhr_new_navbar .lnhr_new_navbar__nav > li {
           padding-bottom: 25px; } }
+      .lnhr_new_navigation .lnhr_new_navbar__nav > li:last-child ul li ul, .lnhr_new_navbar .lnhr_new_navbar__nav > li:last-child ul li ul {
+        left: initial !important;
+        right: 100% !important;
+        transform: translateX(-14px); }
+      .lnhr_new_navigation .lnhr_new_navbar__nav > li:last-child ul li:hover ul, .lnhr_new_navbar .lnhr_new_navbar__nav > li:last-child ul li:hover ul {
+        transform: translateX(0px); }
       .lnhr_new_navigation .lnhr_new_navbar__nav > li:not(:last-child), .lnhr_new_navbar .lnhr_new_navbar__nav > li:not(:last-child) {
         margin-right: 30px; }
       .lnhr_new_navigation .lnhr_new_navbar__nav > li::before, .lnhr_new_navbar .lnhr_new_navbar__nav > li::before {
@@ -639,6 +661,9 @@
 
 .lnhr_new_navbar > .container {
   align-items: flex-end; }
+
+.lnhr_new_navbar {
+  display: none; }
 
 .lnhr_new_patient_stories {
   background: #171717;
