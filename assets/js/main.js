@@ -13,6 +13,7 @@
   $(document).ready(function () {
 
     mobileAccordion();
+    bannerProcedure()
     //
     const lnhr_new_navbar__nav_li = $(".lnhr_new_navbar__nav li");
     lnhr_new_navbar__nav_li.each(function () {
@@ -42,6 +43,8 @@
             });
           });
     }
+
+   
     
   
 
@@ -106,6 +109,7 @@
 
     $(window).on("resize", function () {
       mobileAccordion();
+      bannerProcedure()
     });
 
     //
@@ -131,7 +135,22 @@
     
   });
 
-  //
+   // calculate height of Banner and Procedure
+   function bannerProcedure(){
+      let bannerHeight = $('.lnhr_new_banner').height();
+      let procedureHeight = $('.lnhr_new_procedure_products').height();
+      let extraGap = 0;
+      $('.lnhr_new_banenr_procedure_wrapper').css({
+          height: `${bannerHeight+procedureHeight+extraGap}`,
+          width: `${$(window).width()}`,
+          position: 'absolute',
+          top: '0px',
+          left: '0px',
+          zIndex: '0'
+
+      })
+  }
+
   // Footer Accordion
   function mobileAccordion() {
     if (window.innerWidth < 768) {
