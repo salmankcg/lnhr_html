@@ -182,9 +182,13 @@
     .lnhr_new_toolbar__call.only_for_mobile {
       display: block !important;
       position: absolute;
-      right: 90px;
+      right: 94px;
       margin-right: 0 !important;
-      top: -7px !important; } }
+      top: 48px !important; } }
+  @media (max-width: 575.98px) {
+    .lnhr_new_toolbar__call.only_for_mobile {
+      right: 56px;
+      top: 1px !important; } }
 
 /*------------------------------------------
 ------------------------------------------*/
@@ -192,48 +196,69 @@
   position: relative;
   width: 100%;
   z-index: 0; }
+  .lnhr_new_banner__slider .container {
+    position: relative; }
   .lnhr_new_banner__slider .swiper-wrapper .swiper-slide {
     background-position: 57% 15%; }
     @media only screen and (min-width: 992px) {
       .lnhr_new_banner__slider .swiper-wrapper .swiper-slide {
         background-position: 0% 40%; } }
+    .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .banenr_images {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      right: -21%;
+      top: 9%;
+      z-index: -1; }
+      @media (max-width: 991.98px) {
+        .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .banenr_images {
+          max-width: 100%; } }
+      @media (max-width: 575.98px) {
+        .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .banenr_images {
+          max-width: 130%;
+          top: 10%;
+          z-index: -1; } }
+      @media (max-width: 991.98px) {
+        .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .banenr_images img {
+          max-width: 100%; } }
+    .lnhr_new_banner__slider .swiper-wrapper .swiper-slide-active .banenr_images {
+      visibility: visible;
+      opacity: 1; }
     .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
-      min-height: 100vh;
+      height: 100vh;
       display: flex;
       flex-flow: column;
       align-items: flex-start;
-      justify-content: flex-end;
-      padding-bottom: 25%;
-      height: 100vh; }
+      justify-content: flex-end; }
+      @media (max-width: 575.98px) {
+        .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
+          padding-bottom: 20%;
+          height: 100vh;
+          max-width: 95%; } }
       @media only screen and (min-width: 576px) {
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
-          padding-top: 80%;
-          justify-content: flex-start;
+          height: 600px;
+          background-position: initial;
+          justify-content: center;
+          padding-top: 51%;
           padding-bottom: 0; } }
-      @media (max-width: 767.98px) {
+      @media (min-width: 992px) {
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
-          padding-top: 45%; } }
-
-@media (max-width: 767.98px) and (orientation: landscape) {
-  .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
-    padding-top: 10%;
-    justify-content: center; } }
+          padding-top: 45%;
+          height: 800px; } }
       @media only screen and (min-width: 768px) {
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
-          height: 100vh;
-          justify-content: flex-start;
-          padding-bottom: 51%;
-          padding-top: 100%; } }
+          background-position: initial;
+          justify-content: center;
+          padding-top: 30%;
+          padding-bottom: 0; } }
       @media only screen and (min-width: 992px) {
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
-          height: 100vh;
-          padding-top: 70%; } }
-
-@media (min-width: 576px) and (max-width: 767.98px) and (orientation: portrait) {
-  .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
-    padding-top: 45%;
-    min-height: 75vh;
-    height: 75vh; } }
+          height: 1020px;
+          background-position: initial;
+          justify-content: center;
+          padding-top: 0%;
+          padding-bottom: 0; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
   .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
@@ -242,18 +267,19 @@
     height: 75vh; } }
       @media only screen and (min-width: 1200px) {
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
-          min-height: 1472px; } }
+          height: 1020px; } }
       @media only screen and (min-width: 1400px) {
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
-          min-height: 1651px;
+          height: 1020px;
           background-position: initial;
-          justify-content: flex-start;
-          padding-top: 56%; } }
+          justify-content: center;
+          padding-top: 0%;
+          padding-bottom: 0; } }
 
 @media (min-width: 768px) and (max-width: 1199.98px) and (orientation: landscape) {
   .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
     justify-content: center;
-    padding-bottom: 82%; } }
+    padding-bottom: 0%; } }
   .lnhr_new_banner__slider .swiper-pagination {
     display: inline-flex;
     align-items: flex-start;
@@ -261,20 +287,13 @@
     left: calc(50% - 8px);
     transform: translateX(-50%);
     z-index: 99;
-    top: calc(100vh - 35px); }
-    @media only screen and (min-width: 992px) {
+    top: 97%; }
+    @media only screen and (min-width: 768px) {
       .lnhr_new_banner__slider .swiper-pagination {
-        top: calc(100vh - 100px); } }
-
-@media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait) {
-  .lnhr_new_banner__slider .swiper-pagination {
-    top: calc(75vh - 35px); } }
-    @media only screen and (min-width: 1200px) {
-      .lnhr_new_banner__slider .swiper-pagination {
-        top: calc(100vh + 170px); } }
+        top: 85%; } }
     @media only screen and (min-width: 1400px) {
       .lnhr_new_banner__slider .swiper-pagination {
-        top: calc(100vh - 30px); } }
+        top: 83%; } }
     .lnhr_new_banner__slider .swiper-pagination .swiper-pagination-bullet {
       width: 24px;
       height: 7px;
@@ -322,7 +341,7 @@
 @media (max-width: 767.98px) and (orientation: landscape) {
   .lnhr_new_banner__content h2 {
     font-size: 18px; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 576px) {
     .lnhr_new_banner__content h2 {
       font-size: 40px;
       line-height: 50px;
@@ -331,7 +350,7 @@
     .lnhr_new_banner__content h2 {
       font-size: 70px;
       line-height: 90px;
-      margin-bottom: 50px; } }
+      margin-bottom: 30px; } }
 
 .lnhr_new_banner__content p {
   line-height: 24px;
@@ -407,7 +426,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 93px;
-    height: 300px;
+    height: 180px;
     top: 100px;
     opacity: 0.5; }
     @media only screen and (min-width: 992px) {
@@ -470,7 +489,33 @@
 
 .mean-bar {
   background-color: transparent !important;
-  position: absolute !important; }
+  position: absolute !important;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 99%;
+  display: flex;
+  flex-flow: row-reverse;
+  padding-right: 15px !important;
+  margin-right: 13px; }
+  @media (max-width: 575.98px) {
+    .mean-bar {
+      padding-right: 18px !important;
+      margin-right: 0px; } }
+  @media only screen and (min-width: 576px) {
+    .mean-bar {
+      max-width: 540px; } }
+  @media only screen and (min-width: 768px) {
+    .mean-bar {
+      max-width: 720px; } }
+  @media only screen and (min-width: 992px) {
+    .mean-bar {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .mean-bar {
+      max-width: 540px; } }
+  @media only screen and (min-width: 1400px) {
+    .mean-bar {
+      max-width: 540px; } }
   .mean-bar a.meanmenu-reveal {
     top: 45px;
     background: transparent !important;
@@ -482,7 +527,9 @@
     text-indent: 0px !important;
     font-family: "tt_norms_regular" !important;
     font-size: 10px !important;
-    padding: 0px 13px 11px !important; }
+    padding: 0px 10px 12px 11px !important;
+    position: relative !important;
+    z-index: 999; }
     .mean-bar a.meanmenu-reveal .lnhr_new_menu_clicker {
       background: transparent !important;
       z-index: 10; }
@@ -501,11 +548,17 @@
       font-size: 15px !important; }
   .mean-bar .mean-nav {
     background-color: transparent !important; }
+    @media (max-width: 575.98px) {
+      .mean-bar .mean-nav {
+        position: relative;
+        left: 49%;
+        transform: translateX(-50%);
+        z-index: 50; } }
     .mean-bar .mean-nav > .container {
-      width: 95%; }
+      width: 100%; }
       @media (max-width: 575.98px) {
         .mean-bar .mean-nav > .container {
-          width: 95%; } }
+          width: 100%; } }
     .mean-bar .mean-nav .navbar-brand img {
       max-width: 97px; }
     .mean-bar .mean-nav ul li a {
@@ -519,6 +572,12 @@
 .lnhr_new_navigation, .lnhr_new_navbar {
   margin-top: 17px;
   background: #FFFFFF; }
+  @media (max-width: 1199.98px) {
+    .lnhr_new_navigation, .lnhr_new_navbar {
+      margin-left: 14px; } }
+  @media (max-width: 575.98px) {
+    .lnhr_new_navigation, .lnhr_new_navbar {
+      margin-left: 0px; } }
   @media only screen and (min-width: 1200px) {
     .lnhr_new_navigation, .lnhr_new_navbar {
       margin-top: 0;
@@ -673,13 +732,13 @@
       padding: 40px 0 30px 0; } }
   @media only screen and (min-width: 1200px) {
     .lnhr_new_patient_stories {
-      padding: 50px 0 30px 0; } }
+      padding: 30px 0 30px 0; } }
   @media only screen and (min-width: 1200px) {
     .lnhr_new_patient_stories {
-      padding: 130px 0 30px 0; } }
+      padding: 35px 0 30px 0; } }
   @media only screen and (min-width: 1400px) {
     .lnhr_new_patient_stories {
-      padding: 150px 0 30px 0; } }
+      padding: 35px 0 30px 0; } }
 
 .lnhr_new_section_title.type1 {
   font-size: 22px;
@@ -971,13 +1030,16 @@
       transform: translateY(0%);
       margin-bottom: 0px;
       padding: 50px 0 30px 0px; } }
+  @media only screen and (min-width: 992px) {
+    .lnhr_new_procedure_products {
+      transform: translateY(0%);
+      margin-top: -150px;
+      background: transparent; } }
   @media only screen and (min-width: 1200px) {
     .lnhr_new_procedure_products {
-      padding: 0px; } }
-  @media only screen and (min-width: 1200px) {
-    .lnhr_new_procedure_products {
-      transform: translateY(-92%);
-      margin-bottom: -523px;
+      transform: translateY(0%);
+      margin-bottom: 0px;
+      margin-top: -128px;
       background: transparent; } }
   .lnhr_new_procedure_products .lnhr_new_section_title {
     font-size: 22px;

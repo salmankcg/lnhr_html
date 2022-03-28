@@ -8,12 +8,15 @@
         margin-bottom: 0px;
         padding: 50px 0 30px 0px;
     }
-    @include respond-to(xl){
-        padding: 0px;
+    @include respond-to(lg){
+        transform: translateY(0%);
+        margin-top: -150px;
+        background: transparent;
     }
     @include respond-to(xl){
-        transform: translateY(-92%);
-        margin-bottom: -523px;
+        transform: translateY(0%);
+        margin-bottom: 0px;
+        margin-top: -128px;
         background: transparent;
     }
     .lnhr_new_section_title{

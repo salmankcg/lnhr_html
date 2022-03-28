@@ -26,6 +26,32 @@
   .mean-bar {
     background-color: transparent !important;
     position: absolute !important;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 99%;
+    display: flex;
+    flex-flow: row-reverse;
+    padding-right: 15px !important;
+    margin-right: 13px;
+    @include media-breakpoint-down(sm){
+      padding-right: 18px !important;
+      margin-right: 0px;
+    }
+    @include respond-to(sm){
+      max-width: 540px;
+    }
+    @include respond-to(md){
+      max-width: 720px;
+    }
+    @include respond-to(lg){
+      max-width: 960px;
+    }
+    @include respond-to(xl){
+      max-width: 540px;
+    }
+    @include respond-to(xxl){
+      max-width: 540px;
+    }
     // &::after{
     //     content: "Menu";
     //     position: absolute;
@@ -50,8 +76,9 @@
       text-indent: 0px !important;
       font-family: $tt_regular !important;
       font-size: 10px !important;
-      padding: 0px 13px 11px !important;
-      
+      padding: 0px 10px 12px 11px !important;
+      position: relative !important;
+      z-index: 999;
       .lnhr_new_menu_clicker {
         background: transparent !important;
         z-index: 10;
@@ -76,13 +103,18 @@
     }
     .mean-nav {
       background-color: transparent !important;
-      
+      @include media-breakpoint-down(sm){
+        position: relative;
+        left: 49%;
+        transform: translateX(-50%);
+        z-index: 50;
+      }
       > .container{
-          width: 95%;
+          width: 100%;
           // padding-left: 0;
           // padding-right: 0;
           @include media-breakpoint-down(sm){
-            width: 95%;
+            width: 100%;
           }
       }
       .navbar-brand {
@@ -109,6 +141,13 @@
   .lnhr_new_navigation {
     margin-top: 17px;
     background: $white;
+    
+    @include media-breakpoint-down(xl){
+      margin-left: 14px;
+    }
+    @include media-breakpoint-down(sm){
+      margin-left: 0px;
+    }
     @include respond-to(xl) {
       margin-top: 0;
       background:transparent;

@@ -63,8 +63,12 @@
   @include media-breakpoint-down(xl) {
     display: block !important;
     position: absolute;
-    right: 90px;
+    right: 94px;
     margin-right: 0 !important;
-    top: -7px !important;
+    top: 48px !important;
+  }
+  @include media-breakpoint-down(sm){
+    right: 56px;
+    top: 1px !important;
   }
 }

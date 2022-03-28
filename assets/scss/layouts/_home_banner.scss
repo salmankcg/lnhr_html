@@ -2,53 +2,93 @@
   position: relative;
   width: 100%;
   z-index: 0;
+  .container{
+      position: relative;
+  }
   .swiper-wrapper {
     .swiper-slide {
       background-position: 57% 15%;
       @include respond-to(lg) {
         background-position: 0% 40%;
       }
+      .banenr_images{
+          visibility: hidden;
+          opacity: 0;
+          position: absolute; 
+          right: -21%;
+          top: 9%;
+          z-index: -1;
+          
+          @include media-breakpoint-down(lg){
+              max-width: 100%;
+          }
+          @include media-breakpoint-down(sm){
+            max-width: 130%;
+            top: 10%;
+            z-index: -1;
+          }
+          img{
+            @include media-breakpoint-down(lg){
+                max-width: 100%;
+            }
+          }
+      }
+      &-active{
+        .banenr_images{
+              visibility: visible;
+              opacity: 1;
+
+        }
+      }
 
       .lnhr_new_banner__content {
-        min-height: 100vh;
+        height: 100vh;
         display: flex;
         flex-flow: column;
         align-items: flex-start;
         justify-content: flex-end;
-        padding-bottom: 25%;
-        height: 100vh;
+        @include media-breakpoint-down(sm){
+            padding-bottom: 20%;
+            height: 100vh;
+            max-width: 95%;
+        }
         @include respond-to(sm) {
-          padding-top: 80%;
-          justify-content: flex-start;
+          height: 600px;
+          background-position: initial;
+          justify-content: center;
+          padding-top: 51%;
           padding-bottom: 0;
         }
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-up(lg){
             padding-top: 45%;
+            height: 800px;
         }
         
         @include media-breakpoint-down(md) {
             @include orientation(landscape) {
-                padding-top: 10%;
-                justify-content: center;
+                
             } 
         }
         
         @include respond-to(md) {
-          height: 100vh;
-          justify-content: flex-start;
-          padding-bottom: 51%;
-          padding-top: 100%;
+          background-position: initial;
+          justify-content: center;
+          padding-top: 30%;
+          padding-bottom: 0;
         }
         @include respond-to(lg) {
-          height: 100vh;
-          padding-top: 70%;
+          height: 1020px;
+          background-position: initial;
+          justify-content: center;
+          padding-top: 0%;
+          padding-bottom: 0;
         }
         @include media-breakpoint-between(sm,md){
-          @include orientation(portrait){
-            padding-top: 45%;
-            min-height: 75vh;
-            height: 75vh;
-          }
+          // @include orientation(portrait){
+          //   padding-top: 45%;
+          //   min-height: 75vh;
+          //   height: 75vh;
+          // }
       }
         @include media-breakpoint-between(md,lg){
             @include orientation(portrait){
@@ -58,18 +98,19 @@
             }
         }
         @include respond-to(xl) {
-            min-height: 1472px;
+          height: 1020px;
           }
         @include respond-to(xxl) {
-          min-height: 1651px;
+          height: 1020px;
           background-position: initial;
-          justify-content: flex-start;
-          padding-top: 56%;
+          justify-content: center;
+          padding-top: 0%;
+          padding-bottom: 0;
         }
         @include media-breakpoint-between(md,xl){
           @include orientation(landscape){
             justify-content: center;
-            padding-bottom: 82%;
+            padding-bottom: 0%;
           }
       }
         
@@ -99,21 +140,13 @@
 
     transform: translateX(-50%);
     z-index: 99;
-    top: calc(100vh - 35px);
+    top: 97%;
     
-    @include respond-to(lg){
-        top: calc(100vh - 100px);
+    @include respond-to(md){
+      top: 85%;
     }
-    @include media-breakpoint-between(sm,lg){
-        @include orientation(portrait){
-          top: calc(75vh - 35px);
-        }
-    }
-    @include respond-to(xl){
-      top: calc(100vh + 170px);
-  }
     @include respond-to(xxl) {
-        top: calc(100vh - 30px);
+      top: 83%;
     }
     .swiper-pagination-bullet {
       width: 24px;
@@ -179,7 +212,7 @@
             font-size: 18px;
         } 
     }
-    @include respond-to(md) {
+    @include respond-to(sm) {
       font-size: 40px;
       line-height: 50px;
       margin-bottom: 20px;
@@ -192,7 +225,7 @@
     @include respond-to(xl) {
       font-size: 70px;
       line-height: 90px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
   }
   p {
@@ -254,7 +287,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 93px;
-    height: 300px;
+    height: 180px;
     top: 100px;
     opacity: 0.5;
     @include respond-to(lg) {
