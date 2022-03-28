@@ -610,6 +610,9 @@
       @media only screen and (min-width: 1200px) {
         .lnhr_new_navigation .lnhr_new_navbar__nav > li, .lnhr_new_navbar .lnhr_new_navbar__nav > li {
           padding-bottom: 25px; } }
+      @media only screen and (min-width: 1200px) {
+        .lnhr_new_navigation .lnhr_new_navbar__nav > li:last-child.lnhr_new_has_children, .lnhr_new_navbar .lnhr_new_navbar__nav > li:last-child.lnhr_new_has_children {
+          margin-right: 18px; } }
       .lnhr_new_navigation .lnhr_new_navbar__nav > li:last-child ul li ul, .lnhr_new_navbar .lnhr_new_navbar__nav > li:last-child ul li ul {
         left: initial !important;
         right: 100% !important;

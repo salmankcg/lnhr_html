@@ -196,6 +196,11 @@
           padding-bottom: 25px;
         }
         &:last-child{
+          &.lnhr_new_has_children{
+            @include respond-to(xl){
+              margin-right: 18px;
+            }
+          }
           ul{
             li{
               ul{
