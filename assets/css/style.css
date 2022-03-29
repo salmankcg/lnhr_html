@@ -284,7 +284,7 @@
     display: inline-flex;
     align-items: flex-start;
     justify-content: center;
-    left: calc(50% - 8px);
+    left: calc(50% - 8px) !important;
     transform: translateX(-50%);
     z-index: 99;
     top: 97%; }
