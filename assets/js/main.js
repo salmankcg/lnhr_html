@@ -37,10 +37,12 @@
     if(classExist('.lnhr_set_bg')){
         $(".lnhr_set_bg").each(function (e) {
             let getImage = $(this).attr("data-bg-image");
-            $(this).css({
-              backgroundImage: "url(" + getImage + ")",
-              backgroundSize: "cover",
-            });
+            if(getImage){
+              $(this).css({
+                backgroundImage: "url(" + getImage + ")",
+                backgroundSize: "cover",
+              });
+            }
           });
     }
 
