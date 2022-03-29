@@ -499,6 +499,7 @@
   margin-right: 13px; }
   @media (max-width: 575.98px) {
     .mean-bar {
+      width: 94% !important;
       padding-right: 18px !important;
       margin-right: 0px; } }
   @media only screen and (min-width: 576px) {
@@ -1552,7 +1553,7 @@
 
 .consultation_reviews {
   background: #F3F3F3;
-  padding: 50px 0 150px 0;
+  padding: 50px 0 0px 0;
   position: relative; }
   .consultation_reviews__curve {
     position: absolute;
@@ -1867,10 +1868,20 @@
 
 .lnhr_new_footer {
   padding-bottom: 30px;
-  position: relative; }
+  position: relative;
+  padding-top: 100px; }
   @media (max-width: 767.98px) {
     .lnhr_new_footer {
       padding-bottom: 0; } }
+  @media only screen and (min-width: 576px) {
+    .lnhr_new_footer {
+      padding-top: 130px; } }
+  @media only screen and (min-width: 992px) {
+    .lnhr_new_footer {
+      padding-top: 154px; } }
+  @media only screen and (min-width: 1200px) {
+    .lnhr_new_footer {
+      padding-top: 270px; } }
   .lnhr_new_footer__bottom_edge {
     position: absolute;
     right: 0;
@@ -1893,13 +1904,12 @@
       max-width: 100%;
       max-height: 100%; }
   .lnhr_new_footer__top_edge {
-    transform: scale(-1, -1);
     position: absolute;
     width: 100%;
-    bottom: 100%; }
+    top: -1px; }
     @media only screen and (min-width: 768px) {
       .lnhr_new_footer__top_edge {
-        bottom: 99%; } }
+        top: -1px; } }
   .lnhr_new_footer ul li::before {
     display: none; }
   .lnhr_new_footer__top {
@@ -1954,12 +1964,12 @@
     display: none; }
   @media (max-width: 767.98px) {
     .lnhr_new_footer__middle .lnhr_ac_parent:nth-child(1) .lnhr_new_footer__widget {
-      border-top: 1px solid rgba(0, 0, 0, 0.19);
+      border-top: 1px solid rgba(255, 255, 255, 0.19);
       padding-top: 15px; } }
   .lnhr_new_footer__middle .lnhr_new_footer__widget {
     padding-bottom: 10px;
     margin-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.19); }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.19); }
     @media only screen and (min-width: 1200px) {
       .lnhr_new_footer__middle .lnhr_new_footer__widget {
         padding-bottom: 0; } }
@@ -1989,7 +1999,7 @@
         position: absolute;
         right: 0;
         top: 5px;
-        background: url("../images/ac_down.png");
+        background: url("../images/ico-ac-down.svg");
         width: 10px;
         height: 6px;
         background-size: contain;
@@ -1998,7 +2008,7 @@
           .lnhr_new_footer__middle .lnhr_new_footer__widget_title::after {
             display: none; } }
       .lnhr_new_footer__middle .lnhr_new_footer__widget_title a {
-        color: #000; }
+        color: #FFFFFF; }
     .lnhr_new_footer__middle .lnhr_new_footer__widget_content:not(.lnhr_new_footer__widget_social) {
       display: flex;
       align-items: flex-start;
@@ -2014,7 +2024,7 @@
           .lnhr_new_footer__middle .lnhr_new_footer__widget_content:not(.lnhr_new_footer__widget_social) ul li a {
             text-decoration: none;
             font-family: "tt_norms_regular";
-            color: #000;
+            color: #FFFFFF;
             transition: all 0.1s linear;
             font-size: 12px; }
             @media only screen and (min-width: 1200px) {
@@ -2029,6 +2039,8 @@
       margin-bottom: 0;
       border-bottom: 0;
       padding-bottom: 0; }
+      .lnhr_new_footer__middle .lnhr_new_footer__widget.lnhr_new_footer_social_widget .ssvg {
+        fill: #AE9765; }
     .lnhr_new_footer__middle .lnhr_new_footer__widget_social {
       text-align: right;
       padding-top: 20px;
@@ -2036,6 +2048,8 @@
       display: flex;
       flex-flow: row;
       justify-content: center; }
+      .lnhr_new_footer__middle .lnhr_new_footer__widget_social .ssvg {
+        fill: #c4b47a; }
       @media only screen and (min-width: 768px) {
         .lnhr_new_footer__middle .lnhr_new_footer__widget_social {
           padding-top: 0;
@@ -2066,7 +2080,7 @@
         position: absolute;
         right: 0;
         top: 5px;
-        background: url("../images/ac_down.png");
+        background: url("../images/ico-ac-down.svg");
         width: 10px;
         height: 6px;
         background-size: contain;
@@ -2077,7 +2091,7 @@
       .lnhr_new_footer__bottom {
         padding-top: 80px; } }
     .lnhr_new_footer__bottom_inner {
-      border-top: 1px solid rgba(0, 0, 0, 0.19);
+      border-top: 1px solid rgba(255, 255, 255, 0.19);
       padding-top: 40px;
       padding-bottom: 20px; }
       @media (min-width: 768px) {

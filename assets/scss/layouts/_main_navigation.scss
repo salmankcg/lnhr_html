@@ -33,7 +33,9 @@
     flex-flow: row-reverse;
     padding-right: 15px !important;
     margin-right: 13px;
+    
     @include media-breakpoint-down(sm){
+      width: 94% !important;
       padding-right: 18px !important;
       margin-right: 0px;
     }

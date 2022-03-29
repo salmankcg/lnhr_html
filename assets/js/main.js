@@ -45,6 +45,7 @@
     }
 
    
+    $("img.ssvg").each(function(){var t=$(this),a=t.attr("id"),r=t.attr("class"),i=t.attr("src");$.get(i,function(i){var s=$(i).find("svg");void 0!==a&&(s=s.attr("id",a)),void 0!==r&&(s=s.attr("class",r)),s=s.removeAttr("xmlns:a"),t.replaceWith(s)},"xml")});
     
   
 

@@ -16,6 +16,16 @@
     }
     padding-bottom: 30px;
     position: relative;
+    padding-top: 100px;
+    @include respond-to(sm){
+      padding-top: 130px;
+    }
+    @include respond-to(lg){
+      padding-top: 154px;
+    }
+    @include respond-to(xl){
+      padding-top: 270px;
+    }
     &__bottom_edge{
       position: absolute;
         right: 0;
@@ -40,12 +50,12 @@
       }
     }
     &__top_edge{
-      transform: scale(-1,-1);
+      // transform: scale(-1,-1);
       position: absolute;
       width: 100%;
-      bottom: 100%;
+      top: -1px;
       @include respond-to(md){
-        bottom: 99%;
+        top: -1px;
       }
     }
     ul{
@@ -123,7 +133,7 @@
           &:nth-child(1){
               .lnhr_new_footer__widget{
                   @include media-breakpoint-down(md){
-                    border-top: 1px solid rgba($black, 0.19);
+                    border-top: 1px solid rgba($white, 0.19);
                     padding-top: 15px;
                   }
               }
@@ -132,7 +142,7 @@
       .lnhr_new_footer__widget {
           padding-bottom: 10px;
           margin-bottom: 20px;
-          border-bottom: 1px solid rgba($black, 0.19);
+          border-bottom: 1px solid rgba($white, 0.19);
           @include respond-to(xl){
               padding-bottom: 0;
           }
@@ -167,7 +177,7 @@
           position: absolute;
           right: 0;
           top: 5px;
-          background: url('../images/ac_down.png');
+          background: url('../images/ico-ac-down.svg');
           width: 10px;
           height: 6px;
           background-size: contain;
@@ -175,7 +185,7 @@
           }
           a{
             @extend %a_rules;
-            color: $black;
+            color: $white;
           }
         }
         &_content:not(.lnhr_new_footer__widget_social) {
@@ -197,7 +207,7 @@
                 
                 text-decoration: none;
                 font-family: $tt_regular;
-                color: $black;
+                color: $white;
                 @include transition(0.1s);
                 font-size: 12px;
                 @include respond-to(xl){
@@ -218,12 +228,18 @@
             margin-bottom: 0;
             border-bottom: 0;
             padding-bottom: 0;
+            .ssvg{
+              fill: $ae97;
+            }
         }
   
         &_social {
           text-align: right;
           padding-top: 20px;
           padding-bottom: 0px;
+          .ssvg{
+              fill: $c4b4;
+          }
           @include respond-to(md){
               padding-top: 0;
               padding-bottom: 0;
@@ -265,7 +281,7 @@
                 position: absolute;
                 right: 0;
                 top: 5px;
-                background: url('../images/ac_down.png');
+                background: url('../images/ico-ac-down.svg');
                 width: 10px;
                 height: 6px;
                 background-size: contain;
@@ -281,7 +297,7 @@
           padding-top: 80px;
       }
       &_inner {
-        border-top: 1px solid rgba($black, 0.19);
+        border-top: 1px solid rgba($white, 0.19);
         padding-top: 40px;
         padding-bottom: 20px;
         @include media-breakpoint-up(md){
