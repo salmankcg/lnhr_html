@@ -1,415 +1,483 @@
+// body {
+//   @include media-breakpoint-down(md) {
+//     &.home_v2 {
+//       .container {
+
+//         padding: 0 2rem;
+//       }
+//     }
+//   }
+
+// }
+
 %dropdown_up_arrow {
-    content: "";
-    display: none;
-    @include respond-to(xl){
-      display: block;
-    }
-    position: absolute;
-    bottom: 100%;
-    border: 0.5rem solid transparent;
-    border-bottom-color: #3B3B3B;
-    left: 44%;
-    
+  content: "";
+  display: none;
+
+  @include respond-to(xl) {
+    display: block;
   }
-  
-  %has_children {
-    content: "";
-    position: absolute;
-    right: -16px;
-    background: url("../images/down_arrow.svg");
-    width: 15px;
-    height: 10px;
-    background-size: contain;
-    top: 7px;
+
+  position: absolute;
+  bottom: 100%;
+  border: 0.5rem solid transparent;
+  border-bottom-color: #3B3B3B;
+  left: 44%;
+
+}
+
+%has_children {
+  content: "";
+  position: absolute;
+  right: -16px;
+  background: url("../images/down_arrow.svg");
+  width: 15px;
+  height: 10px;
+  background-size: contain;
+  top: 7px;
+}
+
+.mean-bar {
+  background-color: transparent !important;
+  position: absolute !important;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 99%;
+  display: flex;
+  flex-flow: row-reverse;
+  padding-right: 15px !important;
+  margin-right: 13px;
+
+  @include media-breakpoint-down(sm) {
+    width: 94% !important;
+    padding-right: 18px !important;
+    margin-right: 0px;
   }
-  
-  .mean-bar {
-    background-color: transparent !important;
-    position: absolute !important;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 99%;
-    display: flex;
-    flex-flow: row-reverse;
-    padding-right: 15px !important;
-    margin-right: 13px;
-    
-    @include media-breakpoint-down(sm){
-      width: 94% !important;
-      padding-right: 18px !important;
-      margin-right: 0px;
-    }
-    @include respond-to(sm){
-      max-width: 540px;
-    }
-    @include respond-to(md){
-      max-width: 720px;
-    }
-    @include respond-to(lg){
-      max-width: 960px;
-    }
-    @include respond-to(xl){
-      max-width: 540px;
-    }
-    @include respond-to(xxl){
-      max-width: 540px;
-    }
-    // &::after{
-    //     content: "Menu";
-    //     position: absolute;
-    //     top: 47px;
-    //     right: 50px;
-    //     color: $white;
-    //     text-transform: uppercase;
-    //     font-size: 10px;
-    // }
-    .container{
-        // padding-left: 0;
-        // padding-right: 0;
-    }
-    a.meanmenu-reveal {
-      top: 45px;
+
+  @include respond-to(sm) {
+    max-width: 540px;
+  }
+
+  @include respond-to(md) {
+    max-width: 720px;
+  }
+
+  @include respond-to(lg) {
+    max-width: 960px;
+  }
+
+  @include respond-to(xl) {
+    max-width: 540px;
+  }
+
+  @include respond-to(xxl) {
+    max-width: 540px;
+  }
+
+  // &::after{
+  //     content: "Menu";
+  //     position: absolute;
+  //     top: 47px;
+  //     right: 50px;
+  //     color: $white;
+  //     text-transform: uppercase;
+  //     font-size: 10px;
+  // }
+  .container {
+    // padding-left: 0;
+    // padding-right: 0;
+  }
+
+  a.meanmenu-reveal {
+    top: 45px;
+    background: transparent !important;
+    color: $white !important;
+    right: 0;
+    left: auto;
+    font-size: 18px !important;
+    text-align: center;
+    text-indent: 0px !important;
+    font-family: $tt_regular !important;
+    font-size: 10px !important;
+    padding: 0px 10px 12px 11px !important;
+    position: relative !important;
+    z-index: 999;
+
+    .lnhr_new_menu_clicker {
       background: transparent !important;
-      color: $white !important;
-      right: 0;
-      left: auto;
-      font-size: 18px !important;
-      text-align: center;
-      text-indent: 0px !important;
-      font-family: $tt_regular !important;
-      font-size: 10px !important;
-      padding: 0px 10px 12px 11px !important;
-      position: relative !important;
-      z-index: 999;
-      .lnhr_new_menu_clicker {
-        background: transparent !important;
-        z-index: 10;
-        > img{
-            margin-top: -5px;
-        }
-        span{
-          background: transparent !important;
-          text-transform: uppercase;
-        }
+      z-index: 10;
+
+      >img {
+        margin-top: -5px;
       }
-      .lnhr_new_menu_text {
+
+      span {
         background: transparent !important;
-        transform: translate(-52px, 3px);
-        font-size: 12px;
-      }
-      &.meanclose {
-        top: 45px;
-        right: 0px !important;
-        font-size: 15px !important;
+        text-transform: uppercase;
       }
     }
-    .mean-nav {
-      background-color: transparent !important;
-      @include media-breakpoint-down(sm){
-        position: relative;
-        left: 49%;
-        transform: translateX(-50%);
-        z-index: 50;
+
+    .lnhr_new_menu_text {
+      background: transparent !important;
+      transform: translate(-52px, 3px);
+      font-size: 12px;
+    }
+
+    &.meanclose {
+      top: 45px;
+      right: 0px !important;
+      font-size: 15px !important;
+    }
+  }
+
+  .mean-nav {
+    background-color: transparent !important;
+
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      left: 49%;
+      transform: translateX(-50%);
+      z-index: 50;
+    }
+
+
+
+    >.container {
+      width: 100%;
+
+      // padding-left: 0;
+      // padding-right: 0;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
       }
-      > .container{
-          width: 100%;
-          // padding-left: 0;
-          // padding-right: 0;
-          @include media-breakpoint-down(sm){
-            width: 100%;
-          }
+    }
+
+    .navbar-brand {
+      img {
+        max-width: 97px;
       }
-      .navbar-brand {
-        img {
-          max-width: 97px;
-        }
-      }
-      ul {
-        li {
-          a {
-            color: $primary_clr !important;
-            &.mean-expand {
-              width: 95%;
-              text-align: right;
-              padding: 11px 6px 1px 6px !important;
-              background: transparent !important;
-            }
+    }
+
+    ul {
+      li {
+        a {
+          color: $primary_clr !important;
+
+          &.mean-expand {
+            width: 95%;
+            text-align: right;
+            padding: 11px 6px 1px 6px !important;
+            background: transparent !important;
           }
         }
       }
     }
   }
-  
-  .lnhr_new_navigation {
-    margin-top: 17px;
-    background: $white;
-    
-    @include media-breakpoint-down(xl){
-      margin-left: 14px;
-    }
-    @include media-breakpoint-down(sm){
-      margin-left: 0px;
-    }
-    @include respond-to(xl) {
-      margin-top: 0;
-      background:transparent;
-    }
-  
-    .lnhr_new_navbar__nav {
-      margin-bottom: -21px;
-      li {
-        @extend %ul_rules;
-        a {
-          @extend %a_rules;
+}
+
+.lnhr_new_navigation {
+  margin-top: 17px;
+  background: $white;
+
+  @include media-breakpoint-down(xl) {
+    margin-left: 14px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 0px;
+  }
+
+  @include respond-to(xl) {
+    margin-top: 0;
+    background: transparent;
+  }
+
+  .lnhr_new_navbar__nav {
+    margin-bottom: -21px;
+
+    li {
+      @extend %ul_rules;
+
+      a {
+        @extend %a_rules;
+        color: rgba($color: $white, $alpha: .30);
+        border-bottom: 1px solid rgba($color: $black, $alpha: 0.09);
+
+        @include respond-to(xl) {
           color: rgba($color: $white, $alpha: .30);
-          border-bottom: 1px solid rgba($color: $black, $alpha: 0.09);
-          @include respond-to(xl){
-            color: rgba($color: $white, $alpha: .30); ;
-            border-color: transparent;
+          ;
+          border-color: transparent;
+        }
+      }
+
+      ul {
+        @extend %ul_rules;
+
+        li {
+          position: relative;
+
+          &.lnhr_new_has_children {
+            &::after {
+              display: none;
+
+              @include respond-to(xl) {
+                display: block;
+                transform: rotate(-87deg);
+                right: 4px;
+                top: 21px;
+                height: 10px;
+                opacity: .6;
+              }
+
+              @extend %has_children;
+            }
           }
         }
+      }
+    }
+
+    >li {
+      position: relative;
+      line-height: 20px;
+      padding-bottom: 0px;
+
+      @include respond-to(xl) {
+        padding-bottom: 25px;
+      }
+
+      &:last-child {
+        &.lnhr_new_has_children {
+          @include respond-to(xl) {
+            margin-right: 18px;
+          }
+        }
+
         ul {
-          @extend %ul_rules;
-          
-          li{
-            position: relative;
-            &.lnhr_new_has_children {
-              &::after {
-                display: none;
-                @include respond-to(xl) {
-                  display: block;
-                  transform: rotate(-87deg);
-                    right: 4px;
-                    top: 21px;
-                    height: 10px;
-                    opacity: .6;
-                }
-                @extend %has_children;
+          li {
+            ul {
+              left: initial !important;
+              right: 100% !important;
+              transform: translateX(-14px);
+            }
+
+            &:hover {
+              ul {
+                transform: translateX(0px);
               }
             }
           }
         }
       }
-      > li {
-        position: relative;
-        line-height: 20px;
-        padding-bottom: 0px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      &::before {
+        display: none;
+
         @include respond-to(xl) {
-          padding-bottom: 25px;
+          display: block;
         }
-        &:last-child{
-          &.lnhr_new_has_children{
-            @include respond-to(xl){
-              margin-right: 18px;
-            }
-          }
-          ul{
-            li{
-              ul{
-                left: initial !important;
-                right: 100% !important;
-                transform: translateX(-14px);
-              }
-              &:hover{
-                ul{
-                  transform: translateX(0px);
-                }
-              }
-            }
-          }
-        }
-        &:not(:last-child) {
-          margin-right: 30px;
-        }
-        &::before {
+
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #ac9660;
+        top: -8px;
+        background-image: -moz-linear-gradient(-180deg,
+          rgb(170, 147, 93) 0%,
+          rgb(251, 250, 182) 100%);
+        background-image: -webkit-linear-gradient(-180deg,
+          rgb(170, 147, 93) 0%,
+          rgb(251, 250, 182) 100%);
+        background-image: -ms-linear-gradient(-180deg,
+          rgb(170, 147, 93) 0%,
+          rgb(251, 250, 182) 100%);
+        transform: scale(0, 1);
+        transition: all 0.3s;
+      }
+
+      &.lnhr_new_has_children {
+        &::after {
           display: none;
+
           @include respond-to(xl) {
             display: block;
           }
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 2px;
-          background: #ac9660;
-          top: -8px;
-          background-image: -moz-linear-gradient(
-            -180deg,
-            rgb(170, 147, 93) 0%,
-            rgb(251, 250, 182) 100%
-          );
-          background-image: -webkit-linear-gradient(
-            -180deg,
-            rgb(170, 147, 93) 0%,
-            rgb(251, 250, 182) 100%
-          );
-          background-image: -ms-linear-gradient(
-            -180deg,
-            rgb(170, 147, 93) 0%,
-            rgb(251, 250, 182) 100%
-          );
-          transform: scale(0, 1);
-          transition: all 0.3s;
-        }
-        &.lnhr_new_has_children {
-          &::after {
-            display: none;
-            @include respond-to(xl) {
-              display: block;
-            }
-            @extend %has_children;
-          }
-        }
-        > a {
-          @include cmn_typo();
-          text-transform: uppercase;
-          display: inline-block;
-          padding: 0 5px;
-          text-decoration: none;
-          position: relative;
-  
-          &:hover {
-            text-decoration: none;
-          }
-        }
-        > ul {
-          @extend %ul_rules;
-          border-radius: 0rem;
-          color: $white;
-          font-size: 0.8rem;
-          padding: 0rem 0;
-          min-width: 14rem;
-          z-index: 998;
-          position: relative;
-          @include respond-to(xl) {
-            background: #3B3B3B;
-            top: calc(100% + 0rem);
-            opacity: 0;
-            visibility: hidden;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, 0.5rem);
-            box-shadow: 0px 0px 32px 0px rgba($color: $black, $alpha: 0.9);
-            transition: opacity 0.15s linear, transform 0.15s linear,
-              right 0s 0.15s;
-          }
-          &::before {
-            @extend %dropdown_up_arrow;
-          }
-          // &::after {
-          //   content: "";
-          //   @include respond-to(xl) {
-          //     position: absolute;
-          //     height: 3px;
-          //     width: 100%;
-          //     background: #ac9660;
-          //     bottom: 0px;
-          //     background-image: -moz-linear-gradient(
-          //       -180deg,
-          //       rgb(170, 147, 93) 0%,
-          //       rgb(251, 250, 182) 100%
-          //     );
-          //     background-image: -webkit-linear-gradient(
-          //       -180deg,
-          //       rgb(170, 147, 93) 0%,
-          //       rgb(251, 250, 182) 100%
-          //     );
-          //     background-image: -ms-linear-gradient(
-          //       -180deg,
-          //       rgb(170, 147, 93) 0%,
-          //       rgb(251, 250, 182) 100%
-          //     );
-          //   }
-          // }
-          li {
-            position: relative;
-            a {
-              
-              @include respond-to(xl){
-                  border-bottom: 1px solid rgba($color: $white, $alpha: 0.09);
-              }
-              font-family: $tt_regular;
-              color: rgba($color: $white, $alpha: .30);
-              padding: 1rem 1.5rem;
-              display: block;
-              text-transform: capitalize;
-              width: 93%;
-              @include respond-to(xl) {
-                width: 100%;
-              }
-            }
-            &:hover {
-              > a {
-                color: $white;
-              }
-            }
-            > ul{
-              @include respond-to(xl){
-                left: 100% !important;
-                right: auto !important;
-                position: absolute;
-                background: $cb1a1;;
-                min-width: 14rem;
-                top: 0 !important;
-                transform: translateX(10px);
-                @include transition(.30s);
-                visibility: hidden;
-                opacity: 0;
-                li{
-                  a{
-                    color: $white !important;
-                  }
-                }
-              }
-              li{
-                > ul{
-                  background: $cb1a1;
-                }
-              }
-            }
-            
-          }
-        }
-        &:hover {
-          &::before {
-            transform: scale(1, 1);
-          }
-          >ul {
-            @extend %ul_rules;
-            @include respond-to(xl) {
-              right: auto;
-              left: 50%;
-              opacity: 1;
-               visibility: visible;
-              transform: translate(-50%, -0.5rem);
-              transition: opacity 0.15s linear, transform 0.15s linear;
-              > li{
-                &:hover{
-                  >ul{
-                    visibility: visible;
-                    opacity: 1;
-                    transform: translateX(0);
-                    
-                  }
-                }
-              }
-            }
-          }
-        }
 
+          @extend %has_children;
+        }
       }
+
+      >a {
+        @include cmn_typo();
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 0 5px;
+        text-decoration: none;
+        position: relative;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      >ul {
+        @extend %ul_rules;
+        border-radius: 0rem;
+        color: $white;
+        font-size: 0.8rem;
+        padding: 0rem 0;
+        min-width: 14rem;
+        z-index: 998;
+        position: relative;
+
+        @include respond-to(xl) {
+          background: #3B3B3B;
+          top: calc(100% + 0rem);
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, 0.5rem);
+          box-shadow: 0px 0px 32px 0px rgba($color: $black, $alpha: 0.9);
+          transition: opacity 0.15s linear, transform 0.15s linear,
+            right 0s 0.15s;
+        }
+
+        &::before {
+          @extend %dropdown_up_arrow;
+        }
+
+        // &::after {
+        //   content: "";
+        //   @include respond-to(xl) {
+        //     position: absolute;
+        //     height: 3px;
+        //     width: 100%;
+        //     background: #ac9660;
+        //     bottom: 0px;
+        //     background-image: -moz-linear-gradient(
+        //       -180deg,
+        //       rgb(170, 147, 93) 0%,
+        //       rgb(251, 250, 182) 100%
+        //     );
+        //     background-image: -webkit-linear-gradient(
+        //       -180deg,
+        //       rgb(170, 147, 93) 0%,
+        //       rgb(251, 250, 182) 100%
+        //     );
+        //     background-image: -ms-linear-gradient(
+        //       -180deg,
+        //       rgb(170, 147, 93) 0%,
+        //       rgb(251, 250, 182) 100%
+        //     );
+        //   }
+        // }
+        li {
+          position: relative;
+
+          a {
+
+            @include respond-to(xl) {
+              border-bottom: 1px solid rgba($color: $white, $alpha: 0.09);
+            }
+
+            font-family: $tt_regular;
+            color: rgba($color: $white, $alpha: .30);
+            padding: 1rem 1.5rem;
+            display: block;
+            text-transform: capitalize;
+            width: 93%;
+
+            @include respond-to(xl) {
+              width: 100%;
+            }
+          }
+
+          &:hover {
+            >a {
+              color: $white;
+            }
+          }
+
+          >ul {
+            @include respond-to(xl) {
+              left: 100% !important;
+              right: auto !important;
+              position: absolute;
+              background: $cb1a1;
+              ;
+              min-width: 14rem;
+              top: 0 !important;
+              transform: translateX(10px);
+              @include transition(.30s);
+              visibility: hidden;
+              opacity: 0;
+
+              li {
+                a {
+                  color: $white !important;
+                }
+              }
+            }
+
+            li {
+              >ul {
+                background: $cb1a1;
+              }
+            }
+          }
+
+        }
+      }
+
+      &:hover {
+        &::before {
+          transform: scale(1, 1);
+        }
+
+        >ul {
+          @extend %ul_rules;
+
+          @include respond-to(xl) {
+            right: auto;
+            left: 50%;
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, -0.5rem);
+            transition: opacity 0.15s linear, transform 0.15s linear;
+
+            >li {
+              &:hover {
+                >ul {
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translateX(0);
+
+                }
+              }
+            }
+          }
+        }
+      }
+
     }
   }
-  
-  .lnhr_new_navbar {
-    > .container {
-      align-items: flex-end;
-    }
-    @extend .lnhr_new_navigation;
+}
+
+.lnhr_new_navbar {
+  >.container {
+    align-items: flex-end;
   }
 
- .lnhr_new_navbar{
-  @include media-breakpoint-down(xs){
+  @extend .lnhr_new_navigation;
+}
+
+.lnhr_new_navbar {
+  @include media-breakpoint-down(xs) {
     display: none;
   }
- }
-  
+}
