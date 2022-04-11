@@ -1,0 +1,228 @@
+/* ABOUT SECTION STYLE*/
+.lnhr-about-section-wrapper {
+    position: relative;
+    background-color: #000000;
+    padding: 65px 0 0;
+    background-image: url(../images/about_new_carve.png);
+    background-repeat: no-repeat;
+    background-position: bottom 50px left;
+    background-size: 120px auto;
+    overflow: hidden;
+    z-index: 1;
+}
+.lnhr-about-section-wrapper .container {
+    max-width: 1250px;
+    width: 100%;
+    padding: 0 32px;
+}
+.lnhr-about-section-content-area {
+    width: calc(50% - 16px);
+    box-sizing: border-box;
+}
+.lnhr-about-section-content h4 {
+    font-family: 'TT Norms',-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 68px;
+    color: #d7cc8f;
+    background: -webkit-linear-gradient(80deg, #ac9660 20%,#faf8b4 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 28px;
+    letter-spacing: -0.175rem;
+}
+.lnhr-about-content-text {
+    max-width: 530px;
+}
+.lnhr-about-content-text p {
+    font-family: 'tt_norms_regular', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #8c8c8c;
+    margin: 0;
+}
+.lnhr-about-section-content .lnhr-button {
+    font-family: 'tt_norms_regular', sans-serif !important;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.498168px;
+    line-height: 18px;
+    color: #424242;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    display: inline-block;
+    margin: 0;
+    opacity: 1;
+    padding: 1.7em 1.78em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity 0.15s linear;
+    min-width: 230px;
+    border: 2px solid #424242;
+    font-family: inherit;
+    border-radius: 5px;
+    box-shadow: none;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    background-image: -moz-linear-gradient( -180deg, rgb(255,255,255) 0%, rgb(229,229,229) 17%, rgb(202,202,202) 50%, rgb(212,212,212) 86%, rgb(221,221,221) 100%);
+    background-image: -webkit-linear-gradient( -180deg, rgb(255,255,255) 0%, rgb(229,229,229) 17%, rgb(202,202,202) 50%, rgb(212,212,212) 86%, rgb(221,221,221) 100%);
+    background-image: -ms-linear-gradient( -180deg, rgb(255,255,255) 0%, rgb(229,229,229) 17%, rgb(202,202,202) 50%, rgb(212,212,212) 86%, rgb(221,221,221) 100%);
+    margin-top: 32px;
+}
+.lnhr-about-section-content .lnhr-button:hover {
+    text-decoration: none;
+    background: #ffffff;
+    border-color: #000000;
+    outline: 0;
+}
+.lnhr-about-content-logo {
+    position: relative;
+    margin-top: 160px;
+    margin-bottom: 65px;
+}
+.lnhr-about-content-logo img {
+    max-width: 100%;
+}
+.lnhr-about-content-logo p {
+    font-family: 'tt_norms_regular', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #a38d59;
+    text-align: center;
+    margin-top: 8px;
+}
+.lnhr-about-thumbnail-section {
+    position: absolute;
+    top: 145px;
+    right: 0;
+    width: calc(50% - 16px);
+    height: calc(100% - 145px);
+    background-image: url(../images/dr-ross-3.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    z-index: -1;
+}
+.lnhr-about-thumbnail-section::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    height: 100%;
+    width: 80px;
+    background-image: url(../images/vertical-skew.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.lnhr-about-thumbnail-section img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.lnhr-about-section-wrapper .bottom-skew {
+    position: relative;
+    bottom: -1px;
+    width: calc(100% + 1px);
+}
+
+@media screen and (max-width: 1399px) {
+    .lnhr-about-section-wrapper {
+        background-size: 60px auto;
+    }
+}
+@media screen and (max-width: 1279px) {
+    .lnhr-about-section-content h4 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+@media screen and (max-width: 999px) {
+    .lnhr-about-section-content h4 {
+        font-size: 40px;
+    }
+    .lnhr-about-content-text p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .lnhr-about-section-wrapper .container {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+    }
+    .lnhr-about-section-content h4 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .lnhr-about-thumbnail-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        position: relative;
+        top: initial;
+        right: initial;
+        height: auto;
+    }
+    .lnhr-about-thumbnail-section::after {
+        display: none;
+    }
+    .lnhr-about-thumbnail-section img {
+        display: block;
+    }
+}
+@media screen and (max-width: 599px) {
+    .lnhr-about-section-content-area {
+        width: 100%;
+        order: 2;
+        margin-top: 96px;
+    }
+    .lnhr-about-content-logo {
+        margin: 160px auto 16px;
+    }
+    .lnhr-about-thumbnail-section {
+        width: 100%;
+        order: 1;
+    }
+}
+
+/* LOCATION SECTION STYLE */
+.lnhr-location-section-wrapper {
+    position: relative;
+    padding: 140px 0 190px;
+    background-image: url(../img/bg-world-map.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.lnhr-location-section-wrapper .top-skew {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.lnhr-location-content {
+    padding-top: 80px;
+}
+.lnhr-section-title {
+    font-family: 'TT Norms',-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 76px;
+    line-height: 96px;
+    letter-spacing: -2.8px;
+    color: #d7cc8f;
+    text-align: center;
+}
+.lnhr-location-section-wrapper .bottom-skew {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
