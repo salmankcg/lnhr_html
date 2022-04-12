@@ -1,48 +1,5 @@
-/* ABOUT SECTION STYLE*/
-.lnhr-about-section-wrapper {
-    position: relative;
-    background-color: #000000;
-    padding: 65px 0 0;
-    background-image: url(../images/about_new_carve.png);
-    background-repeat: no-repeat;
-    background-position: bottom 50px left;
-    background-size: 120px auto;
-    overflow: hidden;
-    z-index: 1;
-}
-.lnhr-about-section-wrapper .container {
-    max-width: 1250px;
-    width: 100%;
-    padding: 0 32px;
-}
-.lnhr-about-section-content-area {
-    width: calc(50% - 16px);
-    box-sizing: border-box;
-}
-.lnhr-about-section-content h4 {
-    font-family: 'TT Norms',-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,sans-serif;
-    font-size: 54px;
-    font-weight: 500;
-    line-height: 68px;
-    color: #d7cc8f;
-    background: -webkit-linear-gradient(80deg, #ac9660 20%,#faf8b4 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 28px;
-    letter-spacing: -0.175rem;
-}
-.lnhr-about-content-text {
-    max-width: 530px;
-}
-.lnhr-about-content-text p {
-    font-family: 'tt_norms_regular', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #8c8c8c;
-    margin: 0;
-}
-.lnhr-about-section-content .lnhr-button {
+/* BUTTON STYLE */
+.lnhr-button {
     font-family: 'tt_norms_regular', sans-serif !important;
     font-size: 14px;
     font-weight: 500;
@@ -73,11 +30,58 @@
     background-image: -ms-linear-gradient( -180deg, rgb(255,255,255) 0%, rgb(229,229,229) 17%, rgb(202,202,202) 50%, rgb(212,212,212) 86%, rgb(221,221,221) 100%);
     margin-top: 32px;
 }
-.lnhr-about-section-content .lnhr-button:hover {
+.lnhr-button:hover {
     text-decoration: none;
     background: #ffffff;
+    color: #4b5563;
     border-color: #000000;
     outline: 0;
+}
+
+
+/* ABOUT SECTION STYLE*/
+.lnhr-about-section-wrapper {
+    position: relative;
+    background-color: #000000;
+    padding: 65px 0 0;
+    background-image: url(../images/about_new_carve.png);
+    background-repeat: no-repeat;
+    background-position: bottom 50px left;
+    background-size: 120px auto;
+    overflow: hidden;
+    z-index: 1;
+}
+.lnhr-about-section-wrapper .container {
+    max-width: 1250px;
+    width: 100%;
+    padding: 0 32px;
+}
+.lnhr-about-section-content-area {
+    width: calc(50% - 16px);
+    box-sizing: border-box;
+}
+.lnhr-about-section-content h4 {
+    font-family: 'tt_norms_regular', sans-serif;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 68px;
+    color: #d7cc8f;
+    background: -webkit-linear-gradient(80deg, #ac9660 20%,#faf8b4 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 28px;
+    letter-spacing: -0.175rem;
+}
+.lnhr-about-content-text {
+    max-width: 530px;
+}
+.lnhr-about-content-text p {
+    font-family: 'tt_norms_regular', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #8c8c8c;
+    margin: 0;
 }
 .lnhr-about-content-logo {
     position: relative;
@@ -197,11 +201,28 @@
 /* LOCATION SECTION STYLE */
 .lnhr-location-section-wrapper {
     position: relative;
-    padding: 140px 0 190px;
+    padding: 140px 0 192px;
     background-image: url(../img/bg-world-map.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.lnhr-location-section-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 160px;
+    height: 490px;
+    background-image: url(../img/curve-right-3.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100% auto;
+}
+.lnhr-location-section-wrapper .container {
+    max-width: 1250px;
+    width: 100%;
+    padding: 0 32px;
 }
 .lnhr-location-section-wrapper .top-skew {
     position: absolute;
@@ -213,16 +234,64 @@
     padding-top: 80px;
 }
 .lnhr-section-title {
-    font-family: 'TT Norms',-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,sans-serif;
+    font-family: 'tt_norms_regular', sans-serif;
+    font-weight: 700;
     font-size: 76px;
     line-height: 96px;
     letter-spacing: -2.8px;
     color: #d7cc8f;
     text-align: center;
+    margin-bottom: 75px;
+}
+.lnhr_new_locations .lnhr-location-content .lnhr_new_locations__box {
+    margin-bottom: 32px;
+}
+.lnhr_new_locations .lnhr_new_locations__box_icon {
+    display: block;
+    width: 20px;
+}
+.lnhr_new_locations__box__content {
+    width: calc(100% - 25px);
+}
+.lnhr_new_locations__title {
+    margin: 0;
+}
+.lnhr_new_locations .lnhr-location-content .lnhr_new_locations__box__content .lnhr_new_locations__title a {
+    font-family: 'tt_norms_bold', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    display: inline-block;
+    opacity: 1;
+    margin: 0;
+}
+.lnhr_new_locations .lnhr-location-content .lnhr_new_locations__box__content p {
+    font-family: "tt_norms_regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8c8c8c;
+    opacity: 1;
+    margin: 0;
+}
+.lnhr_new_locations .lnhr-location-content .lnhr_new_locations__box_icon img {
+    width: 20px;
+    height: auto;
+    max-width: initial;
+}
+.lnhr-location-content .lnhr-button {
+    min-width: 300px;
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
 }
 .lnhr-location-section-wrapper .bottom-skew {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
+}
+
+@media screen and (min-width: 999px) {
+
 }
