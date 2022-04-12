@@ -111,11 +111,6 @@
         keyboard: {
           enabled: true,
         },
-        breakpoints: {
-          640: {
-            spaceBetween: 30,
-          },
-        },
       });
     }
 
