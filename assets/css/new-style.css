@@ -424,6 +424,10 @@
 .lnhr_new_testimonial__2 .lnhr_new_testimonial__slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #CDBF83;
 }
+.lnhr_new_testimonial__2 .lnhr_new_testimonial__slider .swiper-pagination .swiper-pagination-bullet:hover,
+.lnhr_new_testimonial__2 .lnhr_new_testimonial__slider .swiper-pagination .swiper-pagination-bullet:focus {
+    opacity: 0.75;
+}
 .lnhr_new_testimonial__2 .lnhr_new_testimonial__slider .swiper-pagination .swiper-pagination-bullet::before {
     content: '';
     line-height: 20px;
