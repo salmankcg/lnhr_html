@@ -89,48 +89,28 @@
         },
       });
     }
-    if (classExist(".lnhr_new_testimonial__slider_two")) {
-      var swiper_two = new Swiper(".lnhr_new_testimonial__slider_two", {
-        slidesPerView: 2,
+    if (classExist('.lnhr_new_testimonial__slider_two')) {
+      var swiper_two = new Swiper('.lnhr_new_testimonial__slider_two', {
+        slidesPerView: 1,
         centeredSlides: true,
+        slidesPerView: 'auto',
         loop: true,
-        spaceBetween: 250,
+        speed: 1000,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
         navigation: false,
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           clickable: true,
           renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + "</span>";
+            return '<span class="' + className + '"></span>';
           },
         },
         keyboard: {
           enabled: true,
         },
-        breakpoints: {
-          // when window width is >= 320px
-          320: {
-            slidesPerView: 1,
-            centeredSlides: false,
-            spaceBetween: 0
-          },
-          // when window width is >= 480px
-          480: {
-            slidesPerView: 1,
-            centeredSlides: false,
-            spaceBetween: 0
-          },
-          // when window width is >= 640px
-          640: {
-            slidesPerView: 1,
-            centeredSlides: false,
-            spaceBetween: 0
-          },
-          768: {
-            slidesPerView: 2,
-            centeredSlides: true,
-            spaceBetween: 250
-          }
-        }
       });
     }
 
