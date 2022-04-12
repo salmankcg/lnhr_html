@@ -1,7 +1,4 @@
 /* BUTTON STYLE */
-.home_v3, .home_v3 body {
-    overflow-x: hidden;
-}
 .lnhr-button {
     font-family: 'tt_norms_regular', sans-serif !important;
     font-size: 14px;
@@ -51,6 +48,7 @@
     background-repeat: no-repeat;
     background-position: bottom 50px left;
     background-size: 120px auto;
+    overflow: hidden;
     z-index: 1;
 }
 .lnhr-about-section-wrapper .container {
