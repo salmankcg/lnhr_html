@@ -493,4 +493,7 @@
     .lnhr_new_testimonial .lnhr_new_testimonial__slider .swiper-slide .lnhr_new_testimonial_star img {
         height: 28px;
     }
+    .lnhr_new_testimonial__2::after {
+        bottom: calc(100% - 100px);
+    }
 }
