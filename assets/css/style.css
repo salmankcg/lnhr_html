@@ -217,7 +217,7 @@
       @media screen and (min-width: 1800px) {
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .banenr_images {
           width: calc(100% + 200px); } }
-      @media screen and (max-height: 768px) {
+      @media screen and (max-width: 1366px) and (max-height: 768px) {
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .banenr_images {
           width: 80%; } }
     .lnhr_new_banner__slider .swiper-wrapper .swiper-slide-active .banenr_images {
@@ -232,10 +232,8 @@
       @media (max-width: 575.98px) {
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
           padding-bottom: 20%;
-          height: 80vh;
-          max-width: 95%; 
-        } 
-      }
+          height: 100vh;
+          max-width: 95%; } }
       @media only screen and (min-width: 576px) {
         .lnhr_new_banner__slider .swiper-wrapper .swiper-slide .lnhr_new_banner__content {
           height: 600px;
@@ -666,8 +664,7 @@
             left: 50%;
             transform: translate(-50%, 0.5rem);
             box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.9);
-            transition: opacity 0.15s linear, transform 0.15s linear,
- right 0s 0.15s; } }
+            transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s; } }
         .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul li, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul li {
           position: relative; }
           .lnhr_new_navigation .lnhr_new_navbar__nav > li > ul li a, .lnhr_new_navbar .lnhr_new_navbar__nav > li > ul li a {
@@ -1545,29 +1542,22 @@
       height: 70px;
       font-size: 18px; } }
 
-  .consultation_reviews {
-    background: #F3F3F3;
-    padding: 50px 0 0px 0;
-    position: relative; 
-  }
+.consultation_reviews {
+  background: #F3F3F3;
+  padding: 50px 0 0px 0;
+  position: relative; }
   .consultation_reviews__curve {
     position: absolute;
-    bottom: -70px;
+    bottom: 100px;
     left: 0;
-    height: 150px; 
-    z-index: 1;
-  }
+    height: 150px; }
     @media (max-width: 575.98px) {
       .consultation_reviews__curve {
-        bottom: initial;
-        top: calc(100% - 60px);
-      } 
-    }
+        bottom: -45px;
+        z-index: 99; } }
     @media only screen and (min-width: 576px) {
       .consultation_reviews__curve {
-        height: 200px; 
-      } 
-    }
+        height: 200px; } }
     @media only screen and (min-width: 992px) {
       .consultation_reviews__curve {
         width: 96px;
