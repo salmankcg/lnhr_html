@@ -202,9 +202,10 @@
 }
 
 .reviews_area{
-    
     position: relative;
     margin-top: 50px;
+    padding-bottom: 10px;
+    
     @include respond-to(md){
         margin-top: 0;
     }

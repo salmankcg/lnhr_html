@@ -62,46 +62,34 @@
     max-width: 540px;
   }
 
-  // &::after{
-  //     content: "Menu";
-  //     position: absolute;
-  //     top: 47px;
-  //     right: 50px;
-  //     color: $white;
-  //     text-transform: uppercase;
-  //     font-size: 10px;
-  // }
-  .container {
-    // padding-left: 0;
-    // padding-right: 0;
-  }
-
   a.meanmenu-reveal {
     top: 45px;
     background: transparent !important;
     color: $white !important;
     right: 0;
     left: auto;
-    font-size: 18px !important;
+    font-size: 18px;
     text-align: center;
     text-indent: 0px !important;
     font-family: $tt_regular !important;
-    font-size: 10px !important;
-    padding: 0px 10px 12px 11px !important;
     position: relative !important;
+    padding: 0;
     z-index: 999;
 
     .lnhr_new_menu_clicker {
       background: transparent !important;
+      margin-top: 0;
       z-index: 10;
 
-      >img {
-        margin-top: -5px;
+      > img {
+        margin-top: 0;
       }
 
       span {
         background: transparent !important;
         text-transform: uppercase;
+        margin-top: 0;
+        line-height: 30px;
       }
     }
 
@@ -109,12 +97,7 @@
       background: transparent !important;
       transform: translate(-52px, 3px);
       font-size: 12px;
-    }
-
-    &.meanclose {
-      top: 45px;
-      right: 0px !important;
-      font-size: 15px !important;
+      margin-top: 0;
     }
   }
 
@@ -339,31 +322,6 @@
           @extend %dropdown_up_arrow;
         }
 
-        // &::after {
-        //   content: "";
-        //   @include respond-to(xl) {
-        //     position: absolute;
-        //     height: 3px;
-        //     width: 100%;
-        //     background: #ac9660;
-        //     bottom: 0px;
-        //     background-image: -moz-linear-gradient(
-        //       -180deg,
-        //       rgb(170, 147, 93) 0%,
-        //       rgb(251, 250, 182) 100%
-        //     );
-        //     background-image: -webkit-linear-gradient(
-        //       -180deg,
-        //       rgb(170, 147, 93) 0%,
-        //       rgb(251, 250, 182) 100%
-        //     );
-        //     background-image: -ms-linear-gradient(
-        //       -180deg,
-        //       rgb(170, 147, 93) 0%,
-        //       rgb(251, 250, 182) 100%
-        //     );
-        //   }
-        // }
         li {
           position: relative;
 

@@ -135,6 +135,14 @@
     width: 100%;
 }
 
+@media screen and (min-width: 1800px) {
+    .lnhr-about-section-content-area {
+        min-height: 920px;
+    }
+    .lnhr-about-thumbnail-section {
+        height: calc(100% - 200px);
+    }
+}
 @media screen and (max-width: 1399px) {
     .lnhr-about-section-wrapper {
         background-size: 60px auto;
@@ -292,6 +300,12 @@
     width: 100%;
 }
 
+@media screen and (min-width: 1700px) {
+    .lnhr-location-content {
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
+}
 @media screen and (max-width: 1439px) {
     .lnhr-location-section-wrapper::after {
         width: 60px;
@@ -323,6 +337,9 @@
 @media screen and (max-width: 767px) {
     .lnhr-location-section-wrapper {
         padding: 50px 16px 76px;
+    }
+    .lnhr-location-content {
+        padding-top: 30px;
     }
 }
 @media screen and (max-width: 599px) {
@@ -366,18 +383,6 @@
     max-width: calc(100% - 25%);
     padding-top: 80px;
 }
-.lnhr_new_testimonial__slider_two .swiper-slide.swiper-slide-active::after {
-    content: "";
-    position: absolute;
-    top: -80px;
-    left: 0;
-    width: 185px;
-    height: 150px;
-    background-image: url(../images/qoute.png);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 100% auto;
-}
 .lnhr-testimonial-message {
     max-width: 875px;
     margin: 0 auto;
@@ -387,7 +392,7 @@
     font-weight: 400;
     font-size: 20px;
     color: #000000;
-    margin-bottom: 50px;
+    margin-bottom: 16px;
     line-height: 28px;
     margin-top: 30px;
 }
@@ -405,7 +410,7 @@
     opacity: 0.2;
 }
 .lnhr_new_testimonial__2 .lnhr_new_testimonial__slider .swiper-pagination {
-    margin-top: 50px;
+    margin-top: 45px;
     position: relative;
 }
 .lnhr_new_testimonial__2 .lnhr_new_testimonial__slider .swiper-pagination .swiper-pagination-bullet {
@@ -423,8 +428,8 @@
     background: #CDBF83;
     opacity: 1;
 }
-.lnhr_new_testimonial__2 .lnhr_new_testimonial__slider .swiper-pagination .swiper-pagination-bullet:hover,
-.lnhr_new_testimonial__2 .lnhr_new_testimonial__slider .swiper-pagination .swiper-pagination-bullet:focus {
+.lnhr_new_testimonial__2 .lnhr_new_testimonial__slider .swiper-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover,
+.lnhr_new_testimonial__2 .lnhr_new_testimonial__slider .swiper-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):focus {
     opacity: 0.75;
 }
 .lnhr_new_testimonial__2 .lnhr_new_testimonial__slider .swiper-pagination .swiper-pagination-bullet::before {
@@ -441,9 +446,35 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.lnhr_new_testimonial__2 .lnhr_new_testimonial_star {
+    position: relative;
+    opacity: 0;
+}
+.lnhr_new_testimonial__2 .swiper-slide-active .lnhr_new_testimonial_star {
+    opacity: 1;
+}
+.lnhr_new_testimonial__2 .lnhr_new_testimonial_star::after {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 185px;
+    height: 150px;
+    background-image: url(../images/qoute.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100% auto;
+}
 .lnhr_new_testimonial__2.lnhr_new_testimonial .lnhr_new_testimonial__slider .swiper-slide .lnhr_new_testimonial_star img {
     width: auto;
     max-width: 100%;
+}
+@media screen and (min-width: 1700px) {
+    .lnhr_new_testimonial__2 .lnhr_new_testimonial_star {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width: 1439px) {
     .lnhr_new_testimonial__2::after {
@@ -456,7 +487,8 @@
 }
 
 @media screen and (max-width: 999px) {
-    .lnhr_new_testimonial__slider_two .swiper-slide.swiper-slide-active::after {
+    .lnhr_new_testimonial__2 .lnhr_new_testimonial_star::after {
+        top: -10px;
         width: 60px;
         height: 56px;
     }
@@ -468,17 +500,11 @@
     .lnhr_new_testimonial__2::after {
         bottom: calc(100% - 65px);
     }
-    .lnhr-location-content {
-        padding-top: 30px;
-    }
     .lnhr_new_testimonial__2 {
         padding: 60px 0 20px;
     }
     .lnhr_new_testimonial__slider_two .swiper-wrapper .swiper-slide {
         padding: 0 20px;
-    }
-    .lnhr_new_testimonial__slider_two .swiper-slide.swiper-slide-active::after {
-        left: 48px;
     }
     .lnhr_new_testimonial .lnhr_new_testimonial__slider .swiper-slide .lnhr_new_testimonial_star img {
         height: 35px;
