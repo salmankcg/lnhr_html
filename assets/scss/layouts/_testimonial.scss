@@ -69,6 +69,12 @@
         img {
 
           display: inline-flex;
+          width: 15px;
+
+          @include respond-to(xl) {
+            width: 22px;
+          }
+          
           &:not(:last-child) {
             margin-right: 10px;
           }

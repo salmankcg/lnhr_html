@@ -930,7 +930,11 @@
     justify-content: center;
     text-align: center; }
     .lnhr_new_testimonial .lnhr_new_testimonial__slider .swiper-slide .lnhr_new_testimonial_star img {
-      display: inline-flex; }
+      display: inline-flex;
+      width: 15px; }
+      @media only screen and (min-width: 1200px) {
+        .lnhr_new_testimonial .lnhr_new_testimonial__slider .swiper-slide .lnhr_new_testimonial_star img {
+          width: 22px; } }
       .lnhr_new_testimonial .lnhr_new_testimonial__slider .swiper-slide .lnhr_new_testimonial_star img:not(:last-child) {
         margin-right: 10px; }
   .lnhr_new_testimonial .lnhr_new_testimonial__slider .swiper-slide p {
